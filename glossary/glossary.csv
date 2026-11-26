@@ -475,3 +475,45 @@ REMnux,REMnux,,Forense,Distribuição Linux com ferramentas prontas para anális
 Mutex,Mutex,,Ameaças e Ataques,Objeto nomeado que o malware cria para evitar múltiplas infecções; serve de IOC.,Global\\MeuMalwareMutex,Y2P5
 Servidor de comando e controle,Command and Control,C2,Ameaças e Ataques,Infraestrutura que o malware contata para receber ordens e exfiltrar dados.,Beacon periódico para um domínio.,Y2P5
 XOR,Exclusive OR (cifra XOR),XOR,Criptografia,Operação lógica reversível muito usada por malware para cifrar strings e payloads.,byte ^ chave repetida = texto original.,Y2P5
+Modelo de responsabilidade compartilhada,Shared responsibility model,,Cloud,Divisão de deveres: o provedor protege a infraestrutura da nuvem e o cliente protege o que coloca nela.,AWS cuida do hardware; você cuida das configs e dados.,Y2P6
+Gerenciamento de identidade e acesso (AWS),AWS Identity and Access Management,IAM,Cloud,"Serviço que controla quem (usuários/roles) pode fazer o quê na AWS, via políticas.",Política de menor privilégio para um role.,Y2P6
+Role da AWS,IAM Role,,Cloud,Identidade com permissões que pode ser assumida temporariamente por serviços ou usuários.,Um Lambda assume um role para acessar o S3.,Y2P6
+Security Token Service,AWS Security Token Service,STS,Cloud,Serviço que emite credenciais temporárias e limitadas na AWS.,AssumeRole devolve credenciais de curta duração.,Y2P6
+Amazon Cognito,Amazon Cognito,,Cloud,Serviço de identidade para autenticar e autorizar usuários de aplicações.,Login de um app mobile com user pool.,Y2P6
+AWS Secrets Manager,AWS Secrets Manager,,Cloud,"Serviço que armazena e rotaciona segredos (senhas, chaves de API, credenciais de banco).",Rotação automática da senha do RDS.,Y2P6
+Key Management Service,AWS Key Management Service,KMS,Cloud,Serviço gerenciado de criação e controle de chaves de criptografia.,Chave KMS cifrando um bucket S3.,Y2P6
+Criptografia no lado do servidor (S3),Server-Side Encryption (SSE),SSE,Cloud,"Criptografia de objetos no S3 em repouso; variantes SSE-S3, SSE-KMS e SSE-C diferem no controle da chave.",SSE-KMS dá auditoria e política de chave.,Y2P6
+AWS CloudTrail,AWS CloudTrail,,Cloud,"Serviço que registra todas as chamadas de API da conta AWS, para auditoria.",Ver quem deletou um bucket.,Y2P6
+Amazon CloudWatch,Amazon CloudWatch,,Cloud,"Serviço de métricas, logs e alarmes para recursos e aplicações AWS.",Alarme quando a CPU passa de 80%.,Y2P6
+AWS Config,AWS Config,,Cloud,Serviço que registra e avalia a configuração dos recursos quanto à conformidade.,Alertar se um bucket ficar público.,Y2P6
+Amazon GuardDuty,Amazon GuardDuty,,Cloud,Serviço gerenciado de detecção de ameaças que analisa logs da conta.,Detectar acesso a partir de IP malicioso.,Y2P6
+AWS Security Hub,AWS Security Hub,,Cloud,Serviço que centraliza e prioriza achados de segurança de vários serviços AWS.,Postura de segurança da conta num painel.,Y2P6
+Amazon Macie,Amazon Macie,,Cloud,Serviço que descobre e classifica dados sensíveis (PII) no S3 usando ML.,Encontrar CPFs num bucket.,Y2P6
+AWS Shield,AWS Shield,,Cloud,Serviço de proteção contra DDoS na AWS.,Mitigar um ataque volumétrico.,Y2P6
+VPC Flow Logs,VPC Flow Logs,,Cloud,Registro do tráfego IP que entra e sai das interfaces de rede de uma VPC.,Investigar conexões suspeitas de uma instância.,Y2P6
+Infraestrutura como Código,Infrastructure as Code,IaC,Cloud,Definir e provisionar infraestrutura por meio de arquivos de código versionáveis.,Template CloudFormation de um bucket.,Y2P6
+AWS CloudFormation,AWS CloudFormation,,Cloud,Serviço de IaC da AWS que cria recursos a partir de templates declarativos.,Deploy repetível de uma stack.,Y2P6
+CI/CD,Continuous Integration / Continuous Delivery,CI/CD,Desenvolvimento,"Práticas e pipeline que automatizam build, teste e entrega de software.",CodePipeline do commit ao deploy.,Y2P6
+DevSecOps,DevSecOps,,Desenvolvimento,Integrar segurança em todo o ciclo de desenvolvimento e entrega (shift-left).,Scan de segurança no pipeline de CI.,Y2P6
+Alta disponibilidade Multi-AZ,Multi-AZ,,Cloud,Implantar recursos em várias zonas de disponibilidade para tolerar falhas.,RDS Multi-AZ com réplica em standby.,Y2P6
+Inteligência Artificial,Artificial Intelligence,IA,Dados e IA,Campo que cria sistemas capazes de tarefas que exigiriam inteligência humana.,Classificador de spam.,Y2P6
+Ciência de dados,Data science,,Dados e IA,"Área que extrai conhecimento de dados com estatística, programação e domínio.",Pipeline de dados para um modelo.,Y2P6
+Aprendizado de máquina,Machine learning,ML,Dados e IA,Subárea da IA em que o sistema aprende padrões a partir de dados.,"Supervisionado, não supervisionado, por reforço.",Y2P6
+Aprendizado supervisionado,Supervised learning,,Dados e IA,ML que aprende de dados rotulados para prever rótulos novos.,Classificar e-mail como spam/não spam.,Y2P6
+Dados rotulados,Labeled data,,Dados e IA,Dados de treino que já têm a resposta correta associada.,Imagens marcadas como 'gato'/'cachorro'.,Y2P6
+Classificação,Classification,,Dados e IA,Tarefa de ML que atribui uma categoria a cada entrada.,Detecção de fraude (fraude/não fraude).,Y2P6
+Regressão,Regression,,Dados e IA,Tarefa de ML que prevê um valor numérico contínuo.,Prever o preço de uma casa.,Y2P6
+Segurança de IA,AI Security,,Dados e IA,"Disciplina que protege modelos e dados de IA, usa IA na defesa e trata a IA como vetor de ataque.",Proteger um modelo contra adversarial e poisoning.,Y2P6
+Ataque adversarial,Adversarial attack,,Ameaças e Ataques,"Perturbar a entrada de um modelo para fazê-lo errar, muitas vezes de forma imperceptível.",FGSM muda pixels e engana o classificador.,Y2P6
+FGSM,Fast Gradient Sign Method,FGSM,Ameaças e Ataques,Técnica de ataque adversarial que usa o gradiente da perda para criar a perturbação.,Enganar um modelo com uma única etapa.,Y2P6
+Envenenamento de dados,Data poisoning,,Ameaças e Ataques,Contaminar o conjunto de treino para degradar ou enviesar o modelo.,Inserir exemplos maliciosos no dataset.,Y2P6
+Model inversion,Model inversion,,Ameaças e Ataques,Reconstruir dados de treino a partir das respostas do modelo.,Recuperar rostos de um modelo facial.,Y2P6
+Membership inference,Membership inference,,Ameaças e Ataques,Descobrir se um registro específico fez parte do treino do modelo (risco de privacidade).,Saber se um paciente estava no dataset.,Y2P6
+Model stealing,Model stealing / extraction,,Ameaças e Ataques,Copiar um modelo consultando repetidamente sua API.,Reconstruir um modelo pago via consultas.,Y2P6
+Modelo de linguagem grande,Large Language Model,LLM,Dados e IA,Modelo de IA generativa treinado em texto que gera linguagem natural.,Um chatbot baseado em LLM.,Y2P6
+Prompt injection,Prompt injection,,Ameaças e Ataques,Inserir instruções maliciosas na entrada de um LLM para subverter seu comportamento.,Conteúdo externo que manda o LLM vazar dados.,Y2P6
+Jailbreak,Jailbreak (LLM),,Ameaças e Ataques,Burlar as salvaguardas de um LLM para obter respostas proibidas.,Prompt que contorna as regras do modelo.,Y2P6
+OWASP Top 10 for LLM,OWASP Top 10 for LLM Applications,,Dados e IA,Lista das principais vulnerabilidades de aplicações com LLM.,"Prompt injection, vazamento, output inseguro.",Y2P6
+MITRE ATLAS,MITRE ATLAS,ATLAS,Dados e IA,Base de conhecimento de táticas e técnicas de ataque a sistemas de IA/ML.,Mapear um ataque de poisoning no ATLAS.,Y2P6
+NIST AI RMF,NIST AI Risk Management Framework,,Dados e IA,Framework do NIST para gerenciar riscos de sistemas de IA.,Governar o ciclo de vida de um modelo.,Y2P6
+Guardrails de IA,AI guardrails,,Dados e IA,Controles que limitam entradas e saídas de um sistema de IA para mantê-lo seguro.,Filtrar saída tóxica de um LLM.,Y2P6
