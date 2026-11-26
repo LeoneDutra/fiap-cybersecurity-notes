@@ -446,3 +446,32 @@ Componente Android,Android component,,Desenvolvimento,"Blocos de um app: Activit
 Intent,Intent,,Desenvolvimento,Objeto de mensagem que aciona componentes ou comunica entre apps no Android.,Intent implícito para abrir um link.,Y2P4
 Componente exportado,Exported component,,Ameaças e Ataques,"Componente acessível por outros apps; se exposto sem proteção, vira vetor de ataque.",Activity exported=true sem permissão.,Y2P4
 Análise estática e dinâmica,Static and dynamic analysis,,Forense,Examinar o código sem executar (estática) e observar o app em execução (dinâmica).,JADX (estática) + ADB/instrumentação (dinâmica).,Y2P4
+Análise de malware,Malware analysis,,Forense,Processo de examinar software malicioso para entender seu funcionamento e extrair indicadores.,Descobrir o C2 de um trojan numa VM isolada.,Y2P5
+Laboratório isolado de malware,Isolated malware lab,,Forense,"Ambiente virtual fechado, sem acesso à internet real, para detonar amostras com segurança.",VM Windows + REMnux em rede host-only.,Y2P5
+Snapshot,Snapshot,,Sistemas,Cópia do estado de uma VM que permite voltar ao ponto salvo após analisar o malware.,Snapshot limpo antes de detonar a amostra.,Y2P5
+Tipos de malware,Malware types,,Ameaças e Ataques,"Categorias de software malicioso: vírus, worm, trojan, ransomware, rootkit, spyware, backdoor.",Trojan que abre um backdoor.,Y2P5
+Anti engenharia reversa,Anti reverse engineering,,Ameaças e Ataques,Técnicas que o malware usa para detectar análise e dificultar a engenharia reversa.,Detectar VM/debugger e parar a execução.,Y2P5
+Polimorfismo,Polymorphism,,Ameaças e Ataques,Capacidade do malware de mudar sua aparência (cifrando o corpo) mantendo a mesma lógica.,"Cada cópia tem bytes diferentes, mesma função.",Y2P5
+Metamorfismo,Metamorphism,,Ameaças e Ataques,Capacidade do malware de reescrever o próprio código a cada geração.,Reordena e substitui instruções equivalentes.,Y2P5
+Ofuscação,Obfuscation,,Ameaças e Ataques,Transformar o código para dificultar a leitura sem mudar o que ele faz.,"Código morto, XOR em strings, fluxo embaralhado.",Y2P5
+Packing,Packing,,Ameaças e Ataques,Comprimir ou cifrar o executável para esconder código e strings dos antivírus.,UPX e packers customizados.,Y2P5
+Entropia,Entropy,,Forense,Medida de aleatoriedade dos bytes; alta entropia sugere compressão ou criptografia (packing).,Seção com entropia ~8.0 indica packer.,Y2P5
+Arquitetura de Von Neumann,Von Neumann architecture,,Sistemas,Modelo de computador em que dados e instruções compartilham a mesma memória.,Base da arquitetura x86.,Y2P5
+Opcode,Operation code,Opcode,Sistemas,Código de máquina que representa uma instrução da CPU.,0x90 = NOP.,Y2P5
+Análise estática,Static analysis,,Forense,Examinar o arquivo malicioso sem executá-lo.,Ler strings e imports de um PE.,Y2P5
+Imphash,Import hash,,Forense,"Hash da tabela de importações de um PE, usado para agrupar amostras relacionadas.",Mesma imphash sugere mesma família.,Y2P5
+VirusTotal,VirusTotal,,Forense,Serviço que analisa arquivos/URLs com dezenas de antivírus e fontes de reputação.,Checar o SHA-256 de uma amostra.,Y2P5
+PEiD,PEiD,,Forense,Ferramenta que identifica packers e compiladores de um executável PE.,Detectar que a amostra está empacotada com UPX.,Y2P5
+PEStudio,PEStudio,,Forense,"Ferramenta de triagem estática de PE: imports, strings, indicadores e reputação.",Destacar APIs e strings suspeitas.,Y2P5
+capa,capa,,Forense,Ferramenta que identifica as capacidades de um binário e as mapeia no ATT&CK.,Detectar 'encrypt data using XOR'.,Y2P5
+YARA,YARA,,Forense,Linguagem e ferramenta de regras para identificar e classificar malware por padrões.,Regra que casa strings de uma família.,Y2P5
+Análise dinâmica,Dynamic analysis,,Forense,Executar a amostra em ambiente controlado e observar seu comportamento.,Detonar na VM e monitorar processos e rede.,Y2P5
+Sandbox,Sandbox,,Forense,Ambiente isolado e automatizado que executa a amostra e gera um relatório de comportamento.,"Any.run, Cuckoo.",Y2P5
+Process Hacker,Process Hacker,,Forense,"Ferramenta que inspeciona processos, threads, handles e memória em tempo real.",Ver o processo filho criado pelo malware.,Y2P5
+Procmon,Process Monitor,Procmon,Forense,"Ferramenta da Sysinternals que registra atividade de arquivos, registro, processos e rede.",Capturar as chaves de registro criadas.,Y2P5
+Regshot,Regshot,,Forense,Ferramenta que compara o registro/arquivos antes e depois da execução.,Detectar a chave de persistência adicionada.,Y2P5
+INetSim,INetSim,,Forense,"Simulador de serviços de internet (DNS, HTTP) para análise em rede isolada.",Fazer o malware revelar o domínio de C2.,Y2P5
+REMnux,REMnux,,Forense,Distribuição Linux com ferramentas prontas para análise de malware.,VM de análise emparelhada com a vítima.,Y2P5
+Mutex,Mutex,,Ameaças e Ataques,Objeto nomeado que o malware cria para evitar múltiplas infecções; serve de IOC.,Global\\MeuMalwareMutex,Y2P5
+Servidor de comando e controle,Command and Control,C2,Ameaças e Ataques,Infraestrutura que o malware contata para receber ordens e exfiltrar dados.,Beacon periódico para um domínio.,Y2P5
+XOR,Exclusive OR (cifra XOR),XOR,Criptografia,Operação lógica reversível muito usada por malware para cifrar strings e payloads.,byte ^ chave repetida = texto original.,Y2P5

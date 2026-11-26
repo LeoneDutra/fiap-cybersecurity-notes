@@ -2,9 +2,9 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**447 terms**
+**476 terms**
 
-[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Z](#z) · [Á](#á)
+[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Y](#y) · [Z](#z) · [Á](#á)
 
 ## A
 
@@ -19,14 +19,19 @@
 | **Android Runtime (ART)** | Android Runtime | IoT e Hardware | Ambiente de execução dos apps Android, que roda o bytecode (DEX). | Y2P4 |
 | **AndroidManifest** | AndroidManifest.xml | IoT e Hardware | Arquivo que declara componentes, permissões e configurações de um app Android. | Y2P4 |
 | **Anonimato** | Anonymity | Threat Intel | Ocultar quem é o autor de uma ação (diferente de privacidade, que oculta o conteúdo). | Y2P1 |
+| **Anti engenharia reversa** | Anti reverse engineering | Ameaças e Ataques | Técnicas que o malware usa para detectar análise e dificultar a engenharia reversa. | Y2P5 |
 | **Análise de firmware** | Firmware analysis | Forense | Extrair e examinar o firmware em busca de segredos, serviços e vulnerabilidades. | Y1P7 |
 | **Análise de fluxo (NetFlow)** | Flow analysis | Redes | Analisar metadados de conexões (IPs, portas, bytes) em vez de cada pacote, para escala. | Y1P6 |
+| **Análise de malware** | Malware analysis | Forense | Processo de examinar software malicioso para entender seu funcionamento e extrair indicadores. | Y2P5 |
+| **Análise dinâmica** | Dynamic analysis | Forense | Executar a amostra em ambiente controlado e observar seu comportamento. | Y2P5 |
+| **Análise estática** | Static analysis | Forense | Examinar o arquivo malicioso sem executá-lo. | Y2P5 |
 | **Análise estática e dinâmica** | Static and dynamic analysis | Forense | Examinar o código sem executar (estática) e observar o app em execução (dinâmica). | Y2P4 |
 | **Análise in-vivo** | Live analysis (in-vivo) | Forense | Coleta de evidências com o sistema ligado, capturando dados voláteis. | Y2P2 |
 | **Análise post-mortem** | Post-mortem analysis | Forense | Análise de uma imagem de disco com o sistema desligado, após o incidente. | Y2P2 |
 | **APKTool** | APKTool | Forense | Ferramenta que desmonta e remonta recursos e código smali de um APK. | Y2P4 |
 | **Arduino** | Arduino | IoT e Hardware | Plataforma aberta de prototipagem eletrônica com microcontrolador e IDE em C. | Y1P7 |
 | **Arquitetura ARM (ARM)** | ARM architecture | Sistemas | Arquitetura RISC de baixo consumo, dominante em celulares e dispositivos embarcados. | Y1P5 |
+| **Arquitetura de Von Neumann** | Von Neumann architecture | Sistemas | Modelo de computador em que dados e instruções compartilham a mesma memória. | Y2P5 |
 | **Arquitetura do Android** | Android platform architecture | IoT e Hardware | Camadas do Android: kernel Linux, HAL, ART, bibliotecas nativas, framework Java e system apps. | Y2P4 |
 | **Arquitetura x86 (x86)** | x86 architecture | Sistemas | Família de arquiteturas de processador CISC da Intel/AMD, dominante em PCs e servidores. | Y1P5 |
 | **AS-REP roasting** | AS-REP roasting | Ameaças e Ataques | Abuso de contas sem pré-autenticação Kerberos para obter dados e quebrar a senha offline. | Y2P3 |
@@ -72,6 +77,7 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Cadeia de custódia** | Chain of custody | Forense | Registro documentado de quem coletou, manuseou e guardou cada evidência, quando e como. | Y2P2 |
+| **capa** | capa | Forense | Ferramenta que identifica as capacidades de um binário e as mapeia no ATT&CK. | Y2P5 |
 | **Censys** | Censys | Threat Intel | Motor de busca de hosts, certificados e serviços expostos, similar ao Shodan. | Y2P1 |
 | **Certificate Transparency (CT)** | Certificate Transparency | Redes | Logs públicos de certificados TLS emitidos, úteis para descobrir subdomínios. | Y2P1 |
 | **Chamada de sistema (syscall)** | System call | Sistemas | Interface pela qual um programa pede um serviço ao kernel. | Y1P5 |
@@ -148,6 +154,7 @@
 | **Endurecimento** | Hardening | GRC | Conjunto de configurações que reduzem a superfície de ataque de um sistema. | Y1P2 |
 | **Engenharia reversa** | Reverse engineering | Ameaças e Ataques | Analisar um binário sem o código-fonte para entender seu funcionamento. | Y1P5 |
 | **Engenharia social** | Social engineering | Ameaças e Ataques | Manipulação psicológica de pessoas para obter informações ou acesso. | Y2P1 |
+| **Entropia** | Entropy | Forense | Medida de aleatoriedade dos bytes; alta entropia sugere compressão ou criptografia (packing). | Y2P5 |
 | **Enumeração de AD** | Active Directory enumeration | Ameaças e Ataques | Mapeamento de usuários, grupos, computadores, GPOs e relações de confiança do domínio. | Y2P3 |
 | **Envenenamento de ARP** | ARP spoofing / ARP poisoning | Ameaças e Ataques | Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM. | Y1P1 |
 | **Envenenamento de cache ARP** | ARP cache poisoning | Ameaças e Ataques | Enviar respostas ARP falsas para redirecionar o tráfego ao atacante (MitM ou DoS). | Y1P6 |
@@ -237,10 +244,12 @@
 | **I2C (I2C)** | Inter-Integrated Circuit | IoT e Hardware | Barramento serial de dois fios para conectar sensores e periféricos ao microcontrolador. | Y1P7 |
 | **ICMP redirect** | ICMP redirect attack | Ameaças e Ataques | Uso de mensagens ICMP redirect forjadas para alterar a rota de um host e desviar o tráfego. | Y1P6 |
 | **Imagem forense** | Forensic image | Forense | Cópia bit a bit de uma mídia, com hash de integridade, usada para análise. | Y2P2 |
+| **Imphash** | Import hash | Forense | Hash da tabela de importações de um PE, usado para agrupar amostras relacionadas. | Y2P5 |
 | **Incidente de segurança** | Security incident | Resposta a Incidentes | Evento que compromete (ou ameaça) a confidencialidade, integridade ou disponibilidade de ativos. | Y2P2 |
 | **Inclusão de arquivo local/remoto (LFI/RFI)** | Local/Remote File Inclusion | Ameaças e Ataques | Incluir e executar arquivos locais (LFI) ou remotos (RFI) por entrada não validada. | Y2P4 |
 | **Indicador de ataque (IoA)** | Indicator of Attack | Threat Intel | Sinal de comportamento ou intenção de ataque em andamento, antes do dano concluído. | Y2P1 |
 | **Indicador de comprometimento (IoC)** | Indicator of Compromise | Threat Intel | Evidência técnica de que um sistema já foi comprometido (hash, IP, domínio, chave de registro). | Y2P1 |
+| **INetSim** | INetSim | Forense | Simulador de serviços de internet (DNS, HTTP) para análise em rede isolada. | Y2P5 |
 | **Infraestrutura de chaves públicas (PKI)** | Public Key Infrastructure | Criptografia | Conjunto de autoridades, certificados e políticas que gerencia chaves públicas e identidades. | Y1P6 |
 | **Injeção** | Injection | Ameaças e Ataques | Envio de entrada maliciosa que a aplicação interpreta como comando ou consulta. | Y1P2 |
 | **Injeção de comando** | Command injection | Ameaças e Ataques | Executar comandos do SO por meio de entrada não tratada passada a um shell. | Y2P4 |
@@ -281,6 +290,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Laboratório isolado de malware** | Isolated malware lab | Forense | Ambiente virtual fechado, sem acesso à internet real, para detonar amostras com segurança. | Y2P5 |
 | **LAMP (LAMP)** | Linux, Apache, MySQL, PHP | Desenvolvimento | Stack clássica de servidor web: Linux + Apache + MySQL/MariaDB + PHP. | Y1P2 |
 | **LAPS (LAPS)** | Local Administrator Password Solution | Sistemas | Solução que define senha única e rotacionada para o administrador local de cada máquina. | Y2P3 |
 | **LDAP (LDAP)** | Lightweight Directory Access Protocol | Redes | Protocolo de consulta e manipulação de diretórios como o Active Directory. | Y2P3 |
@@ -304,6 +314,7 @@
 | **Malware sem arquivo** | Fileless malware | Ameaças e Ataques | Código malicioso que vive na memória sem gravar arquivo no disco, dificultando a detecção. | Y2P2 |
 | **MD5 (MD5)** | Message Digest 5 | Criptografia | Função de hash de 128 bits, hoje insegura por sofrer colisões. | Y1P6 |
 | **Memória virtual** | Virtual memory | Sistemas | Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco. | Y1P3 |
+| **Metamorfismo** | Metamorphism | Ameaças e Ataques | Capacidade do malware de reescrever o próprio código a cada geração. | Y2P5 |
 | **Metasploit** | Metasploit Framework | Ameaças e Ataques | Framework de exploração com módulos, payloads e pós-exploração. | Y2P3 |
 | **Metasploitable2** | Metasploitable2 | Ameaças e Ataques | Máquina virtual Linux propositalmente vulnerável, usada para treino de pentest em laboratório. | Y1P6 |
 | **Metodologia OSCAR (OSCAR)** | OSCAR methodology | Forense | Método de forense de rede: Obtain, Strategize, Collect, Analyze, Report. | Y2P2 |
@@ -317,6 +328,7 @@
 | **Monitoramento** | Monitoring | Resposta a Incidentes | Coleta contínua de métricas e eventos para detectar falhas ou anomalias. | Y1P4 |
 | **Movimento lateral** | Lateral movement | Ameaças e Ataques | Reusar credenciais para pular de uma máquina a outra dentro da rede. | Y2P3 |
 | **MQTT (MQTT)** | Message Queuing Telemetry Transport | IoT e Hardware | Protocolo leve de mensagens publish/subscribe via broker, popular em IoT. | Y1P7 |
+| **Mutex** | Mutex | Ameaças e Ataques | Objeto nomeado que o malware cria para evitar múltiplas infecções; serve de IOC. | Y2P5 |
 | **Máscara curinga** | Wildcard mask | Redes | Máscara usada em ACLs e no OSPF em que 0 = bit deve coincidir e 1 = bit ignorado (o inverso da máscara de sub-rede). | Y1P1 |
 | **Máscara de tamanho variável (VLSM)** | Variable Length Subnet Mask | Redes | Divisão de um bloco em sub-redes de tamanhos diferentes conforme a necessidade de cada uma. | Y1P1 |
 | **Módulo** | Module | Desenvolvimento | Arquivo .py com funções e variáveis que pode ser importado por outros programas. | Y1P4 |
@@ -344,6 +356,8 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Objeto de política de grupo (GPO)** | Group Policy Object | Sistemas | Conjunto de configurações aplicadas a usuários e computadores do domínio via AD. | Y1P3 |
+| **Ofuscação** | Obfuscation | Ameaças e Ataques | Transformar o código para dificultar a leitura sem mudar o que ele faz. | Y2P5 |
+| **Opcode (Opcode)** | Operation code | Sistemas | Código de máquina que representa uma instrução da CPU. | Y2P5 |
 | **OpenVAS (OpenVAS / GVM)** | Open Vulnerability Assessment Scanner | GRC | Scanner de vulnerabilidades open source do Greenbone Vulnerability Management. | Y1P4 |
 | **OpenVPN** | OpenVPN | Redes | VPN de código aberto baseada em SSL/TLS, flexível e muito usada em acesso remoto. | Y1P1 |
 | **Ordem da volatilidade** | Order of volatility | Forense | Prioridade de coleta: do dado mais volátil (RAM) ao mais estável (disco/backup). | Y2P2 |
@@ -354,6 +368,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Packing** | Packing | Ameaças e Ataques | Comprimir ou cifrar o executável para esconder código e strings dos antivírus. | Y2P5 |
 | **Padrão avançado de criptografia (AES)** | Advanced Encryption Standard | Criptografia | Cifra de bloco simétrica padrão (FIPS 197) com chaves de 128, 192 ou 256 bits. | Y1P4 |
 | **Padrão de criptografia de dados (DES)** | Data Encryption Standard | Criptografia | Cifra de bloco simétrica antiga com chave efetiva de 56 bits; hoje é considerada insegura. | Y1P4 |
 | **Paginação** | Paging | Sistemas | Divisão da memória em páginas de tamanho fixo mapeadas pela tabela de páginas. | Y1P3 |
@@ -362,11 +377,13 @@
 | **Pass-the-hash (PtH)** | Pass-the-hash | Ameaças e Ataques | Autenticar usando o hash NTLM da senha, sem conhecer a senha em claro. | Y2P3 |
 | **Password spray** | Password spraying | Ameaças e Ataques | Testar uma senha comum contra muitas contas para evitar bloqueio por tentativas. | Y2P3 |
 | **Payload** | Payload | Ameaças e Ataques | Código entregue após a exploração; staged (em partes) ou stageless (inteiro). | Y2P3 |
+| **PEiD** | PEiD | Forense | Ferramenta que identifica packers e compiladores de um executável PE. | Y2P5 |
 | **Permissões Android** | Android permissions | IoT e Hardware | Mecanismo que exige autorização para um app acessar recursos sensíveis (câmera, contatos). | Y2P4 |
 | **Permissões de arquivo** | File permissions (rwx) | Sistemas | Controle de leitura, escrita e execução para dono, grupo e outros, em notação simbólica ou octal. | Y1P2 |
 | **Persistência de domínio** | Domain persistence | Ameaças e Ataques | Manter acesso ao domínio mesmo após a resposta inicial, forjando credenciais ou tickets. | Y2P3 |
 | **Perícia digital** | Digital forensics | Forense | Coleta, preservação e análise de evidências digitais de forma cientificamente defensável. | Y2P2 |
 | **Perícia forense de memória** | Memory forensics | Forense | Análise de um dump da memória RAM para encontrar processos, injeções e malware. | Y2P2 |
+| **PEStudio** | PEStudio | Forense | Ferramenta de triagem estática de PE: imports, strings, indicadores e reputação. | Y2P5 |
 | **Pilha** | Stack | Sistemas | Região de memória LIFO para variáveis locais e endereços de retorno; cresce para endereços menores. | Y1P5 |
 | **Pilha dupla** | Dual-stack | Redes | Método de transição em que equipamentos rodam IPv4 e IPv6 ao mesmo tempo. | Y1P1 |
 | **Pilha TCP/IP (TCP/IP)** | TCP/IP stack | Redes | Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação. | Y1P1 |
@@ -374,6 +391,7 @@
 | **Pipelining** | Pipelining | Sistemas | Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU. | Y1P5 |
 | **Pivotagem** | Pivoting (OSINT) | Threat Intel | Usar um dado encontrado para descobrir outros relacionados, expandindo a investigação. | Y2P1 |
 | **Playbook** | Playbook | Resposta a Incidentes | Procedimento padronizado passo a passo para responder a um tipo de incidente. | Y2P2 |
+| **Polimorfismo** | Polymorphism | Ameaças e Ataques | Capacidade do malware de mudar sua aparência (cifrando o corpo) mantendo a mesma lógica. | Y2P5 |
 | **Política de segurança de conteúdo (CSP)** | Content Security Policy | Desenvolvimento | Cabeçalho que restringe de onde o navegador pode carregar scripts e recursos. | Y2P4 |
 | **Ponteiro** | Pointer | Desenvolvimento | Variável que armazena o endereço de memória de outro dado. | Y1P7 |
 | **Ponteiro de instrução (EIP / RIP)** | Instruction pointer | Sistemas | Registrador que contém o endereço da próxima instrução a ser executada; controlá-lo é controlar o fluxo. | Y1P5 |
@@ -384,8 +402,10 @@
 | **Prevenção de execução de dados (DEP / NX)** | Data Execution Prevention | Sistemas | Mitigação que marca regiões de dados (como a pilha) como não executáveis. | Y1P5 |
 | **Primeiro o caminho mais curto (OSPF)** | Open Shortest Path First | Redes | IGP de estado de enlace (link-state) que usa o algoritmo de Dijkstra e organiza a rede em áreas (área 0 = backbone). | Y1P1 |
 | **Princípio do menor privilégio (PoLP)** | Principle of least privilege | GRC | Dar a cada usuário ou processo apenas as permissões estritamente necessárias. | Y1P2 |
+| **Process Hacker** | Process Hacker | Forense | Ferramenta que inspeciona processos, threads, handles e memória em tempo real. | Y2P5 |
 | **Processamento de loopback** | Loopback processing | Sistemas | Modo de GPO que aplica configurações de usuário conforme o computador onde ele faz logon. | Y1P3 |
 | **Processo (PID)** | Process (PID) | Sistemas | Programa em execução, identificado por um número (PID). | Y1P2 |
+| **Procmon (Procmon)** | Process Monitor | Forense | Ferramenta da Sysinternals que registra atividade de arquivos, registro, processos e rede. | Y2P5 |
 | **Protoboard** | Breadboard | IoT e Hardware | Placa de contatos para montar circuitos sem solda. | Y1P7 |
 | **Protocolo de autenticação extensível (EAP)** | Extensible Authentication Protocol | Criptografia | Framework de autenticação que suporta certificados, tokens e PEAP; base do 802.1X. | Y1P3 |
 | **Protocolo de borda (BGP)** | Border Gateway Protocol | Redes | Protocolo de vetor de caminho usado entre sistemas autônomos; é o roteamento da Internet. | Y1P1 |
@@ -425,7 +445,9 @@
 | **Registradores de uso geral (GPR)** | General-purpose registers | Sistemas | Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP. | Y1P5 |
 | **Registro do Windows** | Windows Registry | Forense | Banco hierárquico de configuração do Windows, rico em artefatos forenses. | Y2P2 |
 | **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
+| **Regshot** | Regshot | Forense | Ferramenta que compara o registro/arquivos antes e depois da execução. | Y2P5 |
 | **Relatório forense** | Forensic report | Forense | Documento claro e reprodutível com método, achados e conclusões da perícia. | Y2P2 |
+| **REMnux** | REMnux | Forense | Distribuição Linux com ferramentas prontas para análise de malware. | Y2P5 |
 | **Requisitos prioritários de inteligência (PIR)** | Priority Intelligence Requirements | Threat Intel | Perguntas-chave que direcionam a coleta e a análise de inteligência. | Y2P1 |
 | **Retorno do investimento em segurança (ROSI)** | Return on Security Investment | GRC | Métrica que estima o retorno financeiro de um investimento em segurança (perda evitada × custo). | Y1P6 |
 | **Reverse shell** | Reverse shell | Ameaças e Ataques | Shell em que a máquina alvo se conecta de volta ao atacante, contornando firewalls de entrada. | Y2P3 |
@@ -445,6 +467,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Sandbox** | Sandbox | Forense | Ambiente isolado e automatizado que executa a amostra e gera um relatório de comportamento. | Y2P5 |
 | **Sandbox de aplicativo** | Application sandbox | IoT e Hardware | Isolamento de cada app Android com UID próprio, limitando seu acesso. | Y2P4 |
 | **SEAndroid (SEAndroid)** | Security-Enhanced Android | IoT e Hardware | Implementação de SELinux no Android que aplica MAC para reforçar o isolamento. | Y2P4 |
 | **Searchsploit** | Searchsploit | Ameaças e Ataques | Busca offline no banco de exploits do Exploit-DB. | Y2P4 |
@@ -458,6 +481,7 @@
 | **Senha hardcoded** | Hardcoded password | Ameaças e Ataques | Credencial fixa embutida no firmware ou código, impossível de o usuário trocar. | Y1P7 |
 | **Server Message Block (SMB)** | Server Message Block | Redes | Protocolo de compartilhamento de arquivos e impressoras (comum no Windows; Samba no Linux). | Y1P2 |
 | **Server-Side Request Forgery (SSRF)** | Server-Side Request Forgery | Ameaças e Ataques | Forçar o servidor a fazer requisições a destinos escolhidos pelo atacante. | Y2P4 |
+| **Servidor de comando e controle (C2)** | Command and Control | Ameaças e Ataques | Infraestrutura que o malware contata para receber ordens e exfiltrar dados. | Y2P5 |
 | **Servidor de políticas de rede (NPS)** | Network Policy Server | Redes | Implementação de RADIUS da Microsoft para autenticar e autorizar VPN, Wi-Fi e 802.1X. | Y1P3 |
 | **Servidor web** | Web server | Desenvolvimento | Software que atende requisições HTTP/HTTPS e entrega páginas ou APIs. | Y1P2 |
 | **Serviços de Domínio do Active Directory (AD DS)** | Active Directory Domain Services | Sistemas | Função do Windows Server que transforma o servidor em controlador de domínio. | Y1P3 |
@@ -479,6 +503,7 @@
 | **Sistema de pontuação de vulnerabilidades (CVSS)** | Common Vulnerability Scoring System | GRC | Padrão do FIRST que dá uma nota de 0 a 10 à gravidade de uma vulnerabilidade. | Y1P2 |
 | **Sistema de prevenção de intrusão (IPS)** | Intrusion Prevention System | Resposta a Incidentes | Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso. | Y1P1 |
 | **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
+| **Snapshot** | Snapshot | Sistemas | Cópia do estado de uma VM que permite voltar ao ponto salvo após analisar o malware. | Y2P5 |
 | **Sniffing** | Sniffing | Ameaças e Ataques | Captura passiva do tráfego de rede para ler dados, especialmente os em texto claro. | Y1P6 |
 | **Snort** | Snort | Redes | IDS/IPS open source baseado em assinaturas, muito usado em detecção de intrusão. | Y2P2 |
 | **Sock puppet** | Sock puppet | Threat Intel | Persona falsa, isolada e consistente, usada para investigar sem expor a identidade real. | Y2P1 |
@@ -518,6 +543,7 @@
 | **Tier Model** | Administrative Tier Model | GRC | Modelo que separa contas administrativas por nível (DC, servidores, estações) para conter comprometimento. | Y2P3 |
 | **Timeline forense** | Forensic timeline | Forense | Reconstrução cronológica dos eventos a partir de múltiplos artefatos. | Y2P2 |
 | **Tinkercad** | Tinkercad | IoT e Hardware | Simulador online de circuitos e Arduino, usado para prototipar sem hardware físico. | Y1P7 |
+| **Tipos de malware** | Malware types | Ameaças e Ataques | Categorias de software malicioso: vírus, worm, trojan, ransomware, rootkit, spyware, backdoor. | Y2P5 |
 | **Tomada de conta (ATO)** | Account takeover | Ameaças e Ataques | Uso de credenciais legítimas roubadas para controlar a conta de uma vítima. | Y1P1 |
 | **Tor (Tor)** | The Onion Router | Redes | Rede de anonimato que roteia o tráfego por vários nós cifrados; dá acesso à dark web. | Y1P6 |
 | **Tradução de endereços de rede (NAT)** | Network Address Translation | Redes | Troca de endereços IP (geralmente privado→público) na borda da rede. | Y1P1 |
@@ -541,6 +567,7 @@
 | **Varredura de portas** | Port scan | Ameaças e Ataques | Sondagem de hosts para descobrir quais estão ativos e quais serviços/portas estão abertos; costuma ser o primeiro passo de um ataque. | Y1P1 |
 | **Vetor de ataque** | Attack vector | Ameaças e Ataques | Caminho ou meio usado pelo atacante para chegar ao alvo. | Y1P1 |
 | **vim** | Vi IMproved | Sistemas | Editor de texto do terminal com modos normal, inserção e comando. | Y1P2 |
+| **VirusTotal** | VirusTotal | Forense | Serviço que analisa arquivos/URLs com dezenas de antivírus e fontes de reputação. | Y2P5 |
 | **Volatility** | Volatility Framework | Forense | Framework open source de análise forense de memória RAM. | Y2P2 |
 | **Vulnerabilidade** | Vulnerability | GRC | Fraqueza em sistema, processo ou pessoa que pode ser explorada por uma ameaça. | Y1P4 |
 | **Vulnerabilidades e exposições comuns (CVE)** | Common Vulnerabilities and Exposures | GRC | Catálogo público de vulnerabilidades conhecidas, mantido pelo MITRE, com um ID único para cada uma. | Y1P2 |
@@ -568,6 +595,13 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **XML External Entity (XXE)** | XML External Entity | Ameaças e Ataques | Abuso de entidades externas em XML para ler arquivos ou fazer SSRF. | Y2P4 |
+| **XOR (XOR)** | Exclusive OR (cifra XOR) | Criptografia | Operação lógica reversível muito usada por malware para cifrar strings e payloads. | Y2P5 |
+
+## Y
+
+| Termo (PT) | Term (EN) | Categoria | Definição | Fase |
+|---|---|---|---|---|
+| **YARA** | YARA | Forense | Linguagem e ferramenta de regras para identificar e classificar malware por padrões. | Y2P5 |
 
 ## Z
 
