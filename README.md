@@ -14,7 +14,7 @@ and how the topic connects to real SOC / blue-team work.
 | 1 | 2 | Linux: Administração, Serviços e Hardening (Linux Administration, Services & Hardening) | [notes](year-1/phase-2) |
 | 1 | 3 | Windows Server e Active Directory (Windows Server & Active Directory) | [notes](year-1/phase-3) |
 | 1 | 4 | Automação (Shell Script e Python), Risco e Vulnerabilidades (Scripting, Risk & Vulnerability Management) | [notes](year-1/phase-4) |
-| 1 | 5 | _TBD_ | [notes](year-1/phase-5) |
+| 1 | 5 | Arquitetura, Binários e Segurança de Memória (Computer Architecture, Binaries & Memory Safety) | [notes](year-1/phase-5) |
 | 1 | 6 | _TBD_ | [notes](year-1/phase-6) |
 | 1 | 7 | _TBD_ | [notes](year-1/phase-7) |
 | 2 | 1 | _TBD_ | [notes](year-2/phase-1) |

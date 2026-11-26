@@ -39,3 +39,13 @@ Quatro formas de tratar um risco?,"Mitigar, transferir, evitar e aceitar (risco 
 Avaliação de vulnerabilidades × pentest?,"A avaliação identifica e lista (ampla, automatizada); o pentest explora para provar o impacto (manual, direcionado).",Y1P4,vulnerabilidades
 "Além do CVSS, o que considerar para priorizar uma correção?","Exposição do ativo, criticidade para o negócio, exploit público ou exploração ativa (KEV) e controles compensatórios.",Y1P4,vulnerabilidades
 Para que serve o Zabbix numa operação de segurança?,"Monitora disponibilidade e desempenho com alertas, detecta quedas antes que virem incidente e gera histórico.",Y1P4,monitoramento
+"O que são ESP, EBP e EIP?",ESP = topo da pilha; EBP = base do frame atual; EIP = endereço da próxima instrução.,Y1P5,arquitetura registradores
+Por que importa o x86 ser little-endian?,Os bytes de um valor são guardados do menos para o mais significativo; é preciso considerar essa ordem ao ler/montar valores na memória.,Y1P5,arquitetura
+Diferença entre pilha e heap?,"Pilha: LIFO, automática (locais, retorno), cresce para baixo. Heap: alocação manual em runtime (malloc/free), onde ocorrem UAF e double free.",Y1P5,memoria
+O que a seção .text e a IAT dizem sobre um binário?,".text é o código executável; a IAT lista as APIs importadas de DLLs, útil para inferir o comportamento (análise de malware).",Y1P5,binarios pe
+O que é um use-after-free?,"Usar um ponteiro após a memória dele ser liberada; se a região for reocupada com dados controlados, há risco de comprometimento.",Y1P5,memoria vuln
+Como um buffer overflow de pilha muda o fluxo do programa?,"Escreve além do buffer e sobrescreve o endereço de retorno salvo; ao retornar, a execução segue para onde esse endereço aponta.",Y1P5,memoria vuln
+O que o DEP/NX faz e qual a limitação?,"Marca dados (ex.: pilha) como não executáveis. Não impede reaproveitar código já existente, por isso vem com ASLR e CFG.",Y1P5,mitigacoes
+Para que serve o ASLR?,"Aleatoriza os endereços de módulos, pilha e heap a cada execução, para o atacante não saber onde está o alvo.",Y1P5,mitigacoes
+O que é um stack canary?,"Valor secreto antes do endereço de retorno; é checado antes do return e, se foi alterado, o programa aborta (detecta overflow).",Y1P5,mitigacoes
+Por que linguagens memory-safe reduzem essa classe de bug?,"Fazem checagem de limites e gerenciam memória (ou posse, como Rust), eliminando por construção a maioria dos overflows/UAF/double free.",Y1P5,memoria desenvolvimento

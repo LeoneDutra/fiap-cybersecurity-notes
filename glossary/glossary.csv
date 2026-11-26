@@ -184,3 +184,42 @@ Nessus,Nessus,,GRC,Scanner de vulnerabilidades comercial da Tenable; a versão E
 Kali Linux,Kali Linux,,Ameaças e Ataques,"Distribuição Debian voltada a testes de segurança, com centenas de ferramentas pré-instaladas.",VM Kali para laboratório.,Y1P4
 Zabbix,Zabbix,,Sistemas,"Plataforma open source de monitoramento de redes, servidores e aplicações, com agentes e alertas.",Alerta quando o disco passa de 90%.,Y1P4
 Monitoramento,Monitoring,,Resposta a Incidentes,Coleta contínua de métricas e eventos para detectar falhas ou anomalias.,Dashboard de disponibilidade dos servidores.,Y1P4
+Arquitetura x86,x86 architecture,x86,Sistemas,"Família de arquiteturas de processador CISC da Intel/AMD, dominante em PCs e servidores.",CPUs Intel Core e AMD Ryzen.,Y1P5
+Arquitetura ARM,ARM architecture,ARM,Sistemas,"Arquitetura RISC de baixo consumo, dominante em celulares e dispositivos embarcados.",Processadores de smartphones e Apple Silicon.,Y1P5
+Ciclo de instrução,Instruction cycle (fetch-decode-execute),,Sistemas,"Sequência que a CPU repete: buscar a instrução, decodificá-la e executá-la.",O EIP avança a cada ciclo.,Y1P5
+Pipelining,Pipelining,,Sistemas,Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU.,Buscar a próxima instrução enquanto executa a atual.,Y1P5
+Registrador,Register,,Sistemas,"Pequena área de armazenamento dentro da CPU, extremamente rápida, usada no processamento.",EAX guarda o resultado de uma operação.,Y1P5
+Registradores de uso geral,General-purpose registers,GPR,Sistemas,"Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP.",ECX como contador de laço.,Y1P5
+EFLAGS,EFLAGS register,,Sistemas,"Registrador de status cujos bits (flags) refletem o resultado das operações (zero, carry, sinal etc.).",A flag ZF decide um salto condicional.,Y1P5
+Ponteiro de instrução,Instruction pointer,EIP / RIP,Sistemas,Registrador que contém o endereço da próxima instrução a ser executada; controlá-lo é controlar o fluxo.,Overflow que sobrescreve o EIP desvia a execução.,Y1P5
+Pilha,Stack,,Sistemas,Região de memória LIFO para variáveis locais e endereços de retorno; cresce para endereços menores.,ESP aponta o topo; call empilha o retorno.,Y1P5
+Heap,Heap,,Sistemas,Região de memória para alocação dinâmica em tempo de execução.,malloc() e free() em C.,Y1P5
+Endereço de retorno,Return address,,Sistemas,Endereço empilhado por uma chamada de função para onde a execução volta ao terminar.,ret desempilha o endereço de volta ao EIP.,Y1P5
+Little-endian,Little-endian,,Sistemas,Ordem de bytes em que o byte menos significativo é armazenado primeiro; padrão no x86.,0x04030201 na memória: 01 02 03 04.,Y1P5
+Hexadecimal,Hexadecimal,hex,Sistemas,"Base numérica 16; cada dígito representa 4 bits, usado para endereços e opcodes.",0xDEADBEEF,Y1P5
+Swapping,Swapping,,Sistemas,Mover páginas ou processos entre a RAM e o disco para liberar memória.,Área de swap no Linux.,Y1P5
+Endereço virtual,Virtual Address,VA,Sistemas,"Endereço usado pelo processo, traduzido para físico pela MMU; RVA é relativo à base do módulo.",ImageBase + RVA = VA.,Y1P5
+Fork bomb,Fork bomb,,Ameaças e Ataques,Ataque de negação de serviço que cria processos sem parar até esgotar os recursos do sistema.,:(){ :|:& };:,Y1P5
+Prevenção de execução de dados,Data Execution Prevention,DEP / NX,Sistemas,Mitigação que marca regiões de dados (como a pilha) como não executáveis.,Impede executar código injetado na pilha.,Y1P5
+Aleatorização do espaço de endereços,Address Space Layout Randomization,ASLR,Sistemas,"Mitigação que aleatoriza os endereços de carga de módulos, pilha e heap a cada execução.",Dificulta prever onde está o código alvo.,Y1P5
+Stack canary,Stack canary,,Sistemas,"Valor secreto colocado antes do endereço de retorno; se for alterado, o programa aborta.","Flag /GS no MSVC, -fstack-protector no GCC.",Y1P5
+Binário,Binary / executable,,Sistemas,Arquivo com código de máquina e dados prontos para o SO carregar e executar.,"/bin/ls, programa.exe",Y1P5
+Portable Executable,Portable Executable,PE,Sistemas,"Formato de executável do Windows (EXE, DLL, SYS), com cabeçalhos, seções e tabelas de importação.",Analisado com PE-bear ou CFF Explorer.,Y1P5
+Biblioteca de vínculo dinâmico,Dynamic-Link Library,DLL,Sistemas,Biblioteca compartilhada do Windows carregada por vários programas em tempo de execução.,kernel32.dll,Y1P5
+Tabela de endereços de importação,Import Address Table,IAT,Sistemas,Tabela do PE com os endereços das funções de API importadas de outras DLLs.,Revela quais APIs um malware usa.,Y1P5
+Executable and Linkable Format,Executable and Linkable Format,ELF,Sistemas,"Formato de binário do Linux/Unix, com cabeçalho, program headers e section headers.",readelf -h ./programa,Y1P5
+Interface binária de aplicação,Application Binary Interface,ABI,Sistemas,"Contrato de baixo nível (tamanhos, chamadas, registradores) que permite binários interoperarem.",Compatibilidade ABI entre versões de uma lib.,Y1P5
+Chamada de sistema,System call,syscall,Sistemas,Interface pela qual um programa pede um serviço ao kernel.,"write(), open(), execve().",Y1P5
+Wine,Wine Is Not an Emulator,Wine,Sistemas,Camada de compatibilidade que roda executáveis Windows no Linux sem emular o SO.,wine programa.exe,Y1P5
+Assembly,Assembly language,ASM,Desenvolvimento,Linguagem de baixo nível que mapeia quase diretamente as instruções da CPU.,"mov eax, 1; ret",Y1P5
+Convenção de chamada,Calling convention,,Desenvolvimento,"Regras de como argumentos são passados e quem limpa a pilha (cdecl, stdcall, fastcall).",cdecl: quem chama limpa a pilha.,Y1P5
+Debugger,Debugger,,Desenvolvimento,"Ferramenta que executa um programa passo a passo, inspecionando registradores e memória.","GDB, x64dbg, Immunity Debugger.",Y1P5
+Engenharia reversa,Reverse engineering,,Ameaças e Ataques,Analisar um binário sem o código-fonte para entender seu funcionamento.,Ghidra para decompilar um malware.,Y1P5
+Corrupção de memória,Memory corruption,,Ameaças e Ataques,Classe de bugs em que o programa lê/escreve fora dos limites previstos.,"Buffer overflow, UAF, double free.",Y1P5
+Buffer overflow,Buffer overflow,BOF,Ameaças e Ataques,"Escrever mais dados do que o buffer comporta, sobrescrevendo memória adjacente.",strcpy sem verificar o tamanho da entrada.,Y1P5
+Use-after-free,Use-after-free,UAF,Ameaças e Ataques,Usar um ponteiro depois que a memória que ele referenciava foi liberada.,Ponteiro reutilizado após free().,Y1P5
+Double free,Double free,,Ameaças e Ataques,"Liberar duas vezes a mesma região de memória, corrompendo as estruturas do alocador.",free(p); free(p);,Y1P5
+Condição de corrida,Race condition,TOCTOU,Ameaças e Ataques,Falha causada pela ordem/temporização de acessos concorrentes a um recurso compartilhado.,Verificar e usar um arquivo em dois passos (TOCTOU).,Y1P5
+Fuzzing,Fuzzing,,Ameaças e Ataques,Enviar entradas malformadas ou aleatórias em massa para encontrar falhas e crashes.,AFL++ e OSS-Fuzz.,Y1P5
+Shellcode,Shellcode,,Ameaças e Ataques,Pequeno trecho de código de máquina usado como payload em exploração de memória.,Payload que abre uma shell (estudo em lab).,Y1P5
+Funções inseguras de C,Unsafe C functions,,Desenvolvimento,"Funções que não checam limites e causam overflow: gets, strcpy, sprintf, scanf.","Preferir fgets, strncpy, snprintf.",Y1P5

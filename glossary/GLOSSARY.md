@@ -2,7 +2,7 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**185 terms**
+**224 terms**
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [Z](#z) · [Á](#á)
 
@@ -12,7 +12,11 @@
 |---|---|---|---|---|
 | **Active Directory (AD)** | Active Directory | Sistemas | Serviço de diretório da Microsoft que centraliza identidades, computadores, grupos e políticas de uma rede. | Y1P3 |
 | **AGDLP (AGDLP)** | Accounts, Global, Domain Local, Permissions | GRC | Boa prática de aninhamento de grupos: conta → grupo global → grupo de domínio local → permissão (AGUDLP com universal). | Y1P3 |
+| **Aleatorização do espaço de endereços (ASLR)** | Address Space Layout Randomization | Sistemas | Mitigação que aleatoriza os endereços de carga de módulos, pilha e heap a cada execução. | Y1P5 |
 | **Ameaça** | Threat | GRC | Agente ou evento com potencial de causar dano a um ativo. | Y1P4 |
+| **Arquitetura ARM (ARM)** | ARM architecture | Sistemas | Arquitetura RISC de baixo consumo, dominante em celulares e dispositivos embarcados. | Y1P5 |
+| **Arquitetura x86 (x86)** | x86 architecture | Sistemas | Família de arquiteturas de processador CISC da Intel/AMD, dominante em PCs e servidores. | Y1P5 |
+| **Assembly (ASM)** | Assembly language | Desenvolvimento | Linguagem de baixo nível que mapeia quase diretamente as instruções da CPU. | Y1P5 |
 | **Ataque de dicionário** | Dictionary attack | Ameaças e Ataques | Tentar senhas de uma lista de palavras (wordlist) contra um login ou contra hashes. | Y1P4 |
 | **Ativo** | Asset | GRC | Qualquer coisa de valor para a organização que precisa de proteção. | Y1P4 |
 | **auditd** | Linux Audit daemon | Forense | Serviço que registra eventos de segurança no nível do kernel conforme regras definidas. | Y1P2 |
@@ -28,16 +32,24 @@
 |---|---|---|---|---|
 | **Base nacional de vulnerabilidades (NVD)** | National Vulnerability Database | GRC | Base do NIST que enriquece os CVEs com CVSS, CPE e referências. | Y1P4 |
 | **Base64** | Base64 | Criptografia | Codificação (não criptografia) que representa dados binários em texto ASCII. | Y1P2 |
+| **Biblioteca de vínculo dinâmico (DLL)** | Dynamic-Link Library | Sistemas | Biblioteca compartilhada do Windows carregada por vários programas em tempo de execução. | Y1P5 |
+| **Binário** | Binary / executable | Sistemas | Arquivo com código de máquina e dados prontos para o SO carregar e executar. | Y1P5 |
 | **Bloqueio de herança** | Block inheritance | Sistemas | Configuração na OU que impede herdar GPOs de níveis superiores. | Y1P3 |
+| **Buffer overflow (BOF)** | Buffer overflow | Ameaças e Ataques | Escrever mais dados do que o buffer comporta, sobrescrevendo memória adjacente. | Y1P5 |
 
 ## C
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Chamada de sistema (syscall)** | System call | Sistemas | Interface pela qual um programa pede um serviço ao kernel. | Y1P5 |
+| **Ciclo de instrução** | Instruction cycle (fetch-decode-execute) | Sistemas | Sequência que a CPU repete: buscar a instrução, decodificá-la e executá-la. | Y1P5 |
 | **CIS Benchmark (CIS)** | CIS Benchmark | GRC | Guias de configuração segura publicados pelo Center for Internet Security. | Y1P2 |
 | **COBIT (COBIT)** | Control Objectives for Information and Related Technologies | GRC | Framework da ISACA para governança e gestão de TI. | Y1P4 |
+| **Condição de corrida (TOCTOU)** | Race condition | Ameaças e Ataques | Falha causada pela ordem/temporização de acessos concorrentes a um recurso compartilhado. | Y1P5 |
 | **Console de gerenciamento de política de grupo (GPMC)** | Group Policy Management Console | Sistemas | Ferramenta para criar, vincular e analisar GPOs. | Y1P3 |
 | **Controlador de domínio (DC)** | Domain Controller | Sistemas | Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs. | Y1P3 |
+| **Convenção de chamada** | Calling convention | Desenvolvimento | Regras de como argumentos são passados e quem limpa a pilha (cdecl, stdcall, fastcall). | Y1P5 |
+| **Corrupção de memória** | Memory corruption | Ameaças e Ataques | Classe de bugs em que o programa lê/escreve fora dos limites previstos. | Y1P5 |
 | **Criptografia simétrica** | Symmetric encryption | Criptografia | Esquema em que a mesma chave cifra e decifra os dados. | Y1P4 |
 | **cron** | cron | Sistemas | Serviço de agendamento de tarefas recorrentes, configurado no crontab. | Y1P2 |
 | **Código de saída** | Exit code / return code | Desenvolvimento | Número que um comando devolve ao terminar; 0 indica sucesso e outro valor indica erro. | Y1P4 |
@@ -47,26 +59,33 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Daemon** | Daemon | Sistemas | Processo que roda em segundo plano prestando um serviço. | Y1P2 |
+| **Debugger** | Debugger | Desenvolvimento | Ferramenta que executa um programa passo a passo, inspecionando registradores e memória. | Y1P5 |
 | **Delegação de controle** | Delegation of control | GRC | Concessão de tarefas administrativas específicas sobre uma OU sem dar privilégio total. | Y1P3 |
 | **DHCP Snooping** | DHCP Snooping | Redes | Recurso do switch que só aceita respostas DHCP de portas confiáveis e monta uma tabela de vínculos IP-MAC-porta. | Y1P1 |
 | **Distribuição Linux** | Linux distribution (distro) | Sistemas | Pacote completo formado pelo kernel Linux, ferramentas GNU, gerenciador de pacotes e configurações. | Y1P2 |
 | **Domínio** | Domain | Sistemas | Unidade administrativa e de replicação do AD, identificada por um nome DNS. | Y1P3 |
 | **DORA (DORA)** | Discover, Offer, Request, Acknowledge | Redes | As quatro mensagens da concessão DHCP. | Y1P3 |
+| **Double free** | Double free | Ameaças e Ataques | Liberar duas vezes a mesma região de memória, corrompendo as estruturas do alocador. | Y1P5 |
 
 ## E
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **EFLAGS** | EFLAGS register | Sistemas | Registrador de status cujos bits (flags) refletem o resultado das operações (zero, carry, sinal etc.). | Y1P5 |
 | **Encaminhador DNS** | DNS forwarder | Redes | DNS para onde o servidor envia as consultas que não consegue resolver localmente. | Y1P3 |
 | **Encapsulamento** | Encapsulation | Redes | Cada camada acrescenta seu cabeçalho aos dados da camada de cima antes de enviar; o destino faz o processo inverso. | Y1P1 |
+| **Endereço de retorno** | Return address | Sistemas | Endereço empilhado por uma chamada de função para onde a execução volta ao terminar. | Y1P5 |
 | **Endereço IPv4 (IPv4)** | IPv4 address | Redes | Endereço lógico de 32 bits escrito em 4 octetos decimais. | Y1P1 |
 | **Endereço IPv6 (IPv6)** | IPv6 address | Redes | Endereço de 128 bits em hexadecimal, em 8 grupos separados por dois-pontos. | Y1P1 |
 | **Endereço MAC (MAC)** | MAC address | Redes | Endereço físico de 48 bits da interface de rede, usado na camada 2. | Y1P1 |
+| **Endereço virtual (VA)** | Virtual Address | Sistemas | Endereço usado pelo processo, traduzido para físico pela MMU; RVA é relativo à base do módulo. | Y1P5 |
 | **Endereços privados** | Private addressing (RFC 1918) | Redes | Faixas IPv4 reservadas para uso interno, não roteáveis na Internet: 10/8, 172.16/12, 192.168/16. | Y1P1 |
 | **Endurecimento** | Hardening | GRC | Conjunto de configurações que reduzem a superfície de ataque de um sistema. | Y1P2 |
+| **Engenharia reversa** | Reverse engineering | Ameaças e Ataques | Analisar um binário sem o código-fonte para entender seu funcionamento. | Y1P5 |
 | **Envenenamento de ARP** | ARP spoofing / ARP poisoning | Ameaças e Ataques | Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM. | Y1P1 |
 | **Escalada de privilégio (PrivEsc)** | Privilege escalation | Ameaças e Ataques | Quando um atacante sai de um acesso limitado para um nível mais alto (ex.: root). | Y1P2 |
 | **Escalonamento** | Scheduling | Sistemas | Decisão do SO sobre qual processo ou thread usa a CPU e por quanto tempo. | Y1P3 |
+| **Executable and Linkable Format (ELF)** | Executable and Linkable Format | Sistemas | Formato de binário do Linux/Unix, com cabeçalho, program headers e section headers. | Y1P5 |
 | **Expressão regular (regex)** | Regular expression | Desenvolvimento | Linguagem de padrões para buscar e extrair texto. | Y1P4 |
 
 ## F
@@ -81,9 +100,12 @@
 | **firewalld** | firewalld | Redes | Firewall dinâmico baseado em zonas, gerenciado pelo firewall-cmd, com regras runtime e permanentes. | Y1P2 |
 | **Floresta** | Forest | Sistemas | Conjunto de uma ou mais árvores que compartilham schema e relações de confiança; é a fronteira de segurança do AD. | Y1P3 |
 | **Fluxos padrão** | Standard streams (stdin/stdout/stderr) | Sistemas | Canais de entrada (fd 0), saída (fd 1) e erro (fd 2) de um processo. | Y1P2 |
+| **Fork bomb** | Fork bomb | Ameaças e Ataques | Ataque de negação de serviço que cria processos sem parar até esgotar os recursos do sistema. | Y1P5 |
 | **Força bruta** | Brute force | Ameaças e Ataques | Tentativas repetidas de adivinhar senhas até acertar. | Y1P2 |
 | **fstab** | File systems table | Sistemas | Arquivo /etc/fstab que lista o que é montado automaticamente no boot e com quais opções. | Y1P2 |
 | **Função** | Function | Desenvolvimento | Bloco de código nomeado e reutilizável que recebe parâmetros e pode retornar um valor. | Y1P4 |
+| **Funções inseguras de C** | Unsafe C functions | Desenvolvimento | Funções que não checam limites e causam overflow: gets, strcpy, sprintf, scanf. | Y1P5 |
+| **Fuzzing** | Fuzzing | Ameaças e Ataques | Enviar entradas malformadas ou aleatórias em massa para encontrar falhas e crashes. | Y1P5 |
 
 ## G
 
@@ -106,6 +128,8 @@
 |---|---|---|---|---|
 | **Hacktivismo** | Hacktivism | Ameaças e Ataques | Ataques motivados por causas políticas ou sociais, normalmente defacement ou DoS. | Y1P1 |
 | **Hash criptográfico** | Cryptographic hash | Criptografia | Função que gera um resumo de tamanho fixo e irreversível; qualquer mudança no dado muda o hash. | Y1P4 |
+| **Heap** | Heap | Sistemas | Região de memória para alocação dinâmica em tempo de execução. | Y1P5 |
+| **Hexadecimal (hex)** | Hexadecimal | Sistemas | Base numérica 16; cada dígito representa 4 bits, usado para endereços e opcodes. | Y1P5 |
 | **Hierarquia padrão de sistema de arquivos (FHS)** | Filesystem Hierarchy Standard | Sistemas | Padrão que define a função de cada diretório no Linux. | Y1P2 |
 | **Homem no meio (MitM)** | Man-in-the-Middle | Ameaças e Ataques | Atacante se posiciona entre duas partes para interceptar ou alterar a comunicação. | Y1P1 |
 
@@ -115,6 +139,7 @@
 |---|---|---|---|---|
 | **Injeção** | Injection | Ameaças e Ataques | Envio de entrada maliciosa que a aplicação interpreta como comando ou consulta. | Y1P2 |
 | **Inspeção dinâmica de ARP (DAI)** | Dynamic ARP Inspection | Redes | Valida mensagens ARP contra a tabela do DHCP Snooping e descarta as falsificadas. | Y1P1 |
+| **Interface binária de aplicação (ABI)** | Application Binary Interface | Sistemas | Contrato de baixo nível (tamanhos, chamadas, registradores) que permite binários interoperarem. | Y1P5 |
 | **IPsec (IPsec)** | Internet Protocol Security | Criptografia | Conjunto de protocolos (IKE, ESP, AH) que cifra e autentica pacotes IP; modos transporte e túnel. | Y1P1 |
 | **ISO 31000** | ISO 31000 | GRC | Norma com princípios e diretrizes genéricas para gestão de riscos. | Y1P4 |
 | **ISO/IEC 27001** | ISO/IEC 27001 | GRC | Norma internacional que define os requisitos de um Sistema de Gestão de Segurança da Informação (SGSI); a 27002 traz os controles. | Y1P4 |
@@ -141,6 +166,7 @@
 | **Linguagem interpretada** | Interpreted language | Desenvolvimento | Linguagem executada por um interpretador linha a linha, sem compilar para binário antes. | Y1P4 |
 | **Lista** | List | Desenvolvimento | Estrutura de dados ordenada e mutável do Python. | Y1P4 |
 | **Lista de controle de acesso (ACL)** | Access Control List | Redes | Lista ordenada de regras permit/deny aplicada a uma interface para filtrar tráfego; termina com um deny implícito. | Y1P1 |
+| **Little-endian** | Little-endian | Sistemas | Ordem de bytes em que o byte menos significativo é armazenado primeiro; padrão no x86. | Y1P5 |
 | **LSDOU (LSDOU)** | Local, Site, Domain, OU | Sistemas | Ordem de processamento das GPOs; a mais próxima do objeto vence em conflito. | Y1P3 |
 
 ## M
@@ -181,11 +207,16 @@
 | **PAP / CHAP / MS-CHAPv2 (PAP / CHAP)** | Password / Challenge-Handshake Authentication Protocol | Redes | Protocolos de autenticação de acesso remoto: PAP envia senha em texto claro; CHAP e MS-CHAPv2 usam desafio-resposta. | Y1P3 |
 | **Parâmetros posicionais** | Positional parameters | Desenvolvimento | Argumentos passados ao script, acessados como $1, $2…, $# (quantidade) e $@ (todos). | Y1P4 |
 | **Permissões de arquivo** | File permissions (rwx) | Sistemas | Controle de leitura, escrita e execução para dono, grupo e outros, em notação simbólica ou octal. | Y1P2 |
+| **Pilha** | Stack | Sistemas | Região de memória LIFO para variáveis locais e endereços de retorno; cresce para endereços menores. | Y1P5 |
 | **Pilha dupla** | Dual-stack | Redes | Método de transição em que equipamentos rodam IPv4 e IPv6 ao mesmo tempo. | Y1P1 |
 | **Pilha TCP/IP (TCP/IP)** | TCP/IP stack | Redes | Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação. | Y1P1 |
 | **Pipe** | Pipe | Sistemas | Operador | que envia a saída de um comando como entrada do próximo. | Y1P2 |
+| **Pipelining** | Pipelining | Sistemas | Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU. | Y1P5 |
+| **Ponteiro de instrução (EIP / RIP)** | Instruction pointer | Sistemas | Registrador que contém o endereço da próxima instrução a ser executada; controlá-lo é controlar o fluxo. | Y1P5 |
 | **Ponto de acesso não autorizado (Rogue AP)** | Rogue access point | Ameaças e Ataques | AP instalado na rede sem autorização, abrindo uma porta de entrada. | Y1P1 |
 | **Port scanner** | Port scanner | Ameaças e Ataques | Ferramenta que testa portas de um host para descobrir quais serviços estão abertos. | Y1P4 |
+| **Portable Executable (PE)** | Portable Executable | Sistemas | Formato de executável do Windows (EXE, DLL, SYS), com cabeçalhos, seções e tabelas de importação. | Y1P5 |
+| **Prevenção de execução de dados (DEP / NX)** | Data Execution Prevention | Sistemas | Mitigação que marca regiões de dados (como a pilha) como não executáveis. | Y1P5 |
 | **Primeiro o caminho mais curto (OSPF)** | Open Shortest Path First | Redes | IGP de estado de enlace (link-state) que usa o algoritmo de Dijkstra e organiza a rede em áreas (área 0 = backbone). | Y1P1 |
 | **Princípio do menor privilégio (PoLP)** | Principle of least privilege | GRC | Dar a cada usuário ou processo apenas as permissões estritamente necessárias. | Y1P2 |
 | **Processamento de loopback** | Loopback processing | Sistemas | Modo de GPO que aplica configurações de usuário conforme o computador onde ele faz logon. | Y1P3 |
@@ -211,6 +242,8 @@
 | **Rede local virtual (VLAN)** | Virtual LAN | Redes | Segmentação lógica de um switch em domínios de broadcast separados. | Y1P1 |
 | **Rede privada virtual (VPN)** | Virtual Private Network | Redes | Túnel cifrado sobre uma rede pública que liga usuários ou sites como se estivessem na mesma rede. | Y1P1 |
 | **Redirecionamento** | Redirection | Sistemas | Envio de entradas ou saídas para arquivos (>, >>, <, 2>&1). | Y1P2 |
+| **Registrador** | Register | Sistemas | Pequena área de armazenamento dentro da CPU, extremamente rápida, usada no processamento. | Y1P5 |
+| **Registradores de uso geral (GPR)** | General-purpose registers | Sistemas | Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP. | Y1P5 |
 | **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
 | **Risco** | Risk | GRC | Possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto a um ativo; costuma ser estimado como probabilidade × impacto. | Y1P4 |
 | **Risco residual** | Residual risk | GRC | Risco que sobra depois de aplicados os controles. | Y1P4 |
@@ -237,6 +270,7 @@
 | **Shell** | Shell | Sistemas | Interpretador de comandos entre o usuário e o kernel; o Bash é o mais comum no Linux. | Y1P2 |
 | **Shell Script** | Shell script | Desenvolvimento | Arquivo de comandos de shell executado em sequência para automatizar tarefas. | Y1P4 |
 | **Shell seguro (SSH)** | Secure Shell | Redes | Protocolo de acesso remoto cifrado (TCP 22), com autenticação por senha ou chave. | Y1P2 |
+| **Shellcode** | Shellcode | Ameaças e Ataques | Pequeno trecho de código de máquina usado como payload em exploração de memória. | Y1P5 |
 | **Sistema autônomo (AS)** | Autonomous System | Redes | Conjunto de redes sob uma única política de roteamento, identificado por um número (ASN). | Y1P1 |
 | **Sistema de arquivos** | Filesystem | Sistemas | Estrutura que organiza como os dados são gravados no disco. | Y1P2 |
 | **Sistema de arquivos de rede (NFS)** | Network File System | Redes | Protocolo para compartilhar diretórios pela rede, montados como se fossem locais. | Y1P2 |
@@ -247,9 +281,11 @@
 | **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
 | **Socket** | Socket | Redes | Ponto final de comunicação em rede (IP + porta + protocolo) usado pelos programas para trocar dados. | Y1P4 |
 | **ss** | Socket statistics | Redes | Lista sockets e portas em escuta ou conexões ativas, junto com o processo dono. | Y1P2 |
+| **Stack canary** | Stack canary | Sistemas | Valor secreto colocado antes do endereço de retorno; se for alterado, o programa aborta. | Y1P5 |
 | **sudo** | Superuser do | Sistemas | Executa um comando com privilégios de outro usuário (normalmente root), com registro em log. | Y1P2 |
 | **SUID (SUID)** | Set User ID | Sistemas | Bit especial que faz um executável rodar com o privilégio do dono do arquivo; alvo comum de escalada de privilégio. | Y1P2 |
 | **Superusuário** | Superuser (root) | Sistemas | Conta com privilégio total no sistema (UID 0); deve ser usada só quando necessário. | Y1P2 |
+| **Swapping** | Swapping | Sistemas | Mover páginas ou processos entre a RAM e o disco para liberar memória. | Y1P5 |
 | **sysctl** | sysctl | Sistemas | Comando para ler e ajustar parâmetros do kernel em tempo de execução. | Y1P2 |
 | **systemd** | systemd | Sistemas | Sistema de inicialização e gerenciador de serviços (units), dependências e logs do Linux moderno. | Y1P2 |
 
@@ -257,6 +293,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Tabela de endereços de importação (IAT)** | Import Address Table | Sistemas | Tabela do PE com os endereços das funções de API importadas de outras DLLs. | Y1P5 |
 | **Tabela de endereços MAC (CAM)** | MAC address table (CAM table) | Redes | Tabela do switch que associa endereços MAC às portas para encaminhar quadros. | Y1P1 |
 | **TACACS+ (TACACS+)** | Terminal Access Controller Access-Control System Plus | Redes | Protocolo AAA (TCP/49) que cifra o pacote inteiro e separa as três funções; ideal para administrar equipamentos. | Y1P1 |
 | **tcpdump** | tcpdump | Redes | Capturador de pacotes em linha de comando; grava PCAPs para análise. | Y1P2 |
@@ -276,6 +313,7 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Unidade organizacional (OU)** | Organizational Unit | Sistemas | Contêiner do AD que organiza objetos e recebe GPOs e delegação de controle. | Y1P3 |
+| **Use-after-free (UAF)** | Use-after-free | Ameaças e Ataques | Usar um ponteiro depois que a memória que ele referenciava foi liberada. | Y1P5 |
 
 ## V
 
@@ -293,6 +331,7 @@
 |---|---|---|---|---|
 | **Windows Server** | Windows Server | Sistemas | Linha de sistemas operacionais da Microsoft para servidores, com funções como AD, DNS, DHCP, IIS e Hyper-V. | Y1P3 |
 | **Windows Server Update Services (WSUS)** | Windows Server Update Services | Sistemas | Serviço que centraliza aprovação e distribuição de atualizações Microsoft na rede. | Y1P3 |
+| **Wine (Wine)** | Wine Is Not an Emulator | Sistemas | Camada de compatibilidade que roda executáveis Windows no Linux sem emular o SO. | Y1P5 |
 | **Wordlist** | Wordlist | Ameaças e Ataques | Lista de senhas ou palavras usadas em ataques de força bruta ou dicionário. | Y1P4 |
 | **WPA2 (WPA2)** | Wi-Fi Protected Access 2 | Criptografia | Padrão de segurança Wi-Fi com AES-CCMP; modos Personal (PSK) e Enterprise (802.1X/RADIUS). | Y1P1 |
 | **WPA3 (WPA3)** | Wi-Fi Protected Access 3 | Criptografia | Sucessor do WPA2 com SAE, forward secrecy e opção de 192 bits no modo Enterprise. | Y1P1 |
