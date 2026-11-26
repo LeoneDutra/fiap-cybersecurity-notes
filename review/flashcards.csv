@@ -59,3 +59,13 @@ Por que uma sessão FTP é perigosa numa rede compartilhada?,"FTP trafega usuár
 O que é DPI e como difere da inspeção comum?,"A inspeção comum vê só cabeçalhos (IP/portas); o DPI examina o payload (camada 7), identificando aplicações e assinaturas. Base de IDS/IPS e NGFW.",Y1P6,redes dpi
 "No Wireshark, como isolar o HTTP de um host?","Filtro combinando host e protocolo, ex.: ip.addr == 192.168.1.10 && http, e Follow TCP Stream para remontar a conversa.",Y1P6,forense wireshark
 O que é defesa em profundidade?,"Empilhar várias camadas de controle (rede, host, app, pessoas) para que a falha de uma não comprometa tudo.",Y1P6,principios
+"Por que MQTT e CoAP são comuns em IoT, e qual o risco?",São leves para dispositivos com pouca CPU/energia (MQTT pub/sub por broker; CoAP REST sobre UDP). Risco: muitas vezes sem TLS nem autenticação.,Y1P7,iot protocolos
+"O que a botnet Mirai explorou, e qual a lição?","Credenciais de fábrica em serviços como Telnet de câmeras/DVRs. Lição: trocar senhas padrão, fechar serviços de gestão, segmentar.",Y1P7,iot ameacas
+Cite três itens da OWASP IoT Top 10.,Senhas fracas/hardcoded; serviços de rede inseguros; falta de atualização segura.,Y1P7,iot owasp
+O que é análise de firmware e por que é central?,"Extrair e examinar o software do dispositivo (FS, binários, configs); revela senhas/chaves hardcoded, serviços e componentes vulneráveis.",Y1P7,iot firmware
+"Para que servem UART, JTAG, SPI e I2C?","UART: console serial; JTAG/SWD: depurar e ler memória; SPI/I2C: comunicar com chips (flash, sensores). Pontos físicos de acesso.",Y1P7,hardware
+Diferença entre explorar binário ARM e x86?,"Mesmos conceitos (pilha, overflow), mas ARM tem outra sintaxe Assembly, registradores e convenções. Mitigações (NX, canary) continuam valendo.",Y1P7,arm binario
+O que é um ataque BadUSB?,Dispositivo USB que se apresenta como teclado (HID) e digita comandos ao ser plugado. Não conectar USB desconhecido; aplicar controle de dispositivos.,Y1P7,hardware ataques
+Por que a segurança física importa em IoT?,"O atacante tem o dispositivo na mão: pode soldar nas interfaces de debug e ler a flash. Hardening físico (desabilitar JTAG, cifrar flash, secure boot) entra no modelo de ameaça.",Y1P7,iot hardware
+Boas práticas para defender uma implantação de IoT?,"VLAN própria, trocar credenciais padrão, TLS + autenticação, updates assinados, desativar debug em produção, inventário e patch.",Y1P7,iot defesa
+O que o Stuxnet mostra sobre OT/embarcados?,Malware pode causar dano físico (sabotou centrífugas via PLC) mesmo em redes air-gapped; reforça segurança de OT/ICS e controle de mídias.,Y1P7,ot ics

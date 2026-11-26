@@ -16,7 +16,7 @@ and how the topic connects to real SOC / blue-team work.
 | 1 | 4 | Automação (Shell Script e Python), Risco e Vulnerabilidades (Scripting, Risk & Vulnerability Management) | [notes](year-1/phase-4) |
 | 1 | 5 | Arquitetura, Binários e Segurança de Memória (Computer Architecture, Binaries & Memory Safety) | [notes](year-1/phase-5) |
 | 1 | 6 | Criptografia, Análise de Tráfego e Ataques TCP/IP (Cryptography, Traffic Analysis & TCP/IP Attacks) | [notes](year-1/phase-6) |
-| 1 | 7 | _TBD_ | [notes](year-1/phase-7) |
+| 1 | 7 | Segurança de IoT, Firmware e Hardware (IoT, Firmware & Hardware Security) | [notes](year-1/phase-7) |
 | 2 | 1 | _TBD_ | [notes](year-2/phase-1) |
 | 2 | 2 | _TBD_ | [notes](year-2/phase-2) |
 | 2 | 3 | _TBD_ | [notes](year-2/phase-3) |

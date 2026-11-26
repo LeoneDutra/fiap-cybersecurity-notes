@@ -260,3 +260,41 @@ Inspeção profunda de pacotes,Deep Packet Inspection,DPI,Redes,"Análise do pay
 Wireshark,Wireshark,,Forense,"Analisador de protocolos de rede com interface gráfica, para capturar e dissecar pacotes.",Follow TCP Stream de uma sessão HTTP.,Y1P6
 tshark,tshark,,Forense,"Versão em linha de comando do Wireshark, útil para automação e extração de campos.",tshark -r cap.pcap -Y http,Y1P6
 Análise de fluxo,Flow analysis,NetFlow,Redes,"Analisar metadados de conexões (IPs, portas, bytes) em vez de cada pacote, para escala.",NetFlow/IPFIX num coletor.,Y1P6
+Internet das Coisas,Internet of Things,IoT,IoT e Hardware,Rede de objetos físicos com sensores e conectividade que coletam e trocam dados.,"Lâmpada, câmera e termostato inteligentes.",Y1P7
+IoT Industrial,Industrial IoT,IIoT,IoT e Hardware,"Uso de IoT em indústria e infraestrutura crítica, ligado a OT/ICS.",Sensores numa linha de produção.,Y1P7
+Dispositivo embarcado,Embedded device,,IoT e Hardware,"Computador de propósito específico, com recursos limitados, dentro de um produto.",Firmware de um roteador.,Y1P7
+Microcontrolador,Microcontroller,MCU,IoT e Hardware,"Chip que integra CPU, memória e periféricos para controlar um dispositivo.",ATmega do Arduino Uno.,Y1P7
+RFID,Radio-Frequency Identification,RFID,IoT e Hardware,"Identificação por radiofrequência usando etiquetas (passivas, semipassivas ou ativas) e leitores.","Crachá de acesso, pedágio.",Y1P7
+NFC,Near Field Communication,NFC,IoT e Hardware,"Comunicação de rádio de curtíssimo alcance, derivada do RFID.",Pagamento por aproximação.,Y1P7
+Bluetooth Low Energy,Bluetooth Low Energy,BLE,IoT e Hardware,Variante de Bluetooth de baixo consumo usada em wearables e sensores IoT.,Pulseira fitness.,Y1P7
+MQTT,Message Queuing Telemetry Transport,MQTT,IoT e Hardware,"Protocolo leve de mensagens publish/subscribe via broker, popular em IoT.",Sensor publica no tópico casa/sala/temp.,Y1P7
+CoAP,Constrained Application Protocol,CoAP,IoT e Hardware,Protocolo REST leve sobre UDP para dispositivos com poucos recursos.,Alternativa ao HTTP em IoT.,Y1P7
+Broker MQTT,MQTT broker,,IoT e Hardware,Servidor central que recebe publicações e as distribui aos assinantes dos tópicos.,Mosquitto.,Y1P7
+Linguagem C,C language,C,Desenvolvimento,"Linguagem compilada de baixo nível, base de sistemas operacionais e firmware.",Programar o microcontrolador.,Y1P7
+Ponteiro,Pointer,,Desenvolvimento,Variável que armazena o endereço de memória de outro dado.,int *p = &x;,Y1P7
+Estrutura,Struct,,Desenvolvimento,Tipo composto de C que agrupa variáveis de tipos diferentes.,struct Sensor { int id; float valor; };,Y1P7
+Arduino,Arduino,,IoT e Hardware,Plataforma aberta de prototipagem eletrônica com microcontrolador e IDE em C.,Projeto de alarme com sensor ultrassônico.,Y1P7
+Tinkercad,Tinkercad,,IoT e Hardware,"Simulador online de circuitos e Arduino, usado para prototipar sem hardware físico.",Montar e testar um circuito no navegador.,Y1P7
+Protoboard,Breadboard,,IoT e Hardware,Placa de contatos para montar circuitos sem solda.,Prototipar um sensor com LEDs.,Y1P7
+Comunicação serial,Serial communication (UART),UART,IoT e Hardware,Troca de dados bit a bit por uma interface serial; UART dá console a muitos dispositivos.,Arduino envia leituras pela porta serial.,Y1P7
+Gateway IoT,IoT gateway,,IoT e Hardware,Dispositivo que agrega sensores e faz a ponte entre a rede local de IoT e a internet/nuvem.,Gateway MQTT coletando sensores.,Y1P7
+Mirai,Mirai botnet,,Ameaças e Ataques,Botnet de IoT que infectou dispositivos usando credenciais de fábrica e lançou grandes DDoS.,Ataque que derrubou a Dyn em 2016.,Y1P7
+Stuxnet,Stuxnet,,Ameaças e Ataques,"Malware que sabotou centrífugas industriais via PLC, mostrando dano físico por código.",Ataque a sistema OT air-gapped.,Y1P7
+BadUSB,BadUSB,,Ameaças e Ataques,Dispositivo USB que se passa por teclado (HID) e injeta comandos automaticamente.,Pendrive que digita comandos ao ser plugado.,Y1P7
+Firmware,Firmware,,IoT e Hardware,Software de baixo nível gravado no dispositivo que controla o hardware.,Imagem OpenWrt de um roteador.,Y1P7
+Análise de firmware,Firmware analysis,,Forense,"Extrair e examinar o firmware em busca de segredos, serviços e vulnerabilidades.",binwalk -e firmware.bin,Y1P7
+binwalk,binwalk,,Forense,Ferramenta que identifica e extrai sistemas de arquivos e dados embutidos num firmware.,Encontrar um squashfs dentro da imagem.,Y1P7
+OWASP IoT Top 10,OWASP IoT Top 10,,GRC,Lista de referência dos dez riscos de segurança mais comuns em dispositivos IoT.,"Senhas hardcoded, serviços inseguros, sem update seguro.",Y1P7
+Senha hardcoded,Hardcoded password,,Ameaças e Ataques,"Credencial fixa embutida no firmware ou código, impossível de o usuário trocar.",admin/admin gravado no binário.,Y1P7
+Secure boot,Secure boot,,IoT e Hardware,Mecanismo que só permite executar firmware assinado e confiável no boot.,Impede firmware adulterado de subir.,Y1P7
+JTAG,Joint Test Action Group,JTAG,IoT e Hardware,Interface de depuração de hardware que permite controlar a CPU e ler memória.,Extrair firmware direto do chip.,Y1P7
+SPI,Serial Peripheral Interface,SPI,IoT e Hardware,"Barramento serial síncrono para comunicação com chips, como memórias flash.",Ler a flash de um roteador.,Y1P7
+I2C,Inter-Integrated Circuit,I2C,IoT e Hardware,Barramento serial de dois fios para conectar sensores e periféricos ao microcontrolador.,Ler um sensor de temperatura.,Y1P7
+Analisador lógico,Logic analyzer,,IoT e Hardware,"Equipamento que captura e decodifica sinais digitais de barramentos como UART, SPI e I2C.",Identificar o baud rate de uma UART.,Y1P7
+Rede local sem fio,Wireless LAN,WLAN,Redes,Rede sem fio local baseada nos padrões IEEE 802.11 (Wi-Fi).,Rede Wi-Fi doméstica.,Y1P7
+WPS,Wi-Fi Protected Setup,WPS,Ameaças e Ataques,"Recurso de configuração fácil de Wi-Fi com PIN, vulnerável a força bruta.",Desativar o WPS do roteador.,Y1P7
+Handshake WPA2,WPA2 handshake,,Redes,"Troca de mensagens no início da conexão Wi-Fi, capturável para auditar a força da senha.",4-way handshake capturado em modo monitor.,Y1P7
+Modo monitor,Monitor mode,,Redes,"Modo da placa Wi-Fi que captura todo o tráfego do ar, não só o endereçado a ela.",airmon-ng start wlan0.,Y1P7
+Tecnologia operacional,Operational Technology,OT,IoT e Hardware,Hardware e software que monitoram e controlam processos físicos industriais.,Sistemas de uma usina ou fábrica.,Y1P7
+Sistema de controle industrial,Industrial Control System,ICS,IoT e Hardware,"Conjunto de sistemas (SCADA, PLC) que automatiza processos industriais.",Controle de uma estação de tratamento de água.,Y1P7
+Controlador lógico programável,Programmable Logic Controller,PLC,IoT e Hardware,Computador industrial robusto que controla máquinas e processos em tempo real.,Alvo do Stuxnet.,Y1P7
