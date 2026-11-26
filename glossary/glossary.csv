@@ -145,3 +145,42 @@ Thread,Thread,,Sistemas,Linha de execução dentro de um processo; threads compa
 Escalonamento,Scheduling,,Sistemas,Decisão do SO sobre qual processo ou thread usa a CPU e por quanto tempo.,Round-robin com quantum fixo.,Y1P3
 Memória virtual,Virtual memory,,Sistemas,"Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco.",Falta de página carrega a página do disco.,Y1P3
 Paginação,Paging,,Sistemas,Divisão da memória em páginas de tamanho fixo mapeadas pela tabela de páginas.,Páginas de 4 KB.,Y1P3
+Shell Script,Shell script,,Desenvolvimento,Arquivo de comandos de shell executado em sequência para automatizar tarefas.,backup.sh agendado no cron.,Y1P4
+Shebang,Shebang,,Desenvolvimento,Primeira linha de um script (#!) que indica qual interpretador deve executá-lo.,#!/bin/bash ou #!/usr/bin/env python3,Y1P4
+Parâmetros posicionais,Positional parameters,,Desenvolvimento,"Argumentos passados ao script, acessados como $1, $2…, $# (quantidade) e $@ (todos).",./scan.sh 10.0.0.1 → $1 = 10.0.0.1,Y1P4
+Código de saída,Exit code / return code,,Desenvolvimento,Número que um comando devolve ao terminar; 0 indica sucesso e outro valor indica erro.,echo $? logo após o comando.,Y1P4
+Expressão regular,Regular expression,regex,Desenvolvimento,Linguagem de padrões para buscar e extrair texto.,"grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' log",Y1P4
+Função,Function,,Desenvolvimento,Bloco de código nomeado e reutilizável que recebe parâmetros e pode retornar um valor.,"def somar(a, b): return a + b",Y1P4
+Python,Python,,Desenvolvimento,"Linguagem interpretada, de alto nível e multiparadigma, muito usada em automação de segurança e ciência de dados.",Script que consulta a API do VirusTotal.,Y1P4
+Linguagem interpretada,Interpreted language,,Desenvolvimento,"Linguagem executada por um interpretador linha a linha, sem compilar para binário antes.",python3 script.py,Y1P4
+Lista,List,,Desenvolvimento,Estrutura de dados ordenada e mutável do Python.,"portas = [22, 80, 443]; portas.append(8080)",Y1P4
+Módulo,Module,,Desenvolvimento,Arquivo .py com funções e variáveis que pode ser importado por outros programas.,"import calc; calc.somar(2, 3)",Y1P4
+Criptografia simétrica,Symmetric encryption,,Criptografia,Esquema em que a mesma chave cifra e decifra os dados.,AES-256 cifrando um backup.,Y1P4
+Padrão de criptografia de dados,Data Encryption Standard,DES,Criptografia,Cifra de bloco simétrica antiga com chave efetiva de 56 bits; hoje é considerada insegura.,Substituído pelo AES.,Y1P4
+Padrão avançado de criptografia,Advanced Encryption Standard,AES,Criptografia,"Cifra de bloco simétrica padrão (FIPS 197) com chaves de 128, 192 ou 256 bits.","AES.new(chave, AES.MODE_EAX)",Y1P4
+Hash criptográfico,Cryptographic hash,,Criptografia,Função que gera um resumo de tamanho fixo e irreversível; qualquer mudança no dado muda o hash.,sha256sum arquivo.iso,Y1P4
+Ataque de dicionário,Dictionary attack,,Ameaças e Ataques,Tentar senhas de uma lista de palavras (wordlist) contra um login ou contra hashes.,Comparar hashes vazados com a rockyou.txt.,Y1P4
+Wordlist,Wordlist,,Ameaças e Ataques,Lista de senhas ou palavras usadas em ataques de força bruta ou dicionário.,rockyou.txt,Y1P4
+Socket,Socket,,Redes,Ponto final de comunicação em rede (IP + porta + protocolo) usado pelos programas para trocar dados.,"socket.socket(AF_INET, SOCK_STREAM)",Y1P4
+Protocolo de controle de transmissão,Transmission Control Protocol,TCP,Redes,"Protocolo de transporte orientado a conexão, com three-way handshake, confirmação e ordenação.","HTTP, SSH e SMTP usam TCP.",Y1P4
+Protocolo de datagrama de usuário,User Datagram Protocol,UDP,Redes,Protocolo de transporte sem conexão e sem garantia de entrega; leve e rápido.,"DNS, DHCP e streaming usam UDP.",Y1P4
+Three-way handshake,Three-way handshake,,Redes,Estabelecimento de conexão TCP: SYN → SYN-ACK → ACK.,Um SYN sem resposta indica porta filtrada.,Y1P4
+Port scanner,Port scanner,,Ameaças e Ataques,Ferramenta que testa portas de um host para descobrir quais serviços estão abertos.,nmap ou um script Python com socket.,Y1P4
+Risco,Risk,,GRC,Possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto a um ativo; costuma ser estimado como probabilidade × impacto.,Servidor web sem patch exposto à internet.,Y1P4
+Ameaça,Threat,,GRC,Agente ou evento com potencial de causar dano a um ativo.,"Grupo de ransomware, incêndio, funcionário mal-intencionado.",Y1P4
+Vulnerabilidade,Vulnerability,,GRC,"Fraqueza em sistema, processo ou pessoa que pode ser explorada por uma ameaça.","Software desatualizado, senha fraca.",Y1P4
+Ativo,Asset,,GRC,Qualquer coisa de valor para a organização que precisa de proteção.,"Banco de dados de clientes, servidores, reputação.",Y1P4
+Tratamento de risco,Risk treatment,,GRC,"Decisão sobre um risco: mitigar, transferir, evitar ou aceitar.",Contratar seguro cibernético = transferir.,Y1P4
+Risco residual,Residual risk,,GRC,Risco que sobra depois de aplicados os controles.,Risco aceito formalmente pela diretoria.,Y1P4
+COBIT,Control Objectives for Information and Related Technologies,COBIT,GRC,Framework da ISACA para governança e gestão de TI.,Alinhar objetivos de TI aos do negócio.,Y1P4
+ISO/IEC 27001,ISO/IEC 27001,,GRC,Norma internacional que define os requisitos de um Sistema de Gestão de Segurança da Informação (SGSI); a 27002 traz os controles.,Certificação ISO 27001 do data center.,Y1P4
+ISO 31000,ISO 31000,,GRC,Norma com princípios e diretrizes genéricas para gestão de riscos.,Processo corporativo de gestão de riscos.,Y1P4
+Gestão de vulnerabilidades,Vulnerability management,,GRC,"Programa contínuo para identificar, classificar, priorizar, corrigir e verificar vulnerabilidades.",Ciclo mensal de varredura e patch.,Y1P4
+Base nacional de vulnerabilidades,National Vulnerability Database,NVD,GRC,"Base do NIST que enriquece os CVEs com CVSS, CPE e referências.",Consultar o CVSS de um CVE no NVD.,Y1P4
+Avaliação de vulnerabilidades,Vulnerability assessment,,GRC,Varredura (geralmente automatizada) que identifica e lista vulnerabilidades em um escopo.,Scan autenticado com Nessus.,Y1P4
+Teste de intrusão,Penetration test,Pentest,Ameaças e Ataques,Ataque simulado e autorizado que explora vulnerabilidades para provar o impacto.,Pentest anual exigido por compliance.,Y1P4
+OpenVAS,Open Vulnerability Assessment Scanner,OpenVAS / GVM,GRC,Scanner de vulnerabilidades open source do Greenbone Vulnerability Management.,gvm-setup no Kali.,Y1P4
+Nessus,Nessus,,GRC,Scanner de vulnerabilidades comercial da Tenable; a versão Essentials é gratuita e limitada.,Scan básico de rede em 16 IPs.,Y1P4
+Kali Linux,Kali Linux,,Ameaças e Ataques,"Distribuição Debian voltada a testes de segurança, com centenas de ferramentas pré-instaladas.",VM Kali para laboratório.,Y1P4
+Zabbix,Zabbix,,Sistemas,"Plataforma open source de monitoramento de redes, servidores e aplicações, com agentes e alertas.",Alerta quando o disco passa de 90%.,Y1P4
+Monitoramento,Monitoring,,Resposta a Incidentes,Coleta contínua de métricas e eventos para detectar falhas ou anomalias.,Dashboard de disponibilidade dos servidores.,Y1P4

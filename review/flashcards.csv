@@ -29,3 +29,13 @@ Block Inheritance × Enforced?,Block Inheritance (na OU) impede herdar GPOs de c
 Por que o PAP é o protocolo de autenticação VPN menos seguro?,Envia a senha em texto claro. CHAP/MS-CHAPv2 usam desafio-resposta; EAP (certificado/PEAP) é o mais robusto.,Y1P3,vpn autenticacao
 Papel do NPS e do WSUS na segurança?,"NPS: RADIUS da Microsoft, centraliza autenticação e políticas de VPN/Wi-Fi/802.1X. WSUS: centraliza a distribuição de patches.",Y1P3,windows seguranca
 Diferença entre processo e thread?,Processo: programa em execução com memória própria. Thread: linha de execução dentro do processo que compartilha essa memória.,Y1P3,sistemas-operacionais
+"O que significam $#, $@ e $? no Bash?",$# = número de argumentos; $@ = todos os argumentos; $? = código de saída do último comando (0 = sucesso).,Y1P4,bash scripting
+Por que Base64 não é criptografia?,"Não usa chave: é só codificação reversível. Serve para transporte, não para sigilo.",Y1P4,criptografia
+DES ou AES? Por quê?,AES: o DES tem chave efetiva de 56 bits e é quebrável por força bruta; o AES (128/192/256) é o padrão atual.,Y1P4,criptografia
+TCP × UDP do ponto de vista de um socket?,"TCP (SOCK_STREAM): com conexão, entrega e ordem garantidas. UDP (SOCK_DGRAM): sem conexão nem garantia, mais leve.",Y1P4,redes python
+Como um port scan TCP connect decide que a porta está aberta?,"Tenta completar o handshake; se connect_ex retorna 0, está aberta. RST ou timeout = fechada ou filtrada.",Y1P4,redes python
+Etapas da gestão de riscos (ISO 31000/27005)?,"Contexto → identificação → análise → avaliação → tratamento → aceitação, com comunicação e monitoramento contínuos.",Y1P4,grc risco
+Quatro formas de tratar um risco?,"Mitigar, transferir, evitar e aceitar (risco residual).",Y1P4,grc risco
+Avaliação de vulnerabilidades × pentest?,"A avaliação identifica e lista (ampla, automatizada); o pentest explora para provar o impacto (manual, direcionado).",Y1P4,vulnerabilidades
+"Além do CVSS, o que considerar para priorizar uma correção?","Exposição do ativo, criticidade para o negócio, exploit público ou exploração ativa (KEV) e controles compensatórios.",Y1P4,vulnerabilidades
+Para que serve o Zabbix numa operação de segurança?,"Monitora disponibilidade e desempenho com alertas, detecta quedas antes que virem incidente e gera histórico.",Y1P4,monitoramento
