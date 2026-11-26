@@ -408,3 +408,41 @@ LAPS,Local Administrator Password Solution,LAPS,Sistemas,Solução que define se
 gMSA,Group Managed Service Account,gMSA,Sistemas,Conta de serviço com senha longa gerida e rotacionada automaticamente pelo AD.,Mitiga Kerberoasting em contas de serviço.,Y2P3
 Tier Model,Administrative Tier Model,,GRC,"Modelo que separa contas administrativas por nível (DC, servidores, estações) para conter comprometimento.",Admin de estação não loga no DC.,Y2P3
 Credential Guard,Windows Credential Guard,,Sistemas,"Recurso do Windows que isola credenciais em ambiente virtualizado, dificultando o dumping.",Protege os segredos do LSASS.,Y2P3
+OWASP Top 10,OWASP Top 10,,Desenvolvimento,Lista de consenso das dez vulnerabilidades mais críticas em aplicações web.,"Broken Access Control, Injection, SSRF.",Y2P4
+PTES,Penetration Testing Execution Standard,PTES,Ameaças e Ataques,"Metodologia padrão de pentest em fases, do pré-engajamento ao relatório.",Modelagem de ameaça antes de explorar.,Y2P4
+Proxy de interceptação,Intercepting proxy,,Ameaças e Ataques,Ferramenta entre o navegador e o servidor para ler e modificar requisições web.,Burp Suite interceptando o tráfego.,Y2P4
+Burp Suite,Burp Suite,,Ameaças e Ataques,"Plataforma de teste de segurança web com proxy, repeater, intruder e scanner.",Repetir e fuzzar requisições num alvo autorizado.,Y2P4
+gobuster,gobuster,,Ameaças e Ataques,"Ferramenta de brute force de diretórios, arquivos e subdomínios.",gobuster dir -u site -w wordlist,Y2P4
+FFUF,Fuzz Faster U Fool,FFUF,Ameaças e Ataques,Fuzzer web rápido para descobrir caminhos e parâmetros.,ffuf -u site/FUZZ -w wordlist,Y2P4
+Web fuzzing,Web fuzzing,,Ameaças e Ataques,Enviar muitas entradas automatizadas a parâmetros web para encontrar falhas.,Fuzzing de parâmetros com Burp Intruder.,Y2P4
+Quebra de controle de acesso,Broken Access Control,,Ameaças e Ataques,Falha que permite acessar recursos ou ações além do autorizado.,Trocar o ID na URL e ver dados de outro usuário (IDOR).,Y2P4
+Injeção de comando,Command injection,,Ameaças e Ataques,Executar comandos do SO por meio de entrada não tratada passada a um shell.,Mitigado evitando shell e usando APIs seguras.,Y2P4
+Directory traversal,Directory traversal,,Ameaças e Ataques,Usar sequências como ../ para acessar arquivos fora do diretório previsto.,Ler /etc/passwd por um parâmetro de caminho.,Y2P4
+Inclusão de arquivo local/remoto,Local/Remote File Inclusion,LFI/RFI,Ameaças e Ataques,Incluir e executar arquivos locais (LFI) ou remotos (RFI) por entrada não validada.,Mitigado com allowlist de arquivos.,Y2P4
+Injeção de SQL,SQL Injection,SQLi,Ameaças e Ataques,Injetar SQL por entrada não tratada para ler ou alterar o banco.,' OR 1=1 -- ; corrige-se com prepared statements.,Y2P4
+Blind SQL Injection,Blind SQL Injection,,Ameaças e Ataques,SQLi em que o resultado não aparece; infere-se pela resposta (booleano) ou tempo.,Time-based: atraso proposital na resposta.,Y2P4
+sqlmap,sqlmap,,Ameaças e Ataques,Ferramenta que automatiza a detecção e exploração de SQL Injection.,Usar só em aplicação própria/autorizada.,Y2P4
+Cross-Site Scripting,Cross-Site Scripting,XSS,Ameaças e Ataques,Injetar script que executa no navegador de outra vítima.,Mitigado com output encoding e CSP.,Y2P4
+Política de segurança de conteúdo,Content Security Policy,CSP,Desenvolvimento,Cabeçalho que restringe de onde o navegador pode carregar scripts e recursos.,Reduz o impacto de XSS.,Y2P4
+Cross-Site Request Forgery,Cross-Site Request Forgery,CSRF,Ameaças e Ataques,Fazer o navegador autenticado da vítima executar uma ação indesejada.,Mitigado com token anti-CSRF e cookies SameSite.,Y2P4
+Cookie SameSite,SameSite cookie attribute,,Desenvolvimento,"Atributo que limita o envio de cookies em requisições de outros sites, mitigando CSRF.",Set-Cookie: ...; SameSite=Lax,Y2P4
+XML External Entity,XML External Entity,XXE,Ameaças e Ataques,Abuso de entidades externas em XML para ler arquivos ou fazer SSRF.,Mitigado desabilitando entidades externas no parser.,Y2P4
+Server-Side Request Forgery,Server-Side Request Forgery,SSRF,Ameaças e Ataques,Forçar o servidor a fazer requisições a destinos escolhidos pelo atacante.,Mitigado com allowlist e bloqueio de IPs internos.,Y2P4
+WPScan,WPScan,,Ameaças e Ataques,Scanner de vulnerabilidades específico para WordPress.,Enumerar plugins vulneráveis do próprio site.,Y2P4
+Nuclei,Nuclei,,Ameaças e Ataques,Scanner rápido baseado em templates YAML para detectar vulnerabilidades conhecidas.,nuclei -u site -t cves/,Y2P4
+Searchsploit,Searchsploit,,Ameaças e Ataques,Busca offline no banco de exploits do Exploit-DB.,searchsploit apache 2.4,Y2P4
+Segurança mobile,Mobile security,,IoT e Hardware,Proteção de dispositivos e aplicativos móveis (Android/iOS) e seus dados.,Testar um APK contra o OWASP MASVS.,Y2P4
+Arquitetura do Android,Android platform architecture,,IoT e Hardware,"Camadas do Android: kernel Linux, HAL, ART, bibliotecas nativas, framework Java e system apps.",ART substituiu a antiga Dalvik VM.,Y2P4
+Android Runtime,Android Runtime,ART,IoT e Hardware,"Ambiente de execução dos apps Android, que roda o bytecode (DEX).",Compilação AOT/JIT do app.,Y2P4
+Sandbox de aplicativo,Application sandbox,,IoT e Hardware,"Isolamento de cada app Android com UID próprio, limitando seu acesso.",Um app não lê os dados de outro por padrão.,Y2P4
+Permissões Android,Android permissions,,IoT e Hardware,"Mecanismo que exige autorização para um app acessar recursos sensíveis (câmera, contatos).",Permissão de localização concedida em runtime.,Y2P4
+SEAndroid,Security-Enhanced Android,SEAndroid,IoT e Hardware,Implementação de SELinux no Android que aplica MAC para reforçar o isolamento.,Políticas que confinam processos do sistema.,Y2P4
+Assinatura de APK,APK signing,,IoT e Hardware,Processo que assina o aplicativo (esquemas v1/v2/v3) para garantir integridade e origem.,O SO recusa um APK adulterado.,Y2P4
+ADB,Android Debug Bridge,ADB,IoT e Hardware,Ferramenta de linha de comando para comunicar com dispositivos/emuladores Android.,adb install app.apk ; adb shell,Y2P4
+JADX,JADX,,Forense,Decompilador que converte um APK/DEX de volta para código Java legível.,Analisar estaticamente o código de um app.,Y2P4
+APKTool,APKTool,,Forense,Ferramenta que desmonta e remonta recursos e código smali de um APK.,apktool d app.apk,Y2P4
+AndroidManifest,AndroidManifest.xml,,IoT e Hardware,"Arquivo que declara componentes, permissões e configurações de um app Android.",Revela componentes exportados e flags de debug.,Y2P4
+Componente Android,Android component,,Desenvolvimento,"Blocos de um app: Activity, Service, Content Provider e Broadcast Receiver.",Activity é uma tela; Service roda em segundo plano.,Y2P4
+Intent,Intent,,Desenvolvimento,Objeto de mensagem que aciona componentes ou comunica entre apps no Android.,Intent implícito para abrir um link.,Y2P4
+Componente exportado,Exported component,,Ameaças e Ataques,"Componente acessível por outros apps; se exposto sem proteção, vira vetor de ataque.",Activity exported=true sem permissão.,Y2P4
+Análise estática e dinâmica,Static and dynamic analysis,,Forense,Examinar o código sem executar (estática) e observar o app em execução (dinâmica).,JADX (estática) + ADB/instrumentação (dinâmica).,Y2P4

@@ -99,3 +99,13 @@ O que é um Golden Ticket e a resposta defensiva?,"TGT forjado com o hash do krb
 Como ocorre o movimento lateral e como conter?,"Reuso de credenciais por SMB/WinRM/RDP. Conter com LAPS, segmentação, restrição de logon por tier e monitoramento.",Y2P3,ad lateral
 Que eventos do Windows detectam ataques de AD?,"4768/4769 (tickets Kerberos — roasting), 4624/4625 (logons — spray), 4662 (acesso a objetos — DACL), correlacionados num SIEM.",Y2P3,ad deteccao
 Qual a defesa estrutural mais importante no AD?,Menor privilégio com Tier Model: separar contas de administração por nível para que uma estação comprometida não alcance o DC.,Y2P3,ad defesa
+O que é o OWASP Top 10 e para que serve?,"Lista de consenso das vulnerabilidades web mais críticas. Mapa de prioridade para testar, corrigir e treinar devs.",Y2P4,web owasp
+"Raiz comum de SQLi, command injection, LFI/RFI e XXE?","Entrada não confiável tratada como código/consulta/caminho. Corrige-se separando dados de instruções (parametrização, APIs seguras, allowlist, parser sem entidades).",Y2P4,web injection
+Como corrigir SQL Injection de forma robusta?,"Prepared statements/parametrização (ou ORM), validação e menor privilégio no banco. Concatenar input é o antipadrão.",Y2P4,web sqli
+"SQLi clássico × blind, e como detectar o blind?",Clássico: resultado volta na resposta. Blind: infere-se por comportamento booleano ou tempo (time-based).,Y2P4,web sqli
+O que é XSS e como mitigar?,"Script injetado que roda no navegador da vítima. Output encoding por contexto, CSP e sanitização; nunca confiar só no cliente.",Y2P4,web xss
+O que é CSRF e quais as defesas?,"Forçar o navegador autenticado da vítima a executar uma ação. Token anti-CSRF, cookies SameSite e reautenticação de ações sensíveis.",Y2P4,web csrf
+O que é SSRF e como se defende?,"Fazer o servidor requisitar destinos escolhidos pelo atacante (internos/metadados). Allowlist de destinos, bloquear faixas internas, validar URLs.",Y2P4,web ssrf
+Como sandbox e permissões do Android protegem o usuário?,Cada app roda isolado com UID próprio e só acessa recursos com permissão; o SO valida a assinatura. Limita o alcance de um app malicioso.,Y2P4,mobile android
+Por que o AndroidManifest é central na análise?,"Declara componentes, permissões e flags. Componentes exportados sem proteção, debuggable e allowBackup em produção são achados comuns.",Y2P4,mobile android
+Análise estática × dinâmica de um APK?,"Estática: código/recursos sem executar (JADX, APKTool, manifest). Dinâmica: app em execução (ADB, instrumentação, tráfego). Híbrida combina as duas.",Y2P4,mobile analise

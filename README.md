@@ -20,7 +20,7 @@ and how the topic connects to real SOC / blue-team work.
 | 2 | 1 | Cyber Threat Intelligence e OSINT (Cyber Threat Intelligence & OSINT) | [notes](year-2/phase-1) |
 | 2 | 2 | Resposta a Incidentes e Forense Digital / DFIR (Incident Response & Digital Forensics) | [notes](year-2/phase-2) |
 | 2 | 3 | Pentest e Segurança de Active Directory (Penetration Testing & AD Security) | [notes](year-2/phase-3) |
-| 2 | 4 | _TBD_ | [notes](year-2/phase-4) |
+| 2 | 4 | Segurança de Aplicações Web e Mobile (Web & Mobile Application Security) | [notes](year-2/phase-4) |
 | 2 | 5 | _TBD_ | [notes](year-2/phase-5) |
 | 2 | 6 | _TBD_ | [notes](year-2/phase-6) |
 | 2 | 7 | _TBD_ | [notes](year-2/phase-7) |
