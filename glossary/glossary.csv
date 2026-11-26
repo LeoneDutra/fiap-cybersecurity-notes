@@ -373,3 +373,38 @@ Forense de navegador,Browser forensics,,Forense,"Análise de histórico, cache, 
 Timeline forense,Forensic timeline,,Forense,Reconstrução cronológica dos eventos a partir de múltiplos artefatos.,Supertimeline com o Plaso/log2timeline.,Y2P2
 Relatório forense,Forensic report,,Forense,"Documento claro e reprodutível com método, achados e conclusões da perícia.",Laudo entregue ao final da investigação.,Y2P2
 Snort,Snort,,Redes,"IDS/IPS open source baseado em assinaturas, muito usado em detecção de intrusão.",Regra que alerta sobre um exploit conhecido.,Y2P2
+Reconhecimento,Reconnaissance,Recon,Ameaças e Ataques,Fase de coleta de informações sobre o alvo; passivo (sem tocar o alvo) ou ativo (interagindo).,WHOIS/Shodan (passivo); fingerprint (ativo).,Y2P3
+Fingerprint de tecnologia,Technology fingerprinting,,Ameaças e Ataques,Identificar as tecnologias e versões de um site ou serviço.,Wappalyzer e WhatWeb num site.,Y2P3
+Reverse shell,Reverse shell,,Ameaças e Ataques,"Shell em que a máquina alvo se conecta de volta ao atacante, contornando firewalls de entrada.",Detectável por conexões de saída anômalas.,Y2P3
+Bind shell,Bind shell,,Ameaças e Ataques,Shell em que a máquina alvo abre uma porta e espera o atacante se conectar.,Porta incomum escutando num host.,Y2P3
+Payload,Payload,,Ameaças e Ataques,Código entregue após a exploração; staged (em partes) ou stageless (inteiro).,Detectável por assinatura em EDR/IDS.,Y2P3
+Metasploit,Metasploit Framework,,Ameaças e Ataques,"Framework de exploração com módulos, payloads e pós-exploração.",Muito usado em pentest e em labs.,Y2P3
+LDAP,Lightweight Directory Access Protocol,LDAP,Redes,Protocolo de consulta e manipulação de diretórios como o Active Directory.,ldapsearch para enumerar usuários e grupos.,Y2P3
+Nível funcional,Functional level,,Sistemas,Define os recursos disponíveis num domínio ou floresta conforme a versão mínima dos DCs.,Nível funcional Windows Server 2016.,Y2P3
+Autenticação Kerberos,Kerberos authentication,,Criptografia,Protocolo de autenticação do AD baseado em tickets (TGT e TGS) emitidos pelo KDC.,Pedido de TGT no logon (evento 4768).,Y2P3
+Enumeração de AD,Active Directory enumeration,,Ameaças e Ataques,"Mapeamento de usuários, grupos, computadores, GPOs e relações de confiança do domínio.",Enumeração massiva de LDAP é detectável.,Y2P3
+NetExec,NetExec (nxc),,Ameaças e Ataques,Ferramenta de pós-exploração e enumeração de redes Windows/AD (sucessora do CrackMapExec).,Listar shares e validar credenciais em lab.,Y2P3
+BloodHound,BloodHound,,Ameaças e Ataques,Ferramenta que mapeia caminhos de ataque no AD em um grafo (quem chega a Domain Admin).,Usada por atacante e por defensor para cortar caminhos.,Y2P3
+Envenenamento de LLMNR/NBT-NS,LLMNR/NBT-NS poisoning,,Ameaças e Ataques,Abuso de protocolos legados de resolução de nomes na LAN para capturar hashes de autenticação.,Mitigado desabilitando LLMNR e NBT-NS por GPO.,Y2P3
+NTLM relay,NTLM relay,,Ameaças e Ataques,"Retransmitir uma autenticação NTLM capturada para outro serviço, assumindo a identidade da vítima.",Mitigado com SMB/LDAP signing.,Y2P3
+Assinatura SMB/LDAP,SMB/LDAP signing,,Sistemas,Controle que assina mensagens para impedir adulteração e ataques de relay.,Exigir SMB signing por GPO.,Y2P3
+Pass-the-hash,Pass-the-hash,PtH,Ameaças e Ataques,"Autenticar usando o hash NTLM da senha, sem conhecer a senha em claro.","Reduzido com LAPS, Credential Guard e menor privilégio.",Y2P3
+AS-REP roasting,AS-REP roasting,,Ameaças e Ataques,Abuso de contas sem pré-autenticação Kerberos para obter dados e quebrar a senha offline.,Mitigado exigindo pré-autenticação.,Y2P3
+Kerberoasting,Kerberoasting,,Ameaças e Ataques,Pedir tickets de serviço (SPN) e quebrar offline a senha da conta de serviço.,Mitigado com senhas longas/gMSA e alerta em 4769.,Y2P3
+Nome principal de serviço,Service Principal Name,SPN,Sistemas,"Identificador de um serviço no Kerberos, associado a uma conta; alvo do Kerberoasting.",MSSQLSvc/host.dominio:1433,Y2P3
+Password spray,Password spraying,,Ameaças e Ataques,Testar uma senha comum contra muitas contas para evitar bloqueio por tentativas.,"Mitigado com MFA, política forte e alerta em muitos 4625.",Y2P3
+Lista de controle de acesso discricionária,Discretionary Access Control List,DACL,Sistemas,Define quais princípios têm quais permissões sobre um objeto do AD.,ACLs mal configuradas viram caminho de escalonamento.,Y2P3
+Movimento lateral,Lateral movement,,Ameaças e Ataques,Reusar credenciais para pular de uma máquina a outra dentro da rede.,"Via SMB, WinRM ou RDP.",Y2P3
+WinRM,Windows Remote Management,WinRM,Sistemas,"Serviço de administração remota do Windows, usado também para movimento lateral.",Evil-WinRM em pentest de AD.,Y2P3
+Credential dumping,Credential dumping,,Ameaças e Ataques,"Extrair hashes, senhas ou tickets da memória (LSASS) ou do disco.",Mitigado com Credential Guard e LSASS protegido.,Y2P3
+Mimikatz,Mimikatz,,Ameaças e Ataques,Ferramenta que extrai credenciais e manipula tickets Kerberos no Windows.,Dump de credenciais do LSASS em lab.,Y2P3
+LSASS,Local Security Authority Subsystem Service,LSASS,Sistemas,Processo do Windows que guarda credenciais em memória; alvo de credential dumping.,Proteger com RunAsPPL/Credential Guard.,Y2P3
+Rubeus,Rubeus,,Ameaças e Ataques,"Ferramenta para abuso de Kerberos (roasting, tickets) no Windows.",Usada em labs de AD.,Y2P3
+Persistência de domínio,Domain persistence,,Ameaças e Ataques,"Manter acesso ao domínio mesmo após a resposta inicial, forjando credenciais ou tickets.",Golden Ticket com o hash do krbtgt.,Y2P3
+Golden Ticket,Golden Ticket,,Ameaças e Ataques,"Ticket Kerberos (TGT) forjado com o hash da conta krbtgt, dando acesso quase irrestrito.",Mitigado rotacionando o krbtgt duas vezes.,Y2P3
+Silver Ticket,Silver Ticket,,Ameaças e Ataques,"Ticket de serviço (TGS) forjado para um serviço específico, mais furtivo que o Golden.",Acesso forjado a um único serviço.,Y2P3
+krbtgt,krbtgt account,krbtgt,Sistemas,Conta do AD cuja chave assina todos os tickets Kerberos; seu comprometimento permite o Golden Ticket.,Rotacionar a senha do krbtgt periodicamente.,Y2P3
+LAPS,Local Administrator Password Solution,LAPS,Sistemas,Solução que define senha única e rotacionada para o administrador local de cada máquina.,Impede pass-the-hash reutilizar a senha local.,Y2P3
+gMSA,Group Managed Service Account,gMSA,Sistemas,Conta de serviço com senha longa gerida e rotacionada automaticamente pelo AD.,Mitiga Kerberoasting em contas de serviço.,Y2P3
+Tier Model,Administrative Tier Model,,GRC,"Modelo que separa contas administrativas por nível (DC, servidores, estações) para conter comprometimento.",Admin de estação não loga no DC.,Y2P3
+Credential Guard,Windows Credential Guard,,Sistemas,"Recurso do Windows que isola credenciais em ambiente virtualizado, dificultando o dumping.",Protege os segredos do LSASS.,Y2P3

@@ -89,3 +89,13 @@ O que a forense de memória revela que o disco não mostra?,"Processos ocultos, 
 O que é a metodologia OSCAR?,"Forense de rede: Obtain, Strategize, Collect, Analyze, Report.",Y2P2,forense rede
 Como um SIEM ajuda numa investigação?,"Centraliza e correlaciona logs de várias fontes no tempo, reconstruindo o ataque e achando o relevante no volume.",Y2P2,siem dfir
 Três artefatos do Windows e o que revelam?,"Registro (programas/USB), logs .evtx (logons/serviços), histórico de navegador (sites/downloads). E-mail: origem/trânsito pelos cabeçalhos.",Y2P2,forense windows
+Fases de um pentest e como a defesa espelha cada uma?,"Recon, enumeração, exploração, pós-exploração, relatório. Defesa: reduzir exposição, detectar enumeração, bloquear exploração, conter movimento lateral, aprender com o relatório.",Y2P3,pentest
+Por que o NTLM é fraco e qual a mitigação?,"Usa o hash da senha em challenge-response (pass-the-hash, relay). Reduzir/desabilitar NTLM, exigir SMB/LDAP signing, usar Kerberos.",Y2P3,ad ntlm
+O que é LLMNR/NBT-NS poisoning e como mitigar?,"Protocolos legados que respondem a qualquer host da LAN, capturando hashes. Desabilitar LLMNR e NBT-NS por GPO.",Y2P3,ad ataques
+AS-REP roasting × Kerberoasting?,AS-REP: contas sem pré-autenticação. Kerberoasting: tickets de serviço (SPN) quebrados offline. Mitigar com pré-auth e senhas fortes/gMSA.,Y2P3,ad kerberos
+O que o BloodHound revela e como o defensor usa?,Grafo de caminhos de privilégio até Domain Admin. O defensor corta caminhos de escalonamento e DACLs perigosas.,Y2P3,ad bloodhound
+O que é pass-the-hash e como reduzir?,"Autenticar com o hash NTLM sem a senha. Menor privilégio, LAPS, Credential Guard e segmentação por tier.",Y2P3,ad credenciais
+O que é um Golden Ticket e a resposta defensiva?,"TGT forjado com o hash do krbtgt, acesso quase irrestrito. Rotacionar o krbtgt 2x, Tier Model, detectar tickets anômalos.",Y2P3,ad persistencia
+Como ocorre o movimento lateral e como conter?,"Reuso de credenciais por SMB/WinRM/RDP. Conter com LAPS, segmentação, restrição de logon por tier e monitoramento.",Y2P3,ad lateral
+Que eventos do Windows detectam ataques de AD?,"4768/4769 (tickets Kerberos — roasting), 4624/4625 (logons — spray), 4662 (acesso a objetos — DACL), correlacionados num SIEM.",Y2P3,ad deteccao
+Qual a defesa estrutural mais importante no AD?,Menor privilégio com Tier Model: separar contas de administração por nível para que uma estação comprometida não alcance o DC.,Y2P3,ad defesa
