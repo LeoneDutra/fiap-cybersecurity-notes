@@ -18,7 +18,7 @@ and how the topic connects to real SOC / blue-team work.
 | 1 | 6 | Criptografia, Análise de Tráfego e Ataques TCP/IP (Cryptography, Traffic Analysis & TCP/IP Attacks) | [notes](year-1/phase-6) |
 | 1 | 7 | Segurança de IoT, Firmware e Hardware (IoT, Firmware & Hardware Security) | [notes](year-1/phase-7) |
 | 2 | 1 | Cyber Threat Intelligence e OSINT (Cyber Threat Intelligence & OSINT) | [notes](year-2/phase-1) |
-| 2 | 2 | _TBD_ | [notes](year-2/phase-2) |
+| 2 | 2 | Resposta a Incidentes e Forense Digital / DFIR (Incident Response & Digital Forensics) | [notes](year-2/phase-2) |
 | 2 | 3 | _TBD_ | [notes](year-2/phase-3) |
 | 2 | 4 | _TBD_ | [notes](year-2/phase-4) |
 | 2 | 5 | _TBD_ | [notes](year-2/phase-5) |

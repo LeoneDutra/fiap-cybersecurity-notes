@@ -79,3 +79,13 @@ Privacidade é o mesmo que anonimato? VPN garante anonimato?,"Não. Privacidade 
 Etapas do ciclo de vida do OSINT?,Requisitos (PIR) → coleta → processamento → análise → produção → disseminação → feedback/melhoria.,Y2P1,osint ciclo
 O que é um sock puppet e por que verificar perfis?,Persona falsa e isolada para investigar sem expor a identidade real. A verificação (due diligence) distingue perfis reais de fabricados.,Y2P1,osint perfis
 "Cuidados com automação de coleta (Maltego, Recon-ng, theHarvester)?","Validar dados (falsos positivos), respeitar termos de uso e a lei, controlar ruído/rate limit e manter o humano no circuito para interpretar.",Y2P1,osint automacao
+Fases do ciclo de resposta a incidentes (PICERL/NIST)?,"Preparação, Identificação, Contenção, Erradicação, Recuperação e Lições Aprendidas.",Y2P2,dfir ir
+Por que conter vem antes de erradicar?,Para parar a propagação e preservar evidência antes de limpar; erradicar sem conter espalha o problema e destrói rastros.,Y2P2,dfir ir
+O que é a ordem da volatilidade e por que importa?,"Coletar do mais volátil (RAM/conexões) ao mais estável (disco). Reiniciar apaga a memória, muitas vezes a evidência mais rica.",Y2P2,forense
+O que é cadeia de custódia e por que é essencial?,"Registro de quem coletou/manuseou/guardou cada evidência, quando e como. Sem ela, a evidência pode ser contestada e perder valor legal.",Y2P2,forense
+Por que trabalhar sobre cópia e com hash?,"Preserva o original (write blocker) e prova, pelo hash na coleta e revalidado, que a cópia não foi alterada.",Y2P2,forense
+In-vivo × post-mortem?,"In-vivo: sistema ligado (RAM, processos, conexões), capta o que só existe em execução. Post-mortem: imagem de disco desligada, com calma, sem a memória.",Y2P2,forense
+O que a forense de memória revela que o disco não mostra?,"Processos ocultos, injeção de código, malware fileless, chaves de criptografia e conexões de C2 ativas.",Y2P2,forense memoria
+O que é a metodologia OSCAR?,"Forense de rede: Obtain, Strategize, Collect, Analyze, Report.",Y2P2,forense rede
+Como um SIEM ajuda numa investigação?,"Centraliza e correlaciona logs de várias fontes no tempo, reconstruindo o ataque e achando o relevante no volume.",Y2P2,siem dfir
+Três artefatos do Windows e o que revelam?,"Registro (programas/USB), logs .evtx (logons/serviços), histórico de navegador (sites/downloads). E-mail: origem/trânsito pelos cabeçalhos.",Y2P2,forense windows

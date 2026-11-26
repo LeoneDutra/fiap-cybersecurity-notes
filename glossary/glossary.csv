@@ -339,3 +339,37 @@ Link analysis,Link analysis,,Threat Intel,Técnica de visualizar e analisar rela
 Proxy,Proxy,,Redes,"Intermediário que repassa requisições, mudando o IP visto pelo destino.",Proxy web para ocultar a origem.,Y2P1
 Anonimato,Anonymity,,Threat Intel,"Ocultar quem é o autor de uma ação (diferente de privacidade, que oculta o conteúdo).",Tor foca anonimato de identidade.,Y2P1
 Fingerprinting,Device/browser fingerprinting,,Ameaças e Ataques,"Identificar um usuário por características do dispositivo e navegador, mesmo sem cookies.","Resolução, fontes e user-agent combinados.",Y2P1
+Incidente de segurança,Security incident,,Resposta a Incidentes,"Evento que compromete (ou ameaça) a confidencialidade, integridade ou disponibilidade de ativos.","Vazamento de dados, infecção por ransomware.",Y2P2
+Ciclo de resposta a incidentes,Incident response lifecycle,PICERL,Resposta a Incidentes,"Fases da resposta: Preparação, Identificação, Contenção, Erradicação, Recuperação e Lições Aprendidas.",Isolar o host (contenção) antes de limpar.,Y2P2
+NIST SP 800-61,NIST SP 800-61,,Resposta a Incidentes,Guia do NIST para tratamento de incidentes de segurança computacional.,Base de muitos planos de resposta.,Y2P2
+Contenção,Containment,,Resposta a Incidentes,"Ação de impedir a propagação do incidente, isolando sistemas afetados.",Desconectar a máquina comprometida da rede.,Y2P2
+Erradicação,Eradication,,Resposta a Incidentes,"Remoção da causa do incidente (malware, conta comprometida, vulnerabilidade).",Remover o backdoor e aplicar o patch.,Y2P2
+Lições aprendidas,Lessons learned,,Resposta a Incidentes,Revisão pós-incidente para melhorar processos e evitar recorrência.,Reunião e relatório após fechar o caso.,Y2P2
+Playbook,Playbook,,Resposta a Incidentes,Procedimento padronizado passo a passo para responder a um tipo de incidente.,Playbook de resposta a phishing.,Y2P2
+Gerenciamento de eventos e informações de segurança,Security Information and Event Management,SIEM,Resposta a Incidentes,"Plataforma que centraliza, correlaciona e alerta sobre logs de várias fontes.","Splunk, Elastic, Wazuh, QRadar.",Y2P2
+Splunk,Splunk,,Resposta a Incidentes,SIEM e plataforma de análise de logs que usa a linguagem de busca SPL.,index=firewall action=blocked | stats count,Y2P2
+Correlação de eventos,Event correlation,,Resposta a Incidentes,Relacionar logs de fontes diferentes no tempo para reconstruir um ataque.,Ligar um login suspeito a uma conexão de C2.,Y2P2
+Perícia digital,Digital forensics,,Forense,"Coleta, preservação e análise de evidências digitais de forma cientificamente defensável.",Investigar um disco após um incidente.,Y2P2
+Cadeia de custódia,Chain of custody,,Forense,"Registro documentado de quem coletou, manuseou e guardou cada evidência, quando e como.",Formulário assinado a cada transferência da mídia.,Y2P2
+Ordem da volatilidade,Order of volatility,,Forense,Prioridade de coleta: do dado mais volátil (RAM) ao mais estável (disco/backup).,Coletar memória antes de desligar a máquina.,Y2P2
+Write blocker,Write blocker,,Forense,Dispositivo/software que impede qualquer escrita na mídia original durante a coleta.,Bloqueador de escrita ao imagear um HD.,Y2P2
+Imagem forense,Forensic image,,Forense,"Cópia bit a bit de uma mídia, com hash de integridade, usada para análise.",Imagem E01 de um disco criada no Guymager.,Y2P2
+FTK Imager,FTK Imager,,Forense,"Ferramenta para criar imagens forenses e visualizar evidências, calculando hashes.",Imagear um disco e a memória RAM.,Y2P2
+Guymager,Guymager,,Forense,Ferramenta Linux de aquisição de imagens forenses (dd/E01) com verificação de hash.,Clonar um HD para análise.,Y2P2
+Autopsy,Autopsy / The Sleuth Kit,,Forense,"Plataforma forense para analisar imagens de disco: timeline, carving e sistema de arquivos.",Reconstruir arquivos apagados de uma imagem.,Y2P2
+Forense de rede,Network forensics,,Forense,Captura e análise de tráfego de rede para investigar incidentes.,Reconstruir uma exfiltração a partir de um PCAP.,Y2P2
+Metodologia OSCAR,OSCAR methodology,OSCAR,Forense,"Método de forense de rede: Obtain, Strategize, Collect, Analyze, Report.",Planejar antes de coletar o tráfego.,Y2P2
+NetworkMiner,NetworkMiner,,Forense,"Ferramenta que extrai arquivos, credenciais e sessões de um PCAP de forma passiva.",Recuperar arquivos transferidos num ataque.,Y2P2
+Análise in-vivo,Live analysis (in-vivo),,Forense,"Coleta de evidências com o sistema ligado, capturando dados voláteis.",Capturar a RAM e as conexões de uma máquina ativa.,Y2P2
+Evidência volátil,Volatile evidence,,Forense,"Dado que se perde ao desligar o sistema (memória, processos, conexões, cache).",Chaves de criptografia na RAM.,Y2P2
+Perícia forense de memória,Memory forensics,,Forense,"Análise de um dump da memória RAM para encontrar processos, injeções e malware.",Volatility mostrando um processo oculto.,Y2P2
+Volatility,Volatility Framework,,Forense,Framework open source de análise forense de memória RAM.,vol -f mem.raw windows.pslist,Y2P2
+Malware sem arquivo,Fileless malware,,Ameaças e Ataques,"Código malicioso que vive na memória sem gravar arquivo no disco, dificultando a detecção.",Script em PowerShell que roda só na RAM.,Y2P2
+Análise post-mortem,Post-mortem analysis,,Forense,"Análise de uma imagem de disco com o sistema desligado, após o incidente.",Examinar o HD imageado de uma máquina.,Y2P2
+Registro do Windows,Windows Registry,,Forense,"Banco hierárquico de configuração do Windows, rico em artefatos forenses.",Chaves de execução e histórico de USB (USBSTOR).,Y2P2
+Log de evento do Windows,Windows Event Log,EVTX,Forense,"Registros de eventos do sistema (.evtx): logons, serviços, erros e segurança.",Evento 4624/4625 de logon.,Y2P2
+Forense de e-mail,Email forensics,,Forense,"Análise de cabeçalhos, metadados e conteúdo de e-mails para rastrear origem e autenticidade.",Ler os Received headers para achar o IP de origem.,Y2P2
+Forense de navegador,Browser forensics,,Forense,"Análise de histórico, cache, cookies e downloads do navegador.",Recuperar sites visitados de um caso.,Y2P2
+Timeline forense,Forensic timeline,,Forense,Reconstrução cronológica dos eventos a partir de múltiplos artefatos.,Supertimeline com o Plaso/log2timeline.,Y2P2
+Relatório forense,Forensic report,,Forense,"Documento claro e reprodutível com método, achados e conclusões da perícia.",Laudo entregue ao final da investigação.,Y2P2
+Snort,Snort,,Redes,"IDS/IPS open source baseado em assinaturas, muito usado em detecção de intrusão.",Regra que alerta sobre um exploit conhecido.,Y2P2

@@ -2,7 +2,7 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**340 terms**
+**374 terms**
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [Z](#z) · [Á](#á)
 
@@ -18,6 +18,8 @@
 | **Anonimato** | Anonymity | Threat Intel | Ocultar quem é o autor de uma ação (diferente de privacidade, que oculta o conteúdo). | Y2P1 |
 | **Análise de firmware** | Firmware analysis | Forense | Extrair e examinar o firmware em busca de segredos, serviços e vulnerabilidades. | Y1P7 |
 | **Análise de fluxo (NetFlow)** | Flow analysis | Redes | Analisar metadados de conexões (IPs, portas, bytes) em vez de cada pacote, para escala. | Y1P6 |
+| **Análise in-vivo** | Live analysis (in-vivo) | Forense | Coleta de evidências com o sistema ligado, capturando dados voláteis. | Y2P2 |
+| **Análise post-mortem** | Post-mortem analysis | Forense | Análise de uma imagem de disco com o sistema desligado, após o incidente. | Y2P2 |
 | **Arduino** | Arduino | IoT e Hardware | Plataforma aberta de prototipagem eletrônica com microcontrolador e IDE em C. | Y1P7 |
 | **Arquitetura ARM (ARM)** | ARM architecture | Sistemas | Arquitetura RISC de baixo consumo, dominante em celulares e dispositivos embarcados. | Y1P5 |
 | **Arquitetura x86 (x86)** | x86 architecture | Sistemas | Família de arquiteturas de processador CISC da Intel/AMD, dominante em PCs e servidores. | Y1P5 |
@@ -31,6 +33,7 @@
 | **Autenticação simultânea de iguais (SAE)** | Simultaneous Authentication of Equals | Criptografia | Troca de chaves do WPA3-Personal que substitui o PSK e resiste a ataques de dicionário offline. | Y1P1 |
 | **Autenticação, autorização e auditoria (AAA)** | Authentication, Authorization and Accounting | GRC | Framework que controla quem acessa (autenticação), o que pode fazer (autorização) e registra o que fez (accounting). | Y1P1 |
 | **Autoconfiguração sem estado (SLAAC)** | Stateless Address Autoconfiguration | Redes | Mecanismo IPv6 em que o host gera o próprio endereço a partir do prefixo anunciado pelo roteador. | Y1P1 |
+| **Autopsy** | Autopsy / The Sleuth Kit | Forense | Plataforma forense para analisar imagens de disco: timeline, carving e sistema de arquivos. | Y2P2 |
 | **Avaliação de vulnerabilidades** | Vulnerability assessment | GRC | Varredura (geralmente automatizada) que identifica e lista vulnerabilidades em um escopo. | Y1P4 |
 | **awk** | awk | Sistemas | Linguagem de processamento de texto orientada a colunas/campos. | Y1P2 |
 
@@ -54,10 +57,12 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Cadeia de custódia** | Chain of custody | Forense | Registro documentado de quem coletou, manuseou e guardou cada evidência, quando e como. | Y2P2 |
 | **Censys** | Censys | Threat Intel | Motor de busca de hosts, certificados e serviços expostos, similar ao Shodan. | Y2P1 |
 | **Certificate Transparency (CT)** | Certificate Transparency | Redes | Logs públicos de certificados TLS emitidos, úteis para descobrir subdomínios. | Y2P1 |
 | **Chamada de sistema (syscall)** | System call | Sistemas | Interface pela qual um programa pede um serviço ao kernel. | Y1P5 |
 | **Ciclo de instrução** | Instruction cycle (fetch-decode-execute) | Sistemas | Sequência que a CPU repete: buscar a instrução, decodificá-la e executá-la. | Y1P5 |
+| **Ciclo de resposta a incidentes (PICERL)** | Incident response lifecycle | Resposta a Incidentes | Fases da resposta: Preparação, Identificação, Contenção, Erradicação, Recuperação e Lições Aprendidas. | Y2P2 |
 | **Ciclo de vida do OSINT** | OSINT lifecycle | Threat Intel | Etapas: requisitos (PIR), coleta, processamento, análise, produção, disseminação e feedback. | Y2P1 |
 | **Cifra de César** | Caesar cipher | Criptografia | Cifra de substituição que desloca cada letra um número fixo de posições. | Y1P6 |
 | **Cifra de Vigenère** | Vigenère cipher | Criptografia | Cifra de substituição polialfabética que usa uma palavra-chave para variar o deslocamento. | Y1P6 |
@@ -67,10 +72,12 @@
 | **Comunicação serial (UART)** | Serial communication (UART) | IoT e Hardware | Troca de dados bit a bit por uma interface serial; UART dá console a muitos dispositivos. | Y1P7 |
 | **Condição de corrida (TOCTOU)** | Race condition | Ameaças e Ataques | Falha causada pela ordem/temporização de acessos concorrentes a um recurso compartilhado. | Y1P5 |
 | **Console de gerenciamento de política de grupo (GPMC)** | Group Policy Management Console | Sistemas | Ferramenta para criar, vincular e analisar GPOs. | Y1P3 |
+| **Contenção** | Containment | Resposta a Incidentes | Ação de impedir a propagação do incidente, isolando sistemas afetados. | Y2P2 |
 | **Contrainteligência** | Counterintelligence | Threat Intel | Medidas para detectar e frustrar a coleta de inteligência do adversário sobre você. | Y2P1 |
 | **Controlador de domínio (DC)** | Domain Controller | Sistemas | Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs. | Y1P3 |
 | **Controlador lógico programável (PLC)** | Programmable Logic Controller | IoT e Hardware | Computador industrial robusto que controla máquinas e processos em tempo real. | Y1P7 |
 | **Convenção de chamada** | Calling convention | Desenvolvimento | Regras de como argumentos são passados e quem limpa a pilha (cdecl, stdcall, fastcall). | Y1P5 |
+| **Correlação de eventos** | Event correlation | Resposta a Incidentes | Relacionar logs de fontes diferentes no tempo para reconstruir um ataque. | Y2P2 |
 | **Corrupção de memória** | Memory corruption | Ameaças e Ataques | Classe de bugs em que o programa lê/escreve fora dos limites previstos. | Y1P5 |
 | **Criptografia assimétrica** | Asymmetric cryptography | Criptografia | Esquema com par de chaves: a pública cifra/verifica e a privada decifra/assina. | Y1P6 |
 | **Criptografia simétrica** | Symmetric encryption | Criptografia | Esquema em que a mesma chave cifra e decifra os dados. | Y1P4 |
@@ -121,11 +128,13 @@
 | **Engenharia social** | Social engineering | Ameaças e Ataques | Manipulação psicológica de pessoas para obter informações ou acesso. | Y2P1 |
 | **Envenenamento de ARP** | ARP spoofing / ARP poisoning | Ameaças e Ataques | Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM. | Y1P1 |
 | **Envenenamento de cache ARP** | ARP cache poisoning | Ameaças e Ataques | Enviar respostas ARP falsas para redirecionar o tráfego ao atacante (MitM ou DoS). | Y1P6 |
+| **Erradicação** | Eradication | Resposta a Incidentes | Remoção da causa do incidente (malware, conta comprometida, vulnerabilidade). | Y2P2 |
 | **Escalada de privilégio (PrivEsc)** | Privilege escalation | Ameaças e Ataques | Quando um atacante sai de um acesso limitado para um nível mais alto (ex.: root). | Y1P2 |
 | **Escalonamento** | Scheduling | Sistemas | Decisão do SO sobre qual processo ou thread usa a CPU e por quanto tempo. | Y1P3 |
 | **Esteganografia** | Steganography | Criptografia | Técnica de ocultar a existência de uma mensagem dentro de outro arquivo (imagem, áudio). | Y1P6 |
 | **Esteganálise** | Steganalysis | Forense | Conjunto de técnicas para detectar a presença de dados ocultos por esteganografia. | Y1P6 |
 | **Estrutura** | Struct | Desenvolvimento | Tipo composto de C que agrupa variáveis de tipos diferentes. | Y1P7 |
+| **Evidência volátil** | Volatile evidence | Forense | Dado que se perde ao desligar o sistema (memória, processos, conexões, cache). | Y2P2 |
 | **Executable and Linkable Format (ELF)** | Executable and Linkable Format | Sistemas | Formato de binário do Linux/Unix, com cabeçalho, program headers e section headers. | Y1P5 |
 | **Expressão regular (regex)** | Regular expression | Desenvolvimento | Linguagem de padrões para buscar e extrair texto. | Y1P4 |
 
@@ -145,9 +154,13 @@
 | **Firmware** | Firmware | IoT e Hardware | Software de baixo nível gravado no dispositivo que controla o hardware. | Y1P7 |
 | **Floresta** | Forest | Sistemas | Conjunto de uma ou mais árvores que compartilham schema e relações de confiança; é a fronteira de segurança do AD. | Y1P3 |
 | **Fluxos padrão** | Standard streams (stdin/stdout/stderr) | Sistemas | Canais de entrada (fd 0), saída (fd 1) e erro (fd 2) de um processo. | Y1P2 |
+| **Forense de e-mail** | Email forensics | Forense | Análise de cabeçalhos, metadados e conteúdo de e-mails para rastrear origem e autenticidade. | Y2P2 |
+| **Forense de navegador** | Browser forensics | Forense | Análise de histórico, cache, cookies e downloads do navegador. | Y2P2 |
+| **Forense de rede** | Network forensics | Forense | Captura e análise de tráfego de rede para investigar incidentes. | Y2P2 |
 | **Fork bomb** | Fork bomb | Ameaças e Ataques | Ataque de negação de serviço que cria processos sem parar até esgotar os recursos do sistema. | Y1P5 |
 | **Força bruta** | Brute force | Ameaças e Ataques | Tentativas repetidas de adivinhar senhas até acertar. | Y1P2 |
 | **fstab** | File systems table | Sistemas | Arquivo /etc/fstab que lista o que é montado automaticamente no boot e com quais opções. | Y1P2 |
+| **FTK Imager** | FTK Imager | Forense | Ferramenta para criar imagens forenses e visualizar evidências, calculando hashes. | Y2P2 |
 | **Função** | Function | Desenvolvimento | Bloco de código nomeado e reutilizável que recebe parâmetros e pode retornar um valor. | Y1P4 |
 | **Função de derivação de chave (KDF)** | Key Derivation Function | Criptografia | Função lenta e com salt para transformar senhas em chaves, resistente a força bruta. | Y1P6 |
 | **Funções inseguras de C** | Unsafe C functions | Desenvolvimento | Funções que não checam limites e causam overflow: gets, strcpy, sprintf, scanf. | Y1P5 |
@@ -160,6 +173,7 @@
 | **Gateway IoT** | IoT gateway | IoT e Hardware | Dispositivo que agrega sensores e faz a ponte entre a rede local de IoT e a internet/nuvem. | Y1P7 |
 | **Gerenciador de pacotes** | Package manager | Sistemas | Ferramenta que instala, atualiza e remove software resolvendo dependências. | Y1P2 |
 | **Gerenciador de volumes lógicos (LVM)** | Logical Volume Manager | Sistemas | Camada que agrupa discos (PV) em pools (VG) e cria volumes lógicos (LV) redimensionáveis. | Y1P2 |
+| **Gerenciamento de eventos e informações de segurança (SIEM)** | Security Information and Event Management | Resposta a Incidentes | Plataforma que centraliza, correlaciona e alerta sobre logs de várias fontes. | Y2P2 |
 | **Gestão de patches** | Patch management | GRC | Processo de testar, aprovar e aplicar atualizações de segurança. | Y1P3 |
 | **Gestão de vulnerabilidades** | Vulnerability management | GRC | Programa contínuo para identificar, classificar, priorizar, corrigir e verificar vulnerabilidades. | Y1P4 |
 | **Globbing** | Globbing / pattern matching | Sistemas | Uso de curingas (*, ?, [ ]) pelo shell para casar nomes de arquivos. | Y1P2 |
@@ -169,6 +183,7 @@
 | **GPO forçada** | Enforced GPO | Sistemas | Link de GPO que prevalece sobre conflitos e ignora o bloqueio de herança. | Y1P3 |
 | **grep** | Global regular expression print | Sistemas | Busca linhas que casam com um padrão (texto ou regex). | Y1P2 |
 | **Grupo de segurança** | Security group | Sistemas | Grupo do AD usado para conceder permissões; escopos: global, domínio local e universal. | Y1P3 |
+| **Guymager** | Guymager | Forense | Ferramenta Linux de aquisição de imagens forenses (dd/E01) com verificação de hash. | Y2P2 |
 | **Gêmeo maligno** | Evil twin | Ameaças e Ataques | Ponto de acesso falso com o mesmo SSID de uma rede legítima para atrair vítimas. | Y1P1 |
 
 ## H
@@ -192,6 +207,8 @@
 |---|---|---|---|---|
 | **I2C (I2C)** | Inter-Integrated Circuit | IoT e Hardware | Barramento serial de dois fios para conectar sensores e periféricos ao microcontrolador. | Y1P7 |
 | **ICMP redirect** | ICMP redirect attack | Ameaças e Ataques | Uso de mensagens ICMP redirect forjadas para alterar a rota de um host e desviar o tráfego. | Y1P6 |
+| **Imagem forense** | Forensic image | Forense | Cópia bit a bit de uma mídia, com hash de integridade, usada para análise. | Y2P2 |
+| **Incidente de segurança** | Security incident | Resposta a Incidentes | Evento que compromete (ou ameaça) a confidencialidade, integridade ou disponibilidade de ativos. | Y2P2 |
 | **Indicador de ataque (IoA)** | Indicator of Attack | Threat Intel | Sinal de comportamento ou intenção de ataque em andamento, antes do dano concluído. | Y2P1 |
 | **Indicador de comprometimento (IoC)** | Indicator of Compromise | Threat Intel | Evidência técnica de que um sistema já foi comprometido (hash, IP, domínio, chave de registro). | Y2P1 |
 | **Infraestrutura de chaves públicas (PKI)** | Public Key Infrastructure | Criptografia | Conjunto de autoridades, certificados e políticas que gerencia chaves públicas e identidades. | Y1P6 |
@@ -235,6 +252,8 @@
 | **Lista** | List | Desenvolvimento | Estrutura de dados ordenada e mutável do Python. | Y1P4 |
 | **Lista de controle de acesso (ACL)** | Access Control List | Redes | Lista ordenada de regras permit/deny aplicada a uma interface para filtrar tráfego; termina com um deny implícito. | Y1P1 |
 | **Little-endian** | Little-endian | Sistemas | Ordem de bytes em que o byte menos significativo é armazenado primeiro; padrão no x86. | Y1P5 |
+| **Lições aprendidas** | Lessons learned | Resposta a Incidentes | Revisão pós-incidente para melhorar processos e evitar recorrência. | Y2P2 |
+| **Log de evento do Windows (EVTX)** | Windows Event Log | Forense | Registros de eventos do sistema (.evtx): logons, serviços, erros e segurança. | Y2P2 |
 | **LSDOU (LSDOU)** | Local, Site, Domain, OU | Sistemas | Ordem de processamento das GPOs; a mais próxima do objeto vence em conflito. | Y1P3 |
 
 ## M
@@ -242,9 +261,11 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Maltego** | Maltego | Threat Intel | Ferramenta de análise de links e OSINT que monta grafos de relações entre entidades. | Y2P1 |
+| **Malware sem arquivo** | Fileless malware | Ameaças e Ataques | Código malicioso que vive na memória sem gravar arquivo no disco, dificultando a detecção. | Y2P2 |
 | **MD5 (MD5)** | Message Digest 5 | Criptografia | Função de hash de 128 bits, hoje insegura por sofrer colisões. | Y1P6 |
 | **Memória virtual** | Virtual memory | Sistemas | Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco. | Y1P3 |
 | **Metasploitable2** | Metasploitable2 | Ameaças e Ataques | Máquina virtual Linux propositalmente vulnerável, usada para treino de pentest em laboratório. | Y1P6 |
+| **Metodologia OSCAR (OSCAR)** | OSCAR methodology | Forense | Método de forense de rede: Obtain, Strategize, Collect, Analyze, Report. | Y2P2 |
 | **Microcontrolador (MCU)** | Microcontroller | IoT e Hardware | Chip que integra CPU, memória e periféricos para controlar um dispositivo. | Y1P7 |
 | **Mirai** | Mirai botnet | Ameaças e Ataques | Botnet de IoT que infectou dispositivos usando credenciais de fábrica e lançou grandes DDoS. | Y1P7 |
 | **MISP (MISP)** | Malware Information Sharing Platform | Threat Intel | Plataforma aberta para armazenar, correlacionar e compartilhar IoCs e informações de ameaças entre organizações. | Y2P1 |
@@ -264,7 +285,9 @@
 |---|---|---|---|---|
 | **Negação de serviço (DoS / DDoS)** | Denial of Service | Ameaças e Ataques | Ataque que esgota recursos de um serviço ou rede para torná-lo indisponível; DDoS usa muitas origens ao mesmo tempo. | Y1P1 |
 | **Nessus** | Nessus | GRC | Scanner de vulnerabilidades comercial da Tenable; a versão Essentials é gratuita e limitada. | Y1P4 |
+| **NetworkMiner** | NetworkMiner | Forense | Ferramenta que extrai arquivos, credenciais e sessões de um PCAP de forma passiva. | Y2P2 |
 | **NFC (NFC)** | Near Field Communication | IoT e Hardware | Comunicação de rádio de curtíssimo alcance, derivada do RFID. | Y1P7 |
+| **NIST SP 800-61** | NIST SP 800-61 | Resposta a Incidentes | Guia do NIST para tratamento de incidentes de segurança computacional. | Y2P2 |
 | **NTLM (NTLM)** | NT LAN Manager | Criptografia | Esquema de hash/autenticação de senhas do Windows, alvo de ataques como pass-the-hash. | Y1P6 |
 | **Não repúdio** | Non-repudiation | GRC | Garantia de que o autor de uma ação não consegue negar depois que a realizou. | Y1P1 |
 
@@ -275,6 +298,7 @@
 | **Objeto de política de grupo (GPO)** | Group Policy Object | Sistemas | Conjunto de configurações aplicadas a usuários e computadores do domínio via AD. | Y1P3 |
 | **OpenVAS (OpenVAS / GVM)** | Open Vulnerability Assessment Scanner | GRC | Scanner de vulnerabilidades open source do Greenbone Vulnerability Management. | Y1P4 |
 | **OpenVPN** | OpenVPN | Redes | VPN de código aberto baseada em SSL/TLS, flexível e muito usada em acesso remoto. | Y1P1 |
+| **Ordem da volatilidade** | Order of volatility | Forense | Prioridade de coleta: do dado mais volátil (RAM) ao mais estável (disco/backup). | Y2P2 |
 | **OWASP IoT Top 10** | OWASP IoT Top 10 | GRC | Lista de referência dos dez riscos de segurança mais comuns em dispositivos IoT. | Y1P7 |
 
 ## P
@@ -287,12 +311,15 @@
 | **PAP / CHAP / MS-CHAPv2 (PAP / CHAP)** | Password / Challenge-Handshake Authentication Protocol | Redes | Protocolos de autenticação de acesso remoto: PAP envia senha em texto claro; CHAP e MS-CHAPv2 usam desafio-resposta. | Y1P3 |
 | **Parâmetros posicionais** | Positional parameters | Desenvolvimento | Argumentos passados ao script, acessados como $1, $2…, $# (quantidade) e $@ (todos). | Y1P4 |
 | **Permissões de arquivo** | File permissions (rwx) | Sistemas | Controle de leitura, escrita e execução para dono, grupo e outros, em notação simbólica ou octal. | Y1P2 |
+| **Perícia digital** | Digital forensics | Forense | Coleta, preservação e análise de evidências digitais de forma cientificamente defensável. | Y2P2 |
+| **Perícia forense de memória** | Memory forensics | Forense | Análise de um dump da memória RAM para encontrar processos, injeções e malware. | Y2P2 |
 | **Pilha** | Stack | Sistemas | Região de memória LIFO para variáveis locais e endereços de retorno; cresce para endereços menores. | Y1P5 |
 | **Pilha dupla** | Dual-stack | Redes | Método de transição em que equipamentos rodam IPv4 e IPv6 ao mesmo tempo. | Y1P1 |
 | **Pilha TCP/IP (TCP/IP)** | TCP/IP stack | Redes | Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação. | Y1P1 |
 | **Pipe** | Pipe | Sistemas | Operador | que envia a saída de um comando como entrada do próximo. | Y1P2 |
 | **Pipelining** | Pipelining | Sistemas | Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU. | Y1P5 |
 | **Pivotagem** | Pivoting (OSINT) | Threat Intel | Usar um dado encontrado para descobrir outros relacionados, expandindo a investigação. | Y2P1 |
+| **Playbook** | Playbook | Resposta a Incidentes | Procedimento padronizado passo a passo para responder a um tipo de incidente. | Y2P2 |
 | **Ponteiro** | Pointer | Desenvolvimento | Variável que armazena o endereço de memória de outro dado. | Y1P7 |
 | **Ponteiro de instrução (EIP / RIP)** | Instruction pointer | Sistemas | Registrador que contém o endereço da próxima instrução a ser executada; controlá-lo é controlar o fluxo. | Y1P5 |
 | **Ponto de acesso não autorizado (Rogue AP)** | Rogue access point | Ameaças e Ataques | AP instalado na rede sem autorização, abrindo uma porta de entrada. | Y1P1 |
@@ -332,7 +359,9 @@
 | **Redirecionamento** | Redirection | Sistemas | Envio de entradas ou saídas para arquivos (>, >>, <, 2>&1). | Y1P2 |
 | **Registrador** | Register | Sistemas | Pequena área de armazenamento dentro da CPU, extremamente rápida, usada no processamento. | Y1P5 |
 | **Registradores de uso geral (GPR)** | General-purpose registers | Sistemas | Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP. | Y1P5 |
+| **Registro do Windows** | Windows Registry | Forense | Banco hierárquico de configuração do Windows, rico em artefatos forenses. | Y2P2 |
 | **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
+| **Relatório forense** | Forensic report | Forense | Documento claro e reprodutível com método, achados e conclusões da perícia. | Y2P2 |
 | **Requisitos prioritários de inteligência (PIR)** | Priority Intelligence Requirements | Threat Intel | Perguntas-chave que direcionam a coleta e a análise de inteligência. | Y2P1 |
 | **Retorno do investimento em segurança (ROSI)** | Return on Security Investment | GRC | Métrica que estima o retorno financeiro de um investimento em segurança (perda evitada × custo). | Y1P6 |
 | **RFID (RFID)** | Radio-Frequency Identification | IoT e Hardware | Identificação por radiofrequência usando etiquetas (passivas, semipassivas ou ativas) e leitores. | Y1P7 |
@@ -379,10 +408,12 @@
 | **Sistema de prevenção de intrusão (IPS)** | Intrusion Prevention System | Resposta a Incidentes | Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso. | Y1P1 |
 | **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
 | **Sniffing** | Sniffing | Ameaças e Ataques | Captura passiva do tráfego de rede para ler dados, especialmente os em texto claro. | Y1P6 |
+| **Snort** | Snort | Redes | IDS/IPS open source baseado em assinaturas, muito usado em detecção de intrusão. | Y2P2 |
 | **Sock puppet** | Sock puppet | Threat Intel | Persona falsa, isolada e consistente, usada para investigar sem expor a identidade real. | Y2P1 |
 | **Socket** | Socket | Redes | Ponto final de comunicação em rede (IP + porta + protocolo) usado pelos programas para trocar dados. | Y1P4 |
 | **SPI (SPI)** | Serial Peripheral Interface | IoT e Hardware | Barramento serial síncrono para comunicação com chips, como memórias flash. | Y1P7 |
 | **SpiderFoot** | SpiderFoot | Threat Intel | Ferramenta automatizada de OSINT que coleta dados de centenas de fontes. | Y2P1 |
+| **Splunk** | Splunk | Resposta a Incidentes | SIEM e plataforma de análise de logs que usa a linguagem de busca SPL. | Y2P2 |
 | **ss** | Socket statistics | Redes | Lista sockets e portas em escuta ou conexões ativas, junto com o processo dono. | Y1P2 |
 | **Stack canary** | Stack canary | Sistemas | Valor secreto colocado antes do endereço de retorno; se for alterado, o programa aborta. | Y1P5 |
 | **Steghide** | Steghide | Criptografia | Ferramenta de esteganografia que embute e extrai dados cifrados em imagens e áudio. | Y1P6 |
@@ -411,6 +442,7 @@
 | **theHarvester** | theHarvester | Threat Intel | Ferramenta que coleta e-mails, nomes, subdomínios e hosts de fontes públicas. | Y2P1 |
 | **Thread** | Thread | Sistemas | Linha de execução dentro de um processo; threads compartilham a memória do processo. | Y1P3 |
 | **Three-way handshake** | Three-way handshake | Redes | Estabelecimento de conexão TCP: SYN → SYN-ACK → ACK. | Y1P4 |
+| **Timeline forense** | Forensic timeline | Forense | Reconstrução cronológica dos eventos a partir de múltiplos artefatos. | Y2P2 |
 | **Tinkercad** | Tinkercad | IoT e Hardware | Simulador online de circuitos e Arduino, usado para prototipar sem hardware físico. | Y1P7 |
 | **Tomada de conta (ATO)** | Account takeover | Ameaças e Ataques | Uso de credenciais legítimas roubadas para controlar a conta de uma vítima. | Y1P1 |
 | **Tor (Tor)** | The Onion Router | Redes | Rede de anonimato que roteia o tráfego por vários nós cifrados; dá acesso à dark web. | Y1P6 |
@@ -435,6 +467,7 @@
 | **Varredura de portas** | Port scan | Ameaças e Ataques | Sondagem de hosts para descobrir quais estão ativos e quais serviços/portas estão abertos; costuma ser o primeiro passo de um ataque. | Y1P1 |
 | **Vetor de ataque** | Attack vector | Ameaças e Ataques | Caminho ou meio usado pelo atacante para chegar ao alvo. | Y1P1 |
 | **vim** | Vi IMproved | Sistemas | Editor de texto do terminal com modos normal, inserção e comando. | Y1P2 |
+| **Volatility** | Volatility Framework | Forense | Framework open source de análise forense de memória RAM. | Y2P2 |
 | **Vulnerabilidade** | Vulnerability | GRC | Fraqueza em sistema, processo ou pessoa que pode ser explorada por uma ameaça. | Y1P4 |
 | **Vulnerabilidades e exposições comuns (CVE)** | Common Vulnerabilities and Exposures | GRC | Catálogo público de vulnerabilidades conhecidas, mantido pelo MITRE, com um ID único para cada uma. | Y1P2 |
 
@@ -451,6 +484,7 @@
 | **WPA2 (WPA2)** | Wi-Fi Protected Access 2 | Criptografia | Padrão de segurança Wi-Fi com AES-CCMP; modos Personal (PSK) e Enterprise (802.1X/RADIUS). | Y1P1 |
 | **WPA3 (WPA3)** | Wi-Fi Protected Access 3 | Criptografia | Sucessor do WPA2 com SAE, forward secrecy e opção de 192 bits no modo Enterprise. | Y1P1 |
 | **WPS (WPS)** | Wi-Fi Protected Setup | Ameaças e Ataques | Recurso de configuração fácil de Wi-Fi com PIN, vulnerável a força bruta. | Y1P7 |
+| **Write blocker** | Write blocker | Forense | Dispositivo/software que impede qualquer escrita na mídia original durante a coleta. | Y2P2 |
 
 ## Z
 
