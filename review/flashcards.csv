@@ -49,3 +49,13 @@ O que o DEP/NX faz e qual a limitação?,"Marca dados (ex.: pilha) como não exe
 Para que serve o ASLR?,"Aleatoriza os endereços de módulos, pilha e heap a cada execução, para o atacante não saber onde está o alvo.",Y1P5,mitigacoes
 O que é um stack canary?,"Valor secreto antes do endereço de retorno; é checado antes do return e, se foi alterado, o programa aborta (detecta overflow).",Y1P5,mitigacoes
 Por que linguagens memory-safe reduzem essa classe de bug?,"Fazem checagem de limites e gerenciam memória (ou posse, como Rust), eliminando por construção a maioria dos overflows/UAF/double free.",Y1P5,memoria desenvolvimento
+"Simétrica × assimétrica, e por que o TLS usa as duas?","Simétrica: uma chave, rápida, mas precisa distribuí-la. Assimétrica: par público/privado, resolve troca de chaves e assinatura, mas é lenta. TLS: assimétrica negocia a chave de sessão, simétrica cifra os dados.",Y1P6,criptografia
+Por que 'hash não é criptografia'?,"Hash é função unidirecional e sem chave: não há como desfazer. Serve para integridade e armazenar senhas, não para proteger algo recuperável.",Y1P6,criptografia hash
+Para que serve o salt e o que ele impede?,Valor aleatório único somado à senha antes do hash; faz senhas iguais terem hashes diferentes e inutiliza rainbow tables.,Y1P6,criptografia hash
+Diferença entre esteganografia e criptografia?,Criptografia embaralha o conteúdo (fica claro que há segredo); esteganografia esconde a existência da mensagem dentro de outro arquivo.,Y1P6,criptografia stego
+Como funciona o ARP cache poisoning e como mitigar?,"O atacante manda respostas ARP falsas associando seu MAC a um IP legítimo (gateway) para MitM/DoS. Mitiga com DAI, DHCP snooping e ARP estático.",Y1P6,redes ataques
+O que é um SYN flood?,"DoS que envia muitos SYN sem completar o handshake, esgotando as conexões meio-abertas. Mitiga com SYN cookies e rate limiting.",Y1P6,redes dos
+Por que uma sessão FTP é perigosa numa rede compartilhada?,"FTP trafega usuário, senha e dados em texto claro; um sniffer lê tudo. Usar SFTP ou FTPS.",Y1P6,redes sniffing
+O que é DPI e como difere da inspeção comum?,"A inspeção comum vê só cabeçalhos (IP/portas); o DPI examina o payload (camada 7), identificando aplicações e assinaturas. Base de IDS/IPS e NGFW.",Y1P6,redes dpi
+"No Wireshark, como isolar o HTTP de um host?","Filtro combinando host e protocolo, ex.: ip.addr == 192.168.1.10 && http, e Follow TCP Stream para remontar a conversa.",Y1P6,forense wireshark
+O que é defesa em profundidade?,"Empilhar várias camadas de controle (rede, host, app, pessoas) para que a falha de uma não comprometa tudo.",Y1P6,principios
