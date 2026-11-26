@@ -25,7 +25,7 @@ A ideia central: **um dispositivo IoT é um computador completo, muitas vezes ma
 | 11 | Exploração binária para embarcados | Diferenças do **ARM** em relação ao x86 (registradores, memória, pilha, sintaxe Assembly). Identificação de **stack‑based buffer overflow** e *crash hunting* em binários embarcados. *(Resumido só em conceitos e defesas.)* |
 | 12 | Hardware hacking | Reconhecimento de placas e componentes, equipamento de teste (multímetro, analisador lógico), e as **interfaces de depuração/comunicação**: **UART**, **JTAG/SWD**, **SPI** e **I2C** — por onde se lê firmware e se obtém console. |
 | 13 | Wi‑Fi hacking | Famílias wireless (WPAN, WMAN, WWAN, **WLAN**), canais e bandas (2,4/5 GHz), padrões **802.11 a/b/g/n/ac**, modo monitor, captura de **handshake** WPA2, riscos do **WPS** e boas práticas de defesa de Wi‑Fi. |
-| 14 | Projeto Formação Social | Case real da ONG **Passos Mágicos** com a FIAP: laboratório de tecnologia para crianças e adolescentes em vulnerabilidade social (ESG/impacto). |
+| 14 | Projeto Formação Social | Case real de projeto social (ONG de educação): laboratório de tecnologia para crianças e adolescentes em vulnerabilidade social (ESG/impacto). |
 
 ## 🔑 Conceitos-chave
 
