@@ -2,14 +2,16 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**108 terms**
+**146 terms**
 
-[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [V](#v) · [W](#w)
+[A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [Z](#z) · [Á](#á)
 
 ## A
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Active Directory (AD)** | Active Directory | Sistemas | Serviço de diretório da Microsoft que centraliza identidades, computadores, grupos e políticas de uma rede. | Y1P3 |
+| **AGDLP (AGDLP)** | Accounts, Global, Domain Local, Permissions | GRC | Boa prática de aninhamento de grupos: conta → grupo global → grupo de domínio local → permissão (AGUDLP com universal). | Y1P3 |
 | **auditd** | Linux Audit daemon | Forense | Serviço que registra eventos de segurança no nível do kernel conforme regras definidas. | Y1P2 |
 | **Autenticação simultânea de iguais (SAE)** | Simultaneous Authentication of Equals | Criptografia | Troca de chaves do WPA3-Personal que substitui o PSK e resiste a ataques de dicionário offline. | Y1P1 |
 | **Autenticação, autorização e auditoria (AAA)** | Authentication, Authorization and Accounting | GRC | Framework que controla quem acessa (autenticação), o que pode fazer (autorização) e registra o que fez (accounting). | Y1P1 |
@@ -21,12 +23,15 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Base64** | Base64 | Criptografia | Codificação (não criptografia) que representa dados binários em texto ASCII. | Y1P2 |
+| **Bloqueio de herança** | Block inheritance | Sistemas | Configuração na OU que impede herdar GPOs de níveis superiores. | Y1P3 |
 
 ## C
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **CIS Benchmark (CIS)** | CIS Benchmark | GRC | Guias de configuração segura publicados pelo Center for Internet Security. | Y1P2 |
+| **Console de gerenciamento de política de grupo (GPMC)** | Group Policy Management Console | Sistemas | Ferramenta para criar, vincular e analisar GPOs. | Y1P3 |
+| **Controlador de domínio (DC)** | Domain Controller | Sistemas | Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs. | Y1P3 |
 | **cron** | cron | Sistemas | Serviço de agendamento de tarefas recorrentes, configurado no crontab. | Y1P2 |
 
 ## D
@@ -34,13 +39,17 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **Daemon** | Daemon | Sistemas | Processo que roda em segundo plano prestando um serviço. | Y1P2 |
+| **Delegação de controle** | Delegation of control | GRC | Concessão de tarefas administrativas específicas sobre uma OU sem dar privilégio total. | Y1P3 |
 | **DHCP Snooping** | DHCP Snooping | Redes | Recurso do switch que só aceita respostas DHCP de portas confiáveis e monta uma tabela de vínculos IP-MAC-porta. | Y1P1 |
 | **Distribuição Linux** | Linux distribution (distro) | Sistemas | Pacote completo formado pelo kernel Linux, ferramentas GNU, gerenciador de pacotes e configurações. | Y1P2 |
+| **Domínio** | Domain | Sistemas | Unidade administrativa e de replicação do AD, identificada por um nome DNS. | Y1P3 |
+| **DORA (DORA)** | Discover, Offer, Request, Acknowledge | Redes | As quatro mensagens da concessão DHCP. | Y1P3 |
 
 ## E
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Encaminhador DNS** | DNS forwarder | Redes | DNS para onde o servidor envia as consultas que não consegue resolver localmente. | Y1P3 |
 | **Encapsulamento** | Encapsulation | Redes | Cada camada acrescenta seu cabeçalho aos dados da camada de cima antes de enviar; o destino faz o processo inverso. | Y1P1 |
 | **Endereço IPv4 (IPv4)** | IPv4 address | Redes | Endereço lógico de 32 bits escrito em 4 octetos decimais. | Y1P1 |
 | **Endereço IPv6 (IPv6)** | IPv6 address | Redes | Endereço de 128 bits em hexadecimal, em 8 grupos separados por dois-pontos. | Y1P1 |
@@ -49,15 +58,19 @@
 | **Endurecimento** | Hardening | GRC | Conjunto de configurações que reduzem a superfície de ataque de um sistema. | Y1P2 |
 | **Envenenamento de ARP** | ARP spoofing / ARP poisoning | Ameaças e Ataques | Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM. | Y1P1 |
 | **Escalada de privilégio (PrivEsc)** | Privilege escalation | Ameaças e Ataques | Quando um atacante sai de um acesso limitado para um nível mais alto (ex.: root). | Y1P2 |
+| **Escalonamento** | Scheduling | Sistemas | Decisão do SO sobre qual processo ou thread usa a CPU e por quanto tempo. | Y1P3 |
 
 ## F
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Failover DHCP** | DHCP failover | Redes | Dois servidores DHCP compartilham escopos para manter a entrega de IPs se um falhar. | Y1P3 |
+| **Filtro WMI (WMI)** | WMI filter | Sistemas | Consulta WMI que limita a aplicação de uma GPO a máquinas que atendam a um critério. | Y1P3 |
 | **Firewall com estado** | Stateful firewall | Redes | Firewall que acompanha o estado das conexões e libera automaticamente o tráfego de retorno. | Y1P1 |
 | **Firewall de aplicação web (WAF)** | Web Application Firewall | Desenvolvimento | Filtra requisições HTTP/HTTPS para proteger aplicações web (SQLi, XSS etc.). | Y1P1 |
 | **Firewall de próxima geração (NGFW)** | Next-Generation Firewall | Redes | Firewall que soma inspeção de aplicação (camada 7), IPS integrado e controle por usuário/aplicação. | Y1P1 |
 | **firewalld** | firewalld | Redes | Firewall dinâmico baseado em zonas, gerenciado pelo firewall-cmd, com regras runtime e permanentes. | Y1P2 |
+| **Floresta** | Forest | Sistemas | Conjunto de uma ou mais árvores que compartilham schema e relações de confiança; é a fronteira de segurança do AD. | Y1P3 |
 | **Fluxos padrão** | Standard streams (stdin/stdout/stderr) | Sistemas | Canais de entrada (fd 0), saída (fd 1) e erro (fd 2) de um processo. | Y1P2 |
 | **Força bruta** | Brute force | Ameaças e Ataques | Tentativas repetidas de adivinhar senhas até acertar. | Y1P2 |
 | **fstab** | File systems table | Sistemas | Arquivo /etc/fstab que lista o que é montado automaticamente no boot e com quais opções. | Y1P2 |
@@ -68,9 +81,12 @@
 |---|---|---|---|---|
 | **Gerenciador de pacotes** | Package manager | Sistemas | Ferramenta que instala, atualiza e remove software resolvendo dependências. | Y1P2 |
 | **Gerenciador de volumes lógicos (LVM)** | Logical Volume Manager | Sistemas | Camada que agrupa discos (PV) em pools (VG) e cria volumes lógicos (LV) redimensionáveis. | Y1P2 |
+| **Gestão de patches** | Patch management | GRC | Processo de testar, aprovar e aplicar atualizações de segurança. | Y1P3 |
 | **Globbing** | Globbing / pattern matching | Sistemas | Uso de curingas (*, ?, [ ]) pelo shell para casar nomes de arquivos. | Y1P2 |
 | **GNU/Linux** | GNU/Linux | Sistemas | Nome que reconhece que o sistema combina o kernel Linux com as ferramentas do projeto GNU. | Y1P2 |
+| **GPO forçada** | Enforced GPO | Sistemas | Link de GPO que prevalece sobre conflitos e ignora o bloqueio de herança. | Y1P3 |
 | **grep** | Global regular expression print | Sistemas | Busca linhas que casam com um padrão (texto ou regex). | Y1P2 |
+| **Grupo de segurança** | Security group | Sistemas | Grupo do AD usado para conceder permissões; escopos: global, domínio local e universal. | Y1P3 |
 | **Gêmeo maligno** | Evil twin | Ameaças e Ataques | Ponto de acesso falso com o mesmo SSID de uma rede legítima para atrair vítimas. | Y1P1 |
 
 ## H
@@ -99,6 +115,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Kerberos** | Kerberos | Criptografia | Protocolo de autenticação baseado em tickets usado pelo AD. | Y1P3 |
 | **Kernel** | Kernel | Sistemas | Núcleo do sistema operacional: gerencia CPU, memória, dispositivos e processos, fazendo a ponte entre hardware e software. | Y1P2 |
 
 ## L
@@ -107,11 +124,13 @@
 |---|---|---|---|---|
 | **LAMP (LAMP)** | Linux, Apache, MySQL, PHP | Desenvolvimento | Stack clássica de servidor web: Linux + Apache + MySQL/MariaDB + PHP. | Y1P2 |
 | **Lista de controle de acesso (ACL)** | Access Control List | Redes | Lista ordenada de regras permit/deny aplicada a uma interface para filtrar tráfego; termina com um deny implícito. | Y1P1 |
+| **LSDOU (LSDOU)** | Local, Site, Domain, OU | Sistemas | Ordem de processamento das GPOs; a mais próxima do objeto vence em conflito. | Y1P3 |
 
 ## M
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Memória virtual** | Virtual memory | Sistemas | Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco. | Y1P3 |
 | **Modelo OSI (OSI)** | OSI reference model | Redes | Modelo de referência da ISO com 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). | Y1P1 |
 | **Máscara curinga** | Wildcard mask | Redes | Máscara usada em ACLs e no OSPF em que 0 = bit deve coincidir e 1 = bit ignorado (o inverso da máscara de sub-rede). | Y1P1 |
 | **Máscara de tamanho variável (VLSM)** | Variable Length Subnet Mask | Redes | Divisão de um bloco em sub-redes de tamanhos diferentes conforme a necessidade de cada uma. | Y1P1 |
@@ -128,12 +147,15 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Objeto de política de grupo (GPO)** | Group Policy Object | Sistemas | Conjunto de configurações aplicadas a usuários e computadores do domínio via AD. | Y1P3 |
 | **OpenVPN** | OpenVPN | Redes | VPN de código aberto baseada em SSL/TLS, flexível e muito usada em acesso remoto. | Y1P1 |
 
 ## P
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Paginação** | Paging | Sistemas | Divisão da memória em páginas de tamanho fixo mapeadas pela tabela de páginas. | Y1P3 |
+| **PAP / CHAP / MS-CHAPv2 (PAP / CHAP)** | Password / Challenge-Handshake Authentication Protocol | Redes | Protocolos de autenticação de acesso remoto: PAP envia senha em texto claro; CHAP e MS-CHAPv2 usam desafio-resposta. | Y1P3 |
 | **Permissões de arquivo** | File permissions (rwx) | Sistemas | Controle de leitura, escrita e execução para dono, grupo e outros, em notação simbólica ou octal. | Y1P2 |
 | **Pilha dupla** | Dual-stack | Redes | Método de transição em que equipamentos rodam IPv4 e IPv6 ao mesmo tempo. | Y1P1 |
 | **Pilha TCP/IP (TCP/IP)** | TCP/IP stack | Redes | Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação. | Y1P1 |
@@ -141,8 +163,11 @@
 | **Ponto de acesso não autorizado (Rogue AP)** | Rogue access point | Ameaças e Ataques | AP instalado na rede sem autorização, abrindo uma porta de entrada. | Y1P1 |
 | **Primeiro o caminho mais curto (OSPF)** | Open Shortest Path First | Redes | IGP de estado de enlace (link-state) que usa o algoritmo de Dijkstra e organiza a rede em áreas (área 0 = backbone). | Y1P1 |
 | **Princípio do menor privilégio (PoLP)** | Principle of least privilege | GRC | Dar a cada usuário ou processo apenas as permissões estritamente necessárias. | Y1P2 |
+| **Processamento de loopback** | Loopback processing | Sistemas | Modo de GPO que aplica configurações de usuário conforme o computador onde ele faz logon. | Y1P3 |
 | **Processo (PID)** | Process (PID) | Sistemas | Programa em execução, identificado por um número (PID). | Y1P2 |
+| **Protocolo de autenticação extensível (EAP)** | Extensible Authentication Protocol | Criptografia | Framework de autenticação que suporta certificados, tokens e PEAP; base do 802.1X. | Y1P3 |
 | **Protocolo de borda (BGP)** | Border Gateway Protocol | Redes | Protocolo de vetor de caminho usado entre sistemas autônomos; é o roteamento da Internet. | Y1P1 |
+| **Protocolo de configuração dinâmica de hosts (DHCP)** | Dynamic Host Configuration Protocol | Redes | Serviço que entrega IP, máscara, gateway e DNS automaticamente aos clientes. | Y1P3 |
 | **Protocolo de transferência de arquivos (FTP)** | File Transfer Protocol | Redes | Protocolo de transferência de arquivos (TCP 21) sem criptografia; FTPS adiciona TLS. | Y1P2 |
 | **Protocolo de transferência de hipertexto (HTTP)** | Hypertext Transfer Protocol | Redes | Protocolo de aplicação da Web, baseado em requisição/resposta (métodos GET, POST etc.). | Y1P1 |
 | **Protocolo Spanning Tree (STP)** | Spanning Tree Protocol | Redes | Protocolo que bloqueia caminhos redundantes entre switches para evitar loops de camada 2. | Y1P1 |
@@ -158,7 +183,9 @@
 | **Rede local virtual (VLAN)** | Virtual LAN | Redes | Segmentação lógica de um switch em domínios de broadcast separados. | Y1P1 |
 | **Rede privada virtual (VPN)** | Virtual Private Network | Redes | Túnel cifrado sobre uma rede pública que liga usuários ou sites como se estivessem na mesma rede. | Y1P1 |
 | **Redirecionamento** | Redirection | Sistemas | Envio de entradas ou saídas para arquivos (>, >>, <, 2>&1). | Y1P2 |
+| **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
 | **Roteamento dinâmico** | Dynamic routing | Redes | Roteadores trocam informações por protocolos e montam as rotas automaticamente. | Y1P1 |
+| **Roteamento e acesso remoto (RRAS)** | Routing and Remote Access Service | Redes | Função do Windows Server que provê VPN, NAT e roteamento. | Y1P3 |
 | **Roteamento estático** | Static routing | Redes | Rotas configuradas manualmente pelo administrador. | Y1P1 |
 | **Roteamento sem classes (CIDR)** | Classless Inter-Domain Routing | Redes | Notação e técnica que define a máscara pelo número de bits de rede (/n), sem depender das classes. | Y1P1 |
 | **rsync** | rsync | Sistemas | Ferramenta de cópia e sincronização incremental, local ou remota (via SSH). | Y1P2 |
@@ -171,7 +198,10 @@
 | **sed** | Stream editor | Sistemas | Editor de fluxo para substituir, apagar ou extrair texto por padrão. | Y1P2 |
 | **Segurança de porta** | Port Security | Redes | Limita quais e quantos MACs podem usar uma porta do switch e define a ação em caso de violação. | Y1P1 |
 | **Server Message Block (SMB)** | Server Message Block | Redes | Protocolo de compartilhamento de arquivos e impressoras (comum no Windows; Samba no Linux). | Y1P2 |
+| **Servidor de políticas de rede (NPS)** | Network Policy Server | Redes | Implementação de RADIUS da Microsoft para autenticar e autorizar VPN, Wi-Fi e 802.1X. | Y1P3 |
 | **Servidor web** | Web server | Desenvolvimento | Software que atende requisições HTTP/HTTPS e entrega páginas ou APIs. | Y1P2 |
+| **Serviços de Domínio do Active Directory (AD DS)** | Active Directory Domain Services | Sistemas | Função do Windows Server que transforma o servidor em controlador de domínio. | Y1P3 |
+| **Serviços de informações da Internet (IIS)** | Internet Information Services | Desenvolvimento | Servidor web da Microsoft. | Y1P3 |
 | **SFTP / SCP (SFTP / SCP)** | SSH File Transfer Protocol / Secure Copy | Redes | Transferência de arquivos cifrada que usa o canal SSH. | Y1P2 |
 | **Shell** | Shell | Sistemas | Interpretador de comandos entre o usuário e o kernel; o Bash é o mais comum no Linux. | Y1P2 |
 | **Shell seguro (SSH)** | Secure Shell | Redes | Protocolo de acesso remoto cifrado (TCP 22), com autenticação por senha ou chave. | Y1P2 |
@@ -182,6 +212,7 @@
 | **Sistema de nomes de domínio (DNS)** | Domain Name System | Redes | Serviço que traduz nomes em endereços IP de forma hierárquica e distribuída. | Y1P1 |
 | **Sistema de pontuação de vulnerabilidades (CVSS)** | Common Vulnerability Scoring System | GRC | Padrão do FIRST que dá uma nota de 0 a 10 à gravidade de uma vulnerabilidade. | Y1P2 |
 | **Sistema de prevenção de intrusão (IPS)** | Intrusion Prevention System | Resposta a Incidentes | Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso. | Y1P1 |
+| **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
 | **ss** | Socket statistics | Redes | Lista sockets e portas em escuta ou conexões ativas, junto com o processo dono. | Y1P2 |
 | **sudo** | Superuser do | Sistemas | Executa um comando com privilégios de outro usuário (normalmente root), com registro em log. | Y1P2 |
 | **SUID (SUID)** | Set User ID | Sistemas | Bit especial que faz um executável rodar com o privilégio do dono do arquivo; alvo comum de escalada de privilégio. | Y1P2 |
@@ -198,10 +229,17 @@
 | **tcpdump** | tcpdump | Redes | Capturador de pacotes em linha de comando; grava PCAPs para análise. | Y1P2 |
 | **Telnet** | Telnet | Redes | Protocolo antigo de acesso remoto (TCP 23) que trafega tudo em texto claro. | Y1P2 |
 | **Texto claro** | Cleartext | Ameaças e Ataques | Dados transmitidos sem criptografia, legíveis por quem capturar o tráfego. | Y1P2 |
+| **Thread** | Thread | Sistemas | Linha de execução dentro de um processo; threads compartilham a memória do processo. | Y1P3 |
 | **Tomada de conta (ATO)** | Account takeover | Ameaças e Ataques | Uso de credenciais legítimas roubadas para controlar a conta de uma vítima. | Y1P1 |
 | **Tradução de endereços de rede (NAT)** | Network Address Translation | Redes | Troca de endereços IP (geralmente privado→público) na borda da rede. | Y1P1 |
 | **Tronco 802.1Q** | 802.1Q trunk | Redes | Link que transporta várias VLANs entre switches, marcando os quadros com a tag da VLAN. | Y1P1 |
 | **Tríade CID (CID / CIA)** | CIA triad | GRC | Os três pilares da segurança da informação: confidencialidade, integridade e disponibilidade. | Y1P1 |
+
+## U
+
+| Termo (PT) | Term (EN) | Categoria | Definição | Fase |
+|---|---|---|---|---|
+| **Unidade organizacional (OU)** | Organizational Unit | Sistemas | Contêiner do AD que organiza objetos e recebe GPOs e delegação de controle. | Y1P3 |
 
 ## V
 
@@ -216,5 +254,20 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Windows Server** | Windows Server | Sistemas | Linha de sistemas operacionais da Microsoft para servidores, com funções como AD, DNS, DHCP, IIS e Hyper-V. | Y1P3 |
+| **Windows Server Update Services (WSUS)** | Windows Server Update Services | Sistemas | Serviço que centraliza aprovação e distribuição de atualizações Microsoft na rede. | Y1P3 |
 | **WPA2 (WPA2)** | Wi-Fi Protected Access 2 | Criptografia | Padrão de segurança Wi-Fi com AES-CCMP; modos Personal (PSK) e Enterprise (802.1X/RADIUS). | Y1P1 |
 | **WPA3 (WPA3)** | Wi-Fi Protected Access 3 | Criptografia | Sucessor do WPA2 com SAE, forward secrecy e opção de 192 bits no modo Enterprise. | Y1P1 |
+
+## Z
+
+| Termo (PT) | Term (EN) | Categoria | Definição | Fase |
+|---|---|---|---|---|
+| **Zona de pesquisa inversa** | Reverse lookup zone | Redes | Zona que resolve IP → nome usando registros PTR. | Y1P3 |
+| **Zona DNS** | DNS zone | Redes | Parte do namespace DNS sob responsabilidade de um servidor; pode ser primária ou secundária (cópia). | Y1P3 |
+
+## Á
+
+| Termo (PT) | Term (EN) | Categoria | Definição | Fase |
+|---|---|---|---|---|
+| **Árvore de domínios** | Domain tree | Sistemas | Conjunto de domínios do AD com namespace DNS contíguo. | Y1P3 |

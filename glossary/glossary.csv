@@ -107,3 +107,41 @@ Módulos de autenticação plugáveis,Pluggable Authentication Modules,PAM,Siste
 firewalld,firewalld,,Redes,"Firewall dinâmico baseado em zonas, gerenciado pelo firewall-cmd, com regras runtime e permanentes.",firewall-cmd --add-service=https --permanent,Y1P2
 auditd,Linux Audit daemon,,Forense,Serviço que registra eventos de segurança no nível do kernel conforme regras definidas.,auditctl -w /etc/shadow -p wa -k shadow,Y1P2
 Força bruta,Brute force,,Ameaças e Ataques,Tentativas repetidas de adivinhar senhas até acertar.,Centenas de 'Failed password' para root no SSH.,Y1P2
+Windows Server,Windows Server,,Sistemas,"Linha de sistemas operacionais da Microsoft para servidores, com funções como AD, DNS, DHCP, IIS e Hyper-V.",Windows Server 2019 como controlador de domínio.,Y1P3
+Active Directory,Active Directory,AD,Sistemas,"Serviço de diretório da Microsoft que centraliza identidades, computadores, grupos e políticas de uma rede.",Todos os usuários da empresa autenticam no AD.,Y1P3
+Serviços de Domínio do Active Directory,Active Directory Domain Services,AD DS,Sistemas,Função do Windows Server que transforma o servidor em controlador de domínio.,Install-WindowsFeature AD-Domain-Services,Y1P3
+Controlador de domínio,Domain Controller,DC,Sistemas,"Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs.",DC01 responde aos logons do domínio empresa.local.,Y1P3
+Domínio,Domain,,Sistemas,"Unidade administrativa e de replicação do AD, identificada por um nome DNS.",empresa.local,Y1P3
+Árvore de domínios,Domain tree,,Sistemas,Conjunto de domínios do AD com namespace DNS contíguo.,empresa.local e rh.empresa.local.,Y1P3
+Floresta,Forest,,Sistemas,Conjunto de uma ou mais árvores que compartilham schema e relações de confiança; é a fronteira de segurança do AD.,Floresta criada com Install-ADDSForest.,Y1P3
+Kerberos,Kerberos,,Criptografia,Protocolo de autenticação baseado em tickets usado pelo AD.,O DC emite um TGT ao usuário no logon.,Y1P3
+Unidade organizacional,Organizational Unit,OU,Sistemas,Contêiner do AD que organiza objetos e recebe GPOs e delegação de controle.,"OU=TI,DC=empresa,DC=local",Y1P3
+Grupo de segurança,Security group,,Sistemas,"Grupo do AD usado para conceder permissões; escopos: global, domínio local e universal.",GG_Financeiro com acesso à pasta de relatórios.,Y1P3
+AGDLP,"Accounts, Global, Domain Local, Permissions",AGDLP,GRC,Boa prática de aninhamento de grupos: conta → grupo global → grupo de domínio local → permissão (AGUDLP com universal).,Usuários em GG_RH; GG_RH em DL_Pasta_RH_Leitura.,Y1P3
+Delegação de controle,Delegation of control,,GRC,Concessão de tarefas administrativas específicas sobre uma OU sem dar privilégio total.,Helpdesk só pode resetar senhas da OU Usuários.,Y1P3
+Protocolo de configuração dinâmica de hosts,Dynamic Host Configuration Protocol,DHCP,Redes,"Serviço que entrega IP, máscara, gateway e DNS automaticamente aos clientes.",Escopo 192.168.1.20–254.,Y1P3
+DORA,"Discover, Offer, Request, Acknowledge",DORA,Redes,As quatro mensagens da concessão DHCP.,Cliente envia Discover em broadcast ao entrar na rede.,Y1P3
+Failover DHCP,DHCP failover,,Redes,Dois servidores DHCP compartilham escopos para manter a entrega de IPs se um falhar.,Modo hot standby ou balanceamento de carga.,Y1P3
+Zona DNS,DNS zone,,Redes,Parte do namespace DNS sob responsabilidade de um servidor; pode ser primária ou secundária (cópia).,Zona empresa.local no DNS do DC.,Y1P3
+Zona de pesquisa inversa,Reverse lookup zone,,Redes,Zona que resolve IP → nome usando registros PTR.,1.168.192.in-addr.arpa,Y1P3
+Registros DNS,DNS resource records,RR,Redes,"Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc.",Registro A: serv-01 → 192.168.1.1.,Y1P3
+Encaminhador DNS,DNS forwarder,,Redes,DNS para onde o servidor envia as consultas que não consegue resolver localmente.,Forwarder para o DNS do provedor.,Y1P3
+PAP / CHAP / MS-CHAPv2,Password / Challenge-Handshake Authentication Protocol,PAP / CHAP,Redes,Protocolos de autenticação de acesso remoto: PAP envia senha em texto claro; CHAP e MS-CHAPv2 usam desafio-resposta.,Desativar PAP no servidor VPN.,Y1P3
+Protocolo de autenticação extensível,Extensible Authentication Protocol,EAP,Criptografia,"Framework de autenticação que suporta certificados, tokens e PEAP; base do 802.1X.",VPN com EAP-TLS e certificado de cliente.,Y1P3
+Servidor de políticas de rede,Network Policy Server,NPS,Redes,"Implementação de RADIUS da Microsoft para autenticar e autorizar VPN, Wi-Fi e 802.1X.",Política: só o grupo GG_VPN conecta fora do horário.,Y1P3
+Roteamento e acesso remoto,Routing and Remote Access Service,RRAS,Redes,"Função do Windows Server que provê VPN, NAT e roteamento.",Servidor VPN SSTP via RRAS.,Y1P3
+Serviços de informações da Internet,Internet Information Services,IIS,Desenvolvimento,Servidor web da Microsoft.,Site interno publicado no IIS.,Y1P3
+Windows Server Update Services,Windows Server Update Services,WSUS,Sistemas,Serviço que centraliza aprovação e distribuição de atualizações Microsoft na rede.,Aprovação automática de patches críticos para o grupo Piloto.,Y1P3
+Gestão de patches,Patch management,,GRC,"Processo de testar, aprovar e aplicar atualizações de segurança.",Ciclo mensal após o Patch Tuesday.,Y1P3
+Objeto de política de grupo,Group Policy Object,GPO,Sistemas,Conjunto de configurações aplicadas a usuários e computadores do domínio via AD.,GPO que bloqueia dispositivos USB.,Y1P3
+Console de gerenciamento de política de grupo,Group Policy Management Console,GPMC,Sistemas,"Ferramenta para criar, vincular e analisar GPOs.",gpmc.msc,Y1P3
+LSDOU,"Local, Site, Domain, OU",LSDOU,Sistemas,Ordem de processamento das GPOs; a mais próxima do objeto vence em conflito.,GPO da OU Diretoria sobrepõe a do domínio.,Y1P3
+Bloqueio de herança,Block inheritance,,Sistemas,Configuração na OU que impede herdar GPOs de níveis superiores.,OU Laboratório não recebe as GPOs do domínio.,Y1P3
+GPO forçada,Enforced GPO,,Sistemas,Link de GPO que prevalece sobre conflitos e ignora o bloqueio de herança.,Política de senha do domínio marcada como Enforced.,Y1P3
+Filtro WMI,WMI filter,WMI,Sistemas,Consulta WMI que limita a aplicação de uma GPO a máquinas que atendam a um critério.,Aplicar só em computadores com Windows 10.,Y1P3
+Processamento de loopback,Loopback processing,,Sistemas,Modo de GPO que aplica configurações de usuário conforme o computador onde ele faz logon.,Terminais compartilhados com ambiente padronizado.,Y1P3
+Sistema operacional,Operating system,SO / OS,Sistemas,"Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas.","Windows, Linux, macOS, Android.",Y1P3
+Thread,Thread,,Sistemas,Linha de execução dentro de um processo; threads compartilham a memória do processo.,Um navegador usa várias threads por aba.,Y1P3
+Escalonamento,Scheduling,,Sistemas,Decisão do SO sobre qual processo ou thread usa a CPU e por quanto tempo.,Round-robin com quantum fixo.,Y1P3
+Memória virtual,Virtual memory,,Sistemas,"Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco.",Falta de página carrega a página do disco.,Y1P3
+Paginação,Paging,,Sistemas,Divisão da memória em páginas de tamanho fixo mapeadas pela tabela de páginas.,Páginas de 4 KB.,Y1P3

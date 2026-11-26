@@ -19,3 +19,13 @@ Por que Telnet e FTP são inseguros?,Credenciais e dados trafegam em texto claro
 Diferença entre CVE e CVSS?,"CVE é o identificador da vulnerabilidade (MITRE); CVSS é a nota de 0 a 10 da gravidade (FIRST), usada para priorizar.",Y1P2,vulnerabilidades
 Regra 'firewall-cmd --add-port=80/tcp' sobrevive ao reboot?,"Não, é de runtime. Use --permanent (ou --runtime-to-permanent) e depois --reload.",Y1P2,linux firewall
 Para que serve o auditd? Dê um exemplo de regra.,Registra eventos de segurança no kernel. Ex.: auditctl -w /etc/passwd -p wa -k passwd_changes.,Y1P2,linux auditoria
+"Diferença entre domínio, árvore e floresta no AD?",Domínio: unidade administrativa/replicação. Árvore: domínios com namespace contíguo. Floresta: árvores que compartilham schema e confiança (a fronteira de segurança).,Y1P3,windows ad
+OU ou grupo: qual para GPO e qual para acesso a pasta?,GPO e delegação vão em OUs; permissões em recursos vão para grupos.,Y1P3,windows ad
+Explique o modelo AGDLP.,Contas em grupos globais (função) → globais em grupos de domínio local (recurso) → permissão ao DL. Com múltiplos domínios: AGUDLP.,Y1P3,windows ad iam
+Quais são as quatro mensagens do DHCP?,"DORA: Discover, Offer, Request, Acknowledge.",Y1P3,redes dhcp
+Para que servem a zona inversa e os forwarders no DNS?,Zona inversa resolve IP → nome (PTR); forwarders encaminham consultas externas a outro DNS.,Y1P3,redes dns
+Ordem de processamento das GPOs e quem vence?,"LSDOU: Local → Site → Domínio → OU. Vence a mais próxima do objeto, salvo GPO Enforced.",Y1P3,windows gpo
+Block Inheritance × Enforced?,Block Inheritance (na OU) impede herdar GPOs de cima; Enforced (no link) faz a GPO valer mesmo assim e ganhar conflitos abaixo.,Y1P3,windows gpo
+Por que o PAP é o protocolo de autenticação VPN menos seguro?,Envia a senha em texto claro. CHAP/MS-CHAPv2 usam desafio-resposta; EAP (certificado/PEAP) é o mais robusto.,Y1P3,vpn autenticacao
+Papel do NPS e do WSUS na segurança?,"NPS: RADIUS da Microsoft, centraliza autenticação e políticas de VPN/Wi-Fi/802.1X. WSUS: centraliza a distribuição de patches.",Y1P3,windows seguranca
+Diferença entre processo e thread?,Processo: programa em execução com memória própria. Thread: linha de execução dentro do processo que compartilha essa memória.,Y1P3,sistemas-operacionais
