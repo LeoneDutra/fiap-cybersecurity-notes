@@ -23,7 +23,7 @@ and how the topic connects to real SOC / blue-team work.
 | 2 | 4 | Segurança de Aplicações Web e Mobile (Web & Mobile Application Security) | [notes](year-2/phase-4) |
 | 2 | 5 | Análise de Malware (Malware Analysis) | [notes](year-2/phase-5) |
 | 2 | 6 | Segurança em Nuvem (AWS) e Segurança de IA/ML (Cloud & AI/ML Security) | [notes](year-2/phase-6) |
-| 2 | 7 | _TBD_ | [notes](year-2/phase-7) |
+| 2 | 7 | Direito Digital, Governança de TI, Compliance (LGPD) e Gestão de Riscos (Digital Law, IT Governance, Compliance & Risk Management) | [notes](year-2/phase-7) |
 
 ## 📁 Structure
 

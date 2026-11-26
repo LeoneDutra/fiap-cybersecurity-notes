@@ -2,7 +2,7 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**518 terms**
+**558 terms**
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [Q](#q) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [X](#x) · [Y](#y) · [Z](#z) · [Á](#á)
 
@@ -10,6 +10,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Acordo de Nível de Serviço (SLA)** | Service Level Agreement | Governança e Compliance | Acordo que formaliza metas de qualidade de um serviço de TI. | Y2P7 |
 | **Active Directory (AD)** | Active Directory | Sistemas | Serviço de diretório da Microsoft que centraliza identidades, computadores, grupos e políticas de uma rede. | Y1P3 |
 | **ADB (ADB)** | Android Debug Bridge | IoT e Hardware | Ferramenta de linha de comando para comunicar com dispositivos/emuladores Android. | Y2P4 |
 | **AGDLP (AGDLP)** | Accounts, Global, Domain Local, Permissions | GRC | Boa prática de aninhamento de grupos: conta → grupo global → grupo de domínio local → permissão (AGUDLP com universal). | Y1P3 |
@@ -33,6 +34,9 @@
 | **Análise estática e dinâmica** | Static and dynamic analysis | Forense | Examinar o código sem executar (estática) e observar o app em execução (dinâmica). | Y2P4 |
 | **Análise in-vivo** | Live analysis (in-vivo) | Forense | Coleta de evidências com o sistema ligado, capturando dados voláteis. | Y2P2 |
 | **Análise post-mortem** | Post-mortem analysis | Forense | Análise de uma imagem de disco com o sistema desligado, após o incidente. | Y2P2 |
+| **Análise qualitativa de risco** | Qualitative risk analysis | Governança e Compliance | Avaliar riscos por categorias (alto/médio/baixo) sem números exatos. | Y2P7 |
+| **Análise quantitativa de risco** | Quantitative risk analysis | Governança e Compliance | Avaliar riscos com valores numéricos (probabilidade e perda financeira). | Y2P7 |
+| **Apetite a risco** | Risk appetite | Governança e Compliance | Quantidade de risco que a organização aceita assumir por seus objetivos. | Y2P7 |
 | **APKTool** | APKTool | Forense | Ferramenta que desmonta e remonta recursos e código smali de um APK. | Y2P4 |
 | **Aprendizado de máquina (ML)** | Machine learning | Dados e IA | Subárea da IA em que o sistema aprende padrões a partir de dados. | Y2P6 |
 | **Aprendizado supervisionado** | Supervised learning | Dados e IA | ML que aprende de dados rotulados para prever rótulos novos. | Y2P6 |
@@ -44,7 +48,7 @@
 | **AS-REP roasting** | AS-REP roasting | Ameaças e Ataques | Abuso de contas sem pré-autenticação Kerberos para obter dados e quebrar a senha offline. | Y2P3 |
 | **Assembly (ASM)** | Assembly language | Desenvolvimento | Linguagem de baixo nível que mapeia quase diretamente as instruções da CPU. | Y1P5 |
 | **Assinatura de APK** | APK signing | IoT e Hardware | Processo que assina o aplicativo (esquemas v1/v2/v3) para garantir integridade e origem. | Y2P4 |
-| **Assinatura digital** | Digital signature | Criptografia | Hash de uma mensagem cifrado com a chave privada do autor; garante autenticidade e não repúdio. | Y1P6 |
+| **Assinatura digital** | Digital signature | Criptografia | Hash de uma mensagem cifrado com a chave privada do autor; garante autenticidade e não repúdio. | Y1P6 Y2P7 |
 | **Assinatura SMB/LDAP** | SMB/LDAP signing | Sistemas | Controle que assina mensagens para impedir adulteração e ataques de relay. | Y2P3 |
 | **Ataque adversarial** | Adversarial attack | Ameaças e Ataques | Perturbar a entrada de um modelo para fazê-lo errar, muitas vezes de forma imperceptível. | Y2P6 |
 | **Ataque de dicionário** | Dictionary attack | Ameaças e Ataques | Tentar senhas de uma lista de palavras (wordlist) contra um login ou contra hashes. | Y1P4 |
@@ -57,6 +61,7 @@
 | **Autenticação, autorização e auditoria (AAA)** | Authentication, Authorization and Accounting | GRC | Framework que controla quem acessa (autenticação), o que pode fazer (autorização) e registra o que fez (accounting). | Y1P1 |
 | **Autoconfiguração sem estado (SLAAC)** | Stateless Address Autoconfiguration | Redes | Mecanismo IPv6 em que o host gera o próprio endereço a partir do prefixo anunciado pelo roteador. | Y1P1 |
 | **Autopsy** | Autopsy / The Sleuth Kit | Forense | Plataforma forense para analisar imagens de disco: timeline, carving e sistema de arquivos. | Y2P2 |
+| **Autoridade Nacional de Proteção de Dados (ANPD)** | National Data Protection Authority | Governança e Compliance | Órgão que fiscaliza e aplica sanções sob a LGPD. | Y2P7 |
 | **Avaliação de vulnerabilidades** | Vulnerability assessment | GRC | Varredura (geralmente automatizada) que identifica e lista vulnerabilidades em um escopo. | Y1P4 |
 | **awk** | awk | Sistemas | Linguagem de processamento de texto orientada a colunas/campos. | Y1P2 |
 | **AWS CloudFormation** | AWS CloudFormation | Cloud | Serviço de IaC da AWS que cria recursos a partir de templates declarativos. | Y2P6 |
@@ -71,8 +76,10 @@
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
 | **BadUSB** | BadUSB | Ameaças e Ataques | Dispositivo USB que se passa por teclado (HID) e injeta comandos automaticamente. | Y1P7 |
+| **Base legal** | Legal basis | Governança e Compliance | Justificativa jurídica que autoriza tratar um dado pessoal. | Y2P7 |
 | **Base nacional de vulnerabilidades (NVD)** | National Vulnerability Database | GRC | Base do NIST que enriquece os CVEs com CVSS, CPE e referências. | Y1P4 |
 | **Base64** | Base64 | Criptografia | Codificação (não criptografia) que representa dados binários em texto ASCII. | Y1P2 |
+| **Biblioteca de Infraestrutura de TI (ITIL)** | Information Technology Infrastructure Library | Governança e Compliance | Conjunto de boas práticas de gestão de serviços de TI (versão atual ITIL 4). | Y2P7 |
 | **Biblioteca de vínculo dinâmico (DLL)** | Dynamic-Link Library | Sistemas | Biblioteca compartilhada do Windows carregada por vários programas em tempo de execução. | Y1P5 |
 | **Bind shell** | Bind shell | Ameaças e Ataques | Shell em que a máquina alvo abre uma porta e espera o atacante se conectar. | Y2P3 |
 | **binwalk** | binwalk | Forense | Ferramenta que identifica e extrai sistemas de arquivos e dados embutidos num firmware. | Y1P7 |
@@ -105,14 +112,16 @@
 | **Ciência de dados** | Data science | Dados e IA | Área que extrai conhecimento de dados com estatística, programação e domínio. | Y2P6 |
 | **Classificação** | Classification | Dados e IA | Tarefa de ML que atribui uma categoria a cada entrada. | Y2P6 |
 | **CoAP (CoAP)** | Constrained Application Protocol | IoT e Hardware | Protocolo REST leve sobre UDP para dispositivos com poucos recursos. | Y1P7 |
-| **COBIT (COBIT)** | Control Objectives for Information and Related Technologies | GRC | Framework da ISACA para governança e gestão de TI. | Y1P4 |
+| **COBIT (COBIT)** | Control Objectives for Information and Related Technologies | GRC | Framework da ISACA para governança e gestão de TI. | Y1P4 Y2P7 |
 | **Componente Android** | Android component | Desenvolvimento | Blocos de um app: Activity, Service, Content Provider e Broadcast Receiver. | Y2P4 |
 | **Componente exportado** | Exported component | Ameaças e Ataques | Componente acessível por outros apps; se exposto sem proteção, vira vetor de ataque. | Y2P4 |
 | **Comunicação serial (UART)** | Serial communication (UART) | IoT e Hardware | Troca de dados bit a bit por uma interface serial; UART dá console a muitos dispositivos. | Y1P7 |
 | **Condição de corrida (TOCTOU)** | Race condition | Ameaças e Ataques | Falha causada pela ordem/temporização de acessos concorrentes a um recurso compartilhado. | Y1P5 |
+| **Consentimento** | Consent | Governança e Compliance | Autorização livre, informada e revogável do titular para tratar seus dados. | Y2P7 |
 | **Console de gerenciamento de política de grupo (GPMC)** | Group Policy Management Console | Sistemas | Ferramenta para criar, vincular e analisar GPOs. | Y1P3 |
 | **Contenção** | Containment | Resposta a Incidentes | Ação de impedir a propagação do incidente, isolando sistemas afetados. | Y2P2 |
 | **Contrainteligência** | Counterintelligence | Threat Intel | Medidas para detectar e frustrar a coleta de inteligência do adversário sobre você. | Y2P1 |
+| **Controlador** | Data controller | Governança e Compliance | Quem decide sobre o tratamento dos dados pessoais e responde por ele. | Y2P7 |
 | **Controlador de domínio (DC)** | Domain Controller | Sistemas | Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs. | Y1P3 |
 | **Controlador lógico programável (PLC)** | Programmable Logic Controller | IoT e Hardware | Computador industrial robusto que controla máquinas e processos em tempo real. | Y1P7 |
 | **Convenção de chamada** | Calling convention | Desenvolvimento | Regras de como argumentos são passados e quem limpa a pilha (cdecl, stdcall, fastcall). | Y1P5 |
@@ -121,6 +130,7 @@
 | **Corrupção de memória** | Memory corruption | Ameaças e Ataques | Classe de bugs em que o programa lê/escreve fora dos limites previstos. | Y1P5 |
 | **Credential dumping** | Credential dumping | Ameaças e Ataques | Extrair hashes, senhas ou tickets da memória (LSASS) ou do disco. | Y2P3 |
 | **Credential Guard** | Windows Credential Guard | Sistemas | Recurso do Windows que isola credenciais em ambiente virtualizado, dificultando o dumping. | Y2P3 |
+| **Crime eletrônico** | Cybercrime | Ameaças e Ataques | Delito em que o computador é o meio ou o objeto do crime. | Y2P7 |
 | **Criptografia assimétrica** | Asymmetric cryptography | Criptografia | Esquema com par de chaves: a pública cifra/verifica e a privada decifra/assina. | Y1P6 |
 | **Criptografia no lado do servidor (S3) (SSE)** | Server-Side Encryption (SSE) | Cloud | Criptografia de objetos no S3 em repouso; variantes SSE-S3, SSE-KMS e SSE-C diferem no controle da chave. | Y2P6 |
 | **Criptografia simétrica** | Symmetric encryption | Criptografia | Esquema em que a mesma chave cifra e decifra os dados. | Y1P4 |
@@ -138,6 +148,9 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Dado anonimizado** | Anonymized data | Dados e IA | Dado que não permite identificar o titular, saindo do escopo da LGPD. | Y2P7 |
+| **Dado pessoal** | Personal data | Dados e IA | Informação relacionada a pessoa natural identificada ou identificável. | Y2P7 |
+| **Dado pessoal sensível** | Sensitive personal data | Dados e IA | Dado sobre origem racial, saúde, biometria, religião, etc., com proteção reforçada. | Y2P7 |
 | **Dado, informação e inteligência** | Data, information, intelligence | Threat Intel | Hierarquia: dado é o fato bruto, informação é o dado com contexto, inteligência é a análise que apoia decisão. | Y2P1 |
 | **Dados rotulados** | Labeled data | Dados e IA | Dados de treino que já têm a resposta correta associada. | Y2P6 |
 | **Daemon** | Daemon | Sistemas | Processo que roda em segundo plano prestando um serviço. | Y1P2 |
@@ -151,8 +164,10 @@
 | **Diamond Model** | Diamond Model | Threat Intel | Modelo que correlaciona adversário, capacidade, infraestrutura e vítima numa intrusão. | Y2P1 |
 | **Diffie-Hellman (DH)** | Diffie-Hellman key exchange | Criptografia | Protocolo que permite a duas partes combinarem uma chave secreta por um canal público. | Y1P6 |
 | **Directory traversal** | Directory traversal | Ameaças e Ataques | Usar sequências como ../ para acessar arquivos fora do diretório previsto. | Y2P4 |
+| **Direito digital** | Digital law | Governança e Compliance | Ramo do direito que regula as relações e responsabilidades no ambiente digital. | Y2P7 |
 | **Dispositivo embarcado** | Embedded device | IoT e Hardware | Computador de propósito específico, com recursos limitados, dentro de um produto. | Y1P7 |
 | **Distribuição Linux** | Linux distribution (distro) | Sistemas | Pacote completo formado pelo kernel Linux, ferramentas GNU, gerenciador de pacotes e configurações. | Y1P2 |
+| **Documento eletrônico** | Electronic document | Governança e Compliance | Registro digital com valor jurídico, independente do suporte físico. | Y2P7 |
 | **Domínio** | Domain | Sistemas | Unidade administrativa e de replicação do AD, identificada por um nome DNS. | Y1P3 |
 | **DORA (DORA)** | Discover, Offer, Request, Acknowledge | Redes | As quatro mensagens da concessão DHCP. | Y1P3 |
 | **Double free** | Double free | Ameaças e Ataques | Liberar duas vezes a mesma região de memória, corrompendo as estruturas do alocador. | Y1P5 |
@@ -165,6 +180,7 @@
 | **EFLAGS** | EFLAGS register | Sistemas | Registrador de status cujos bits (flags) refletem o resultado das operações (zero, carry, sinal etc.). | Y1P5 |
 | **Encaminhador DNS** | DNS forwarder | Redes | DNS para onde o servidor envia as consultas que não consegue resolver localmente. | Y1P3 |
 | **Encapsulamento** | Encapsulation | Redes | Cada camada acrescenta seu cabeçalho aos dados da camada de cima antes de enviar; o destino faz o processo inverso. | Y1P1 |
+| **Encarregado de dados (DPO)** | Data Protection Officer | Governança e Compliance | Pessoa que é canal entre a organização, os titulares e a ANPD. | Y2P7 |
 | **Endereço de retorno** | Return address | Sistemas | Endereço empilhado por uma chamada de função para onde a execução volta ao terminar. | Y1P5 |
 | **Endereço IPv4 (IPv4)** | IPv4 address | Redes | Endereço lógico de 32 bits escrito em 4 octetos decimais. | Y1P1 |
 | **Endereço IPv6 (IPv6)** | IPv6 address | Redes | Endereço de 128 bits em hexadecimal, em 8 grupos separados por dois-pontos. | Y1P1 |
@@ -231,6 +247,7 @@
 | **Gerenciamento de eventos e informações de segurança (SIEM)** | Security Information and Event Management | Resposta a Incidentes | Plataforma que centraliza, correlaciona e alerta sobre logs de várias fontes. | Y2P2 |
 | **Gerenciamento de identidade e acesso (AWS) (IAM)** | AWS Identity and Access Management | Cloud | Serviço que controla quem (usuários/roles) pode fazer o quê na AWS, via políticas. | Y2P6 |
 | **Gestão de patches** | Patch management | GRC | Processo de testar, aprovar e aplicar atualizações de segurança. | Y1P3 |
+| **Gestão de riscos** | Risk management | Governança e Compliance | Processo de identificar, avaliar e tratar incertezas que afetam objetivos. | Y2P7 |
 | **Gestão de vulnerabilidades** | Vulnerability management | GRC | Programa contínuo para identificar, classificar, priorizar, corrigir e verificar vulnerabilidades. | Y1P4 |
 | **Globbing** | Globbing / pattern matching | Sistemas | Uso de curingas (*, ?, [ ]) pelo shell para casar nomes de arquivos. | Y1P2 |
 | **gMSA (gMSA)** | Group Managed Service Account | Sistemas | Conta de serviço com senha longa gerida e rotacionada automaticamente pelo AD. | Y2P3 |
@@ -239,6 +256,8 @@
 | **gobuster** | gobuster | Ameaças e Ataques | Ferramenta de brute force de diretórios, arquivos e subdomínios. | Y2P4 |
 | **Golden Ticket** | Golden Ticket | Ameaças e Ataques | Ticket Kerberos (TGT) forjado com o hash da conta krbtgt, dando acesso quase irrestrito. | Y2P3 |
 | **Google dorks** | Google dorks | Threat Intel | Operadores de busca avançada para encontrar informações e exposições específicas. | Y2P1 |
+| **Governança corporativa** | Corporate governance | Governança e Compliance | Sistema de direção e controle que equilibra interesses dos stakeholders. | Y2P7 |
+| **Governança de TI** | IT governance | Governança e Compliance | Garantir que a TI entregue valor, gerencie riscos e siga a estratégia. | Y2P7 |
 | **GPO forçada** | Enforced GPO | Sistemas | Link de GPO que prevalece sobre conflitos e ignora o bloqueio de herança. | Y1P3 |
 | **grep** | Global regular expression print | Sistemas | Busca linhas que casam com um padrão (texto ou regex). | Y1P2 |
 | **Grupo de segurança** | Security group | Sistemas | Grupo do AD usado para conceder permissões; escopos: global, domínio local e universal. | Y1P3 |
@@ -290,8 +309,9 @@
 | **Internet das Coisas (IoT)** | Internet of Things | IoT e Hardware | Rede de objetos físicos com sensores e conectividade que coletam e trocam dados. | Y1P7 |
 | **IoT Industrial (IIoT)** | Industrial IoT | IoT e Hardware | Uso de IoT em indústria e infraestrutura crítica, ligado a OT/ICS. | Y1P7 |
 | **IPsec (IPsec)** | Internet Protocol Security | Criptografia | Conjunto de protocolos (IKE, ESP, AH) que cifra e autentica pacotes IP; modos transporte e túnel. | Y1P1 |
-| **ISO 31000** | ISO 31000 | GRC | Norma com princípios e diretrizes genéricas para gestão de riscos. | Y1P4 |
-| **ISO/IEC 27001** | ISO/IEC 27001 | GRC | Norma internacional que define os requisitos de um Sistema de Gestão de Segurança da Informação (SGSI); a 27002 traz os controles. | Y1P4 |
+| **ISO 31000** | ISO 31000 | GRC | Norma com princípios e diretrizes genéricas para gestão de riscos. | Y1P4 Y2P7 |
+| **ISO/IEC 27001** | ISO/IEC 27001 | GRC | Norma internacional que define os requisitos de um Sistema de Gestão de Segurança da Informação (SGSI); a 27002 traz os controles. | Y1P4 Y2P7 |
+| **ISO/IEC 27005** | ISO/IEC 27005 | Governança e Compliance | Norma de gestão de riscos aplicada à segurança da informação. | Y2P7 |
 
 ## J
 
@@ -322,6 +342,8 @@
 | **LAMP (LAMP)** | Linux, Apache, MySQL, PHP | Desenvolvimento | Stack clássica de servidor web: Linux + Apache + MySQL/MariaDB + PHP. | Y1P2 |
 | **LAPS (LAPS)** | Local Administrator Password Solution | Sistemas | Solução que define senha única e rotacionada para o administrador local de cada máquina. | Y2P3 |
 | **LDAP (LDAP)** | Lightweight Directory Access Protocol | Redes | Protocolo de consulta e manipulação de diretórios como o Active Directory. | Y2P3 |
+| **Lei Carolina Dieckmann** | Carolina Dieckmann Law | Ameaças e Ataques | Lei 12.737/2012 que tipificou a invasão de dispositivo informático (Art. 154-A). | Y2P7 |
+| **Lei Geral de Proteção de Dados (LGPD)** | General Data Protection Law (Brazil) | Governança e Compliance | Lei 13.709/2018 que regula o tratamento de dados pessoais no Brasil. | Y2P7 |
 | **Linguagem C (C)** | C language | Desenvolvimento | Linguagem compilada de baixo nível, base de sistemas operacionais e firmware. | Y1P7 |
 | **Linguagem interpretada** | Interpreted language | Desenvolvimento | Linguagem executada por um interpretador linha a linha, sem compilar para binário antes. | Y1P4 |
 | **Link analysis** | Link analysis | Threat Intel | Técnica de visualizar e analisar relações entre entidades para revelar padrões. | Y2P1 |
@@ -340,6 +362,8 @@
 |---|---|---|---|---|
 | **Maltego** | Maltego | Threat Intel | Ferramenta de análise de links e OSINT que monta grafos de relações entre entidades. | Y2P1 |
 | **Malware sem arquivo** | Fileless malware | Ameaças e Ataques | Código malicioso que vive na memória sem gravar arquivo no disco, dificultando a detecção. | Y2P2 |
+| **Marco Civil da Internet** | Brazilian Civil Rights Framework for the Internet | Governança e Compliance | Lei 12.965/2014 que define princípios do uso da internet no Brasil. | Y2P7 |
+| **Matriz de risco** | Risk matrix | Governança e Compliance | Ferramenta que cruza probabilidade e impacto para priorizar riscos. | Y2P7 |
 | **MD5 (MD5)** | Message Digest 5 | Criptografia | Função de hash de 128 bits, hoje insegura por sofrer colisões. | Y1P6 |
 | **Membership inference** | Membership inference | Ameaças e Ataques | Descobrir se um registro específico fez parte do treino do modelo (risco de privacidade). | Y2P6 |
 | **Memória virtual** | Virtual memory | Sistemas | Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco. | Y1P3 |
@@ -360,6 +384,7 @@
 | **Modelo OSI (OSI)** | OSI reference model | Redes | Modelo de referência da ISO com 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). | Y1P1 |
 | **Modo monitor** | Monitor mode | Redes | Modo da placa Wi-Fi que captura todo o tráfego do ar, não só o endereçado a ela. | Y1P7 |
 | **Monitoramento** | Monitoring | Resposta a Incidentes | Coleta contínua de métricas e eventos para detectar falhas ou anomalias. | Y1P4 |
+| **Monitoramento no trabalho** | Workplace monitoring | Governança e Compliance | Acompanhar o uso de recursos corporativos, com limites legais de privacidade. | Y2P7 |
 | **Movimento lateral** | Lateral movement | Ameaças e Ataques | Reusar credenciais para pular de uma máquina a outra dentro da rede. | Y2P3 |
 | **MQTT (MQTT)** | Message Queuing Telemetry Transport | IoT e Hardware | Protocolo leve de mensagens publish/subscribe via broker, popular em IoT. | Y1P7 |
 | **Mutex** | Mutex | Ameaças e Ataques | Objeto nomeado que o malware cria para evitar múltiplas infecções; serve de IOC. | Y2P5 |
@@ -395,6 +420,7 @@
 | **Opcode (Opcode)** | Operation code | Sistemas | Código de máquina que representa uma instrução da CPU. | Y2P5 |
 | **OpenVAS (OpenVAS / GVM)** | Open Vulnerability Assessment Scanner | GRC | Scanner de vulnerabilidades open source do Greenbone Vulnerability Management. | Y1P4 |
 | **OpenVPN** | OpenVPN | Redes | VPN de código aberto baseada em SSL/TLS, flexível e muito usada em acesso remoto. | Y1P1 |
+| **Operador** | Data processor | Governança e Compliance | Quem trata dados pessoais em nome do controlador. | Y2P7 |
 | **Ordem da volatilidade** | Order of volatility | Forense | Prioridade de coleta: do dado mais volátil (RAM) ao mais estável (disco/backup). | Y2P2 |
 | **OWASP IoT Top 10** | OWASP IoT Top 10 | GRC | Lista de referência dos dez riscos de segurança mais comuns em dispositivos IoT. | Y1P7 |
 | **OWASP Top 10** | OWASP Top 10 | Desenvolvimento | Lista de consenso das dez vulnerabilidades mais críticas em aplicações web. | Y2P4 |
@@ -409,6 +435,7 @@
 | **Padrão de criptografia de dados (DES)** | Data Encryption Standard | Criptografia | Cifra de bloco simétrica antiga com chave efetiva de 56 bits; hoje é considerada insegura. | Y1P4 |
 | **Paginação** | Paging | Sistemas | Divisão da memória em páginas de tamanho fixo mapeadas pela tabela de páginas. | Y1P3 |
 | **PAP / CHAP / MS-CHAPv2 (PAP / CHAP)** | Password / Challenge-Handshake Authentication Protocol | Redes | Protocolos de autenticação de acesso remoto: PAP envia senha em texto claro; CHAP e MS-CHAPv2 usam desafio-resposta. | Y1P3 |
+| **Partes interessadas** | Stakeholders | Governança e Compliance | Todos os afetados pela organização: acionistas, clientes, sociedade. | Y2P7 |
 | **Parâmetros posicionais** | Positional parameters | Desenvolvimento | Argumentos passados ao script, acessados como $1, $2…, $# (quantidade) e $@ (todos). | Y1P4 |
 | **Pass-the-hash (PtH)** | Pass-the-hash | Ameaças e Ataques | Autenticar usando o hash NTLM da senha, sem conhecer a senha em claro. | Y2P3 |
 | **Password spray** | Password spraying | Ameaças e Ataques | Testar uma senha comum contra muitas contas para evitar bloqueio por tentativas. | Y2P3 |
@@ -426,6 +453,7 @@
 | **Pipe** | Pipe | Sistemas | Operador | que envia a saída de um comando como entrada do próximo. | Y1P2 |
 | **Pipelining** | Pipelining | Sistemas | Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU. | Y1P5 |
 | **Pivotagem** | Pivoting (OSINT) | Threat Intel | Usar um dado encontrado para descobrir outros relacionados, expandindo a investigação. | Y2P1 |
+| **Planejamento estratégico de TI (PETI)** | Strategic IT planning | Governança e Compliance | Definir como a tecnologia contribui para os resultados do negócio. | Y2P7 |
 | **Playbook** | Playbook | Resposta a Incidentes | Procedimento padronizado passo a passo para responder a um tipo de incidente. | Y2P2 |
 | **Polimorfismo** | Polymorphism | Ameaças e Ataques | Capacidade do malware de mudar sua aparência (cifrando o corpo) mantendo a mesma lógica. | Y2P5 |
 | **Política de segurança de conteúdo (CSP)** | Content Security Policy | Desenvolvimento | Cabeçalho que restringe de onde o navegador pode carregar scripts e recursos. | Y2P4 |
@@ -435,9 +463,11 @@
 | **Port mirroring (SPAN)** | Port mirroring (SPAN) | Redes | Recurso do switch que copia o tráfego de uma porta para outra, onde fica o analisador. | Y1P6 |
 | **Port scanner** | Port scanner | Ameaças e Ataques | Ferramenta que testa portas de um host para descobrir quais serviços estão abertos. | Y1P4 |
 | **Portable Executable (PE)** | Portable Executable | Sistemas | Formato de executável do Windows (EXE, DLL, SYS), com cabeçalhos, seções e tabelas de importação. | Y1P5 |
+| **Prestação de contas** | Accountability | Governança e Compliance | Dever de responder pelas decisões e seus resultados. | Y2P7 |
 | **Prevenção de execução de dados (DEP / NX)** | Data Execution Prevention | Sistemas | Mitigação que marca regiões de dados (como a pilha) como não executáveis. | Y1P5 |
 | **Primeiro o caminho mais curto (OSPF)** | Open Shortest Path First | Redes | IGP de estado de enlace (link-state) que usa o algoritmo de Dijkstra e organiza a rede em áreas (área 0 = backbone). | Y1P1 |
 | **Princípio do menor privilégio (PoLP)** | Principle of least privilege | GRC | Dar a cada usuário ou processo apenas as permissões estritamente necessárias. | Y1P2 |
+| **Privacidade desde a concepção** | Privacy by design | Governança e Compliance | Projetar sistemas já com privacidade e proteção de dados embutidas. | Y2P7 |
 | **Process Hacker** | Process Hacker | Forense | Ferramenta que inspeciona processos, threads, handles e memória em tempo real. | Y2P5 |
 | **Processamento de loopback** | Loopback processing | Sistemas | Modo de GPO que aplica configurações de usuário conforme o computador onde ele faz logon. | Y1P3 |
 | **Processo (PID)** | Process (PID) | Sistemas | Programa em execução, identificado por um número (PID). | Y1P2 |
@@ -452,6 +482,7 @@
 | **Protocolo de transferência de arquivos (FTP)** | File Transfer Protocol | Redes | Protocolo de transferência de arquivos (TCP 21) sem criptografia; FTPS adiciona TLS. | Y1P2 |
 | **Protocolo de transferência de hipertexto (HTTP)** | Hypertext Transfer Protocol | Redes | Protocolo de aplicação da Web, baseado em requisição/resposta (métodos GET, POST etc.). | Y1P1 |
 | **Protocolo Spanning Tree (STP)** | Spanning Tree Protocol | Redes | Protocolo que bloqueia caminhos redundantes entre switches para evitar loops de camada 2. | Y1P1 |
+| **Prova eletrônica** | Electronic evidence | Forense | Evidência digital usada em processo judicial; depende de integridade e autoria. | Y2P7 |
 | **Proxy** | Proxy | Redes | Intermediário que repassa requisições, mudando o IP visto pelo destino. | Y2P1 |
 | **Proxy de interceptação** | Intercepting proxy | Ameaças e Ataques | Ferramenta entre o navegador e o servidor para ler e modificar requisições web. | Y2P4 |
 | **PTES (PTES)** | Penetration Testing Execution Standard | Ameaças e Ataques | Metodologia padrão de pentest em fases, do pré-engajamento ao relatório. | Y2P4 |
@@ -480,18 +511,24 @@
 | **Redirecionamento** | Redirection | Sistemas | Envio de entradas ou saídas para arquivos (>, >>, <, 2>&1). | Y1P2 |
 | **Registrador** | Register | Sistemas | Pequena área de armazenamento dentro da CPU, extremamente rápida, usada no processamento. | Y1P5 |
 | **Registradores de uso geral (GPR)** | General-purpose registers | Sistemas | Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP. | Y1P5 |
+| **Registro de riscos** | Risk register | Governança e Compliance | Documento que lista cada risco, seu dono, resposta e status. | Y2P7 |
 | **Registro do Windows** | Windows Registry | Forense | Banco hierárquico de configuração do Windows, rico em artefatos forenses. | Y2P2 |
 | **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
 | **Regressão** | Regression | Dados e IA | Tarefa de ML que prevê um valor numérico contínuo. | Y2P6 |
 | **Regshot** | Regshot | Forense | Ferramenta que compara o registro/arquivos antes e depois da execução. | Y2P5 |
+| **Regulamento Geral de Proteção de Dados (GDPR)** | General Data Protection Regulation | Governança e Compliance | Regulamento europeu de proteção de dados que inspirou a LGPD. | Y2P7 |
+| **Relatório de Impacto à Proteção de Dados (RIPD/DPIA)** | Data Protection Impact Assessment | Governança e Compliance | Documento que avalia riscos de privacidade de um tratamento de dados. | Y2P7 |
 | **Relatório forense** | Forensic report | Forense | Documento claro e reprodutível com método, achados e conclusões da perícia. | Y2P2 |
 | **REMnux** | REMnux | Forense | Distribuição Linux com ferramentas prontas para análise de malware. | Y2P5 |
 | **Requisitos prioritários de inteligência (PIR)** | Priority Intelligence Requirements | Threat Intel | Perguntas-chave que direcionam a coleta e a análise de inteligência. | Y2P1 |
+| **Reserva legal** | Principle of legality | Governança e Compliance | Princípio penal: não há crime sem lei anterior que o defina. | Y2P7 |
 | **Retorno do investimento em segurança (ROSI)** | Return on Security Investment | GRC | Métrica que estima o retorno financeiro de um investimento em segurança (perda evitada × custo). | Y1P6 |
 | **Reverse shell** | Reverse shell | Ameaças e Ataques | Shell em que a máquina alvo se conecta de volta ao atacante, contornando firewalls de entrada. | Y2P3 |
 | **RFID (RFID)** | Radio-Frequency Identification | IoT e Hardware | Identificação por radiofrequência usando etiquetas (passivas, semipassivas ou ativas) e leitores. | Y1P7 |
-| **Risco** | Risk | GRC | Possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto a um ativo; costuma ser estimado como probabilidade × impacto. | Y1P4 |
-| **Risco residual** | Residual risk | GRC | Risco que sobra depois de aplicados os controles. | Y1P4 |
+| **Risco** | Risk | GRC | Possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto a um ativo; costuma ser estimado como probabilidade × impacto. | Y1P4 Y2P7 |
+| **Risco de terceiros** | Third-party / supply chain risk | Governança e Compliance | Risco trazido por fornecedores e pela cadeia de suprimentos. | Y2P7 |
+| **Risco inerente** | Inherent risk | Governança e Compliance | Nível de risco antes da aplicação de controles. | Y2P7 |
+| **Risco residual** | Residual risk | GRC | Risco que sobra depois de aplicados os controles. | Y1P4 Y2P7 |
 | **Role da AWS** | IAM Role | Cloud | Identidade com permissões que pode ser assumida temporariamente por serviços ou usuários. | Y2P6 |
 | **Roteamento dinâmico** | Dynamic routing | Redes | Roteadores trocam informações por protocolos e montam as rotas automaticamente. | Y1P1 |
 | **Roteamento e acesso remoto (RRAS)** | Routing and Remote Access Service | Redes | Função do Windows Server que provê VPN, NAT e roteamento. | Y1P3 |
@@ -540,9 +577,11 @@
 | **Sistema de arquivos de rede (NFS)** | Network File System | Redes | Protocolo para compartilhar diretórios pela rede, montados como se fossem locais. | Y1P2 |
 | **Sistema de controle industrial (ICS)** | Industrial Control System | IoT e Hardware | Conjunto de sistemas (SCADA, PLC) que automatiza processos industriais. | Y1P7 |
 | **Sistema de detecção de intrusão (IDS)** | Intrusion Detection System | Resposta a Incidentes | Monitora o tráfego ou o host e gera alertas sobre atividade suspeita, sem bloquear (passivo). | Y1P1 |
+| **Sistema de Gestão de Segurança da Informação (SGSI)** | Information Security Management System | Governança e Compliance | Conjunto de políticas e processos para gerir a segurança da informação. | Y2P7 |
 | **Sistema de nomes de domínio (DNS)** | Domain Name System | Redes | Serviço que traduz nomes em endereços IP de forma hierárquica e distribuída. | Y1P1 |
 | **Sistema de pontuação de vulnerabilidades (CVSS)** | Common Vulnerability Scoring System | GRC | Padrão do FIRST que dá uma nota de 0 a 10 à gravidade de uma vulnerabilidade. | Y1P2 |
 | **Sistema de prevenção de intrusão (IPS)** | Intrusion Prevention System | Resposta a Incidentes | Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso. | Y1P1 |
+| **Sistema de Valor de Serviço (SVS)** | Service Value System | Governança e Compliance | Modelo do ITIL 4 que transforma demanda e oportunidade em valor. | Y2P7 |
 | **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
 | **Snapshot** | Snapshot | Sistemas | Cópia do estado de uma VM que permite voltar ao ponto salvo após analisar o malware. | Y2P5 |
 | **Sniffing** | Sniffing | Ameaças e Ataques | Captura passiva do tráfego de rede para ler dados, especialmente os em texto claro. | Y1P6 |
@@ -585,10 +624,11 @@
 | **Timeline forense** | Forensic timeline | Forense | Reconstrução cronológica dos eventos a partir de múltiplos artefatos. | Y2P2 |
 | **Tinkercad** | Tinkercad | IoT e Hardware | Simulador online de circuitos e Arduino, usado para prototipar sem hardware físico. | Y1P7 |
 | **Tipos de malware** | Malware types | Ameaças e Ataques | Categorias de software malicioso: vírus, worm, trojan, ransomware, rootkit, spyware, backdoor. | Y2P5 |
+| **Titular dos dados** | Data subject | Governança e Compliance | Pessoa natural a quem os dados pessoais se referem. | Y2P7 |
 | **Tomada de conta (ATO)** | Account takeover | Ameaças e Ataques | Uso de credenciais legítimas roubadas para controlar a conta de uma vítima. | Y1P1 |
 | **Tor (Tor)** | The Onion Router | Redes | Rede de anonimato que roteia o tráfego por vários nós cifrados; dá acesso à dark web. | Y1P6 |
 | **Tradução de endereços de rede (NAT)** | Network Address Translation | Redes | Troca de endereços IP (geralmente privado→público) na borda da rede. | Y1P1 |
-| **Tratamento de risco** | Risk treatment | GRC | Decisão sobre um risco: mitigar, transferir, evitar ou aceitar. | Y1P4 |
+| **Tratamento de risco** | Risk treatment | GRC | Decisão sobre um risco: mitigar, transferir, evitar ou aceitar. | Y1P4 Y2P7 |
 | **Tronco 802.1Q** | 802.1Q trunk | Redes | Link que transporta várias VLANs entre switches, marcando os quadros com a tag da VLAN. | Y1P1 |
 | **Tríade CID (CID / CIA)** | CIA triad | GRC | Os três pilares da segurança da informação: confidencialidade, integridade e disponibilidade. | Y1P1 |
 | **tshark** | tshark | Forense | Versão em linha de comando do Wireshark, útil para automação e extração de campos. | Y1P6 |
