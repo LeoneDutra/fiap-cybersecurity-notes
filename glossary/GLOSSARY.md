@@ -2,7 +2,7 @@
 
 > Generated from `glossary.csv` by `scripts/build_glossary.py`. Edit the CSV, not this file.
 
-**299 terms**
+**340 terms**
 
 [A](#a) · [B](#b) · [C](#c) · [D](#d) · [E](#e) · [F](#f) · [G](#g) · [H](#h) · [I](#i) · [J](#j) · [K](#k) · [L](#l) · [M](#m) · [N](#n) · [O](#o) · [P](#p) · [R](#r) · [S](#s) · [T](#t) · [U](#u) · [V](#v) · [W](#w) · [Z](#z) · [Á](#á)
 
@@ -15,6 +15,7 @@
 | **Aleatorização do espaço de endereços (ASLR)** | Address Space Layout Randomization | Sistemas | Mitigação que aleatoriza os endereços de carga de módulos, pilha e heap a cada execução. | Y1P5 |
 | **Ameaça** | Threat | GRC | Agente ou evento com potencial de causar dano a um ativo. | Y1P4 |
 | **Analisador lógico** | Logic analyzer | IoT e Hardware | Equipamento que captura e decodifica sinais digitais de barramentos como UART, SPI e I2C. | Y1P7 |
+| **Anonimato** | Anonymity | Threat Intel | Ocultar quem é o autor de uma ação (diferente de privacidade, que oculta o conteúdo). | Y2P1 |
 | **Análise de firmware** | Firmware analysis | Forense | Extrair e examinar o firmware em busca de segredos, serviços e vulnerabilidades. | Y1P7 |
 | **Análise de fluxo (NetFlow)** | Flow analysis | Redes | Analisar metadados de conexões (IPs, portas, bytes) em vez de cada pacote, para escala. | Y1P6 |
 | **Arduino** | Arduino | IoT e Hardware | Plataforma aberta de prototipagem eletrônica com microcontrolador e IDE em C. | Y1P7 |
@@ -53,8 +54,11 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Censys** | Censys | Threat Intel | Motor de busca de hosts, certificados e serviços expostos, similar ao Shodan. | Y2P1 |
+| **Certificate Transparency (CT)** | Certificate Transparency | Redes | Logs públicos de certificados TLS emitidos, úteis para descobrir subdomínios. | Y2P1 |
 | **Chamada de sistema (syscall)** | System call | Sistemas | Interface pela qual um programa pede um serviço ao kernel. | Y1P5 |
 | **Ciclo de instrução** | Instruction cycle (fetch-decode-execute) | Sistemas | Sequência que a CPU repete: buscar a instrução, decodificá-la e executá-la. | Y1P5 |
+| **Ciclo de vida do OSINT** | OSINT lifecycle | Threat Intel | Etapas: requisitos (PIR), coleta, processamento, análise, produção, disseminação e feedback. | Y2P1 |
 | **Cifra de César** | Caesar cipher | Criptografia | Cifra de substituição que desloca cada letra um número fixo de posições. | Y1P6 |
 | **Cifra de Vigenère** | Vigenère cipher | Criptografia | Cifra de substituição polialfabética que usa uma palavra-chave para variar o deslocamento. | Y1P6 |
 | **CIS Benchmark (CIS)** | CIS Benchmark | GRC | Guias de configuração segura publicados pelo Center for Internet Security. | Y1P2 |
@@ -63,6 +67,7 @@
 | **Comunicação serial (UART)** | Serial communication (UART) | IoT e Hardware | Troca de dados bit a bit por uma interface serial; UART dá console a muitos dispositivos. | Y1P7 |
 | **Condição de corrida (TOCTOU)** | Race condition | Ameaças e Ataques | Falha causada pela ordem/temporização de acessos concorrentes a um recurso compartilhado. | Y1P5 |
 | **Console de gerenciamento de política de grupo (GPMC)** | Group Policy Management Console | Sistemas | Ferramenta para criar, vincular e analisar GPOs. | Y1P3 |
+| **Contrainteligência** | Counterintelligence | Threat Intel | Medidas para detectar e frustrar a coleta de inteligência do adversário sobre você. | Y2P1 |
 | **Controlador de domínio (DC)** | Domain Controller | Sistemas | Servidor que guarda uma cópia do banco do AD, autentica usuários e replica alterações com outros DCs. | Y1P3 |
 | **Controlador lógico programável (PLC)** | Programmable Logic Controller | IoT e Hardware | Computador industrial robusto que controla máquinas e processos em tempo real. | Y1P7 |
 | **Convenção de chamada** | Calling convention | Desenvolvimento | Regras de como argumentos são passados e quem limpa a pilha (cdecl, stdcall, fastcall). | Y1P5 |
@@ -70,24 +75,33 @@
 | **Criptografia assimétrica** | Asymmetric cryptography | Criptografia | Esquema com par de chaves: a pública cifra/verifica e a privada decifra/assina. | Y1P6 |
 | **Criptografia simétrica** | Symmetric encryption | Criptografia | Esquema em que a mesma chave cifra e decifra os dados. | Y1P4 |
 | **cron** | cron | Sistemas | Serviço de agendamento de tarefas recorrentes, configurado no crontab. | Y1P2 |
+| **CTI estratégica** | Strategic threat intelligence | Threat Intel | Inteligência de alto nível sobre tendências e risco, voltada a executivos e decisões de longo prazo. | Y2P1 |
+| **CTI operacional** | Operational threat intelligence | Threat Intel | Inteligência sobre campanhas e intenções de um ator específico, para resposta e caça. | Y2P1 |
+| **CTI tática** | Tactical threat intelligence | Threat Intel | Inteligência sobre TTPs e comportamento dos adversários, voltada aos times de defesa. | Y2P1 |
+| **CTI técnica** | Technical threat intelligence | Threat Intel | Indicadores técnicos específicos (IoCs) para alimentar ferramentas de detecção. | Y2P1 |
+| **Cyber Kill Chain** | Cyber Kill Chain | Threat Intel | Modelo da Lockheed Martin com 7 fases de um ataque, do reconhecimento às ações no objetivo. | Y2P1 |
 | **Código de saída** | Exit code / return code | Desenvolvimento | Número que um comando devolve ao terminar; 0 indica sucesso e outro valor indica erro. | Y1P4 |
 
 ## D
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Dado, informação e inteligência** | Data, information, intelligence | Threat Intel | Hierarquia: dado é o fato bruto, informação é o dado com contexto, inteligência é a análise que apoia decisão. | Y2P1 |
 | **Daemon** | Daemon | Sistemas | Processo que roda em segundo plano prestando um serviço. | Y1P2 |
 | **Dark web** | Dark web | Ameaças e Ataques | Parte da deep web acessível só por redes de anonimato como o Tor, usada para o bem e para o mal. | Y1P6 |
 | **Debugger** | Debugger | Desenvolvimento | Ferramenta que executa um programa passo a passo, inspecionando registradores e memória. | Y1P5 |
+| **Deception** | Deception | Threat Intel | Uso de iscas e informações falsas (honeypots, honeytokens) para enganar e detectar o atacante. | Y2P1 |
 | **Defesa em profundidade** | Defense in depth | GRC | Empilhar várias camadas de controle para que a falha de uma não comprometa o todo. | Y1P6 |
 | **Delegação de controle** | Delegation of control | GRC | Concessão de tarefas administrativas específicas sobre uma OU sem dar privilégio total. | Y1P3 |
 | **DHCP Snooping** | DHCP Snooping | Redes | Recurso do switch que só aceita respostas DHCP de portas confiáveis e monta uma tabela de vínculos IP-MAC-porta. | Y1P1 |
+| **Diamond Model** | Diamond Model | Threat Intel | Modelo que correlaciona adversário, capacidade, infraestrutura e vítima numa intrusão. | Y2P1 |
 | **Diffie-Hellman (DH)** | Diffie-Hellman key exchange | Criptografia | Protocolo que permite a duas partes combinarem uma chave secreta por um canal público. | Y1P6 |
 | **Dispositivo embarcado** | Embedded device | IoT e Hardware | Computador de propósito específico, com recursos limitados, dentro de um produto. | Y1P7 |
 | **Distribuição Linux** | Linux distribution (distro) | Sistemas | Pacote completo formado pelo kernel Linux, ferramentas GNU, gerenciador de pacotes e configurações. | Y1P2 |
 | **Domínio** | Domain | Sistemas | Unidade administrativa e de replicação do AD, identificada por um nome DNS. | Y1P3 |
 | **DORA (DORA)** | Discover, Offer, Request, Acknowledge | Redes | As quatro mensagens da concessão DHCP. | Y1P3 |
 | **Double free** | Double free | Ameaças e Ataques | Liberar duas vezes a mesma região de memória, corrompendo as estruturas do alocador. | Y1P5 |
+| **Due diligence** | Due diligence | GRC | Investigação cuidadosa para verificar a legitimidade de uma pessoa, empresa ou informação. | Y2P1 |
 
 ## E
 
@@ -104,6 +118,7 @@
 | **Endereços privados** | Private addressing (RFC 1918) | Redes | Faixas IPv4 reservadas para uso interno, não roteáveis na Internet: 10/8, 172.16/12, 192.168/16. | Y1P1 |
 | **Endurecimento** | Hardening | GRC | Conjunto de configurações que reduzem a superfície de ataque de um sistema. | Y1P2 |
 | **Engenharia reversa** | Reverse engineering | Ameaças e Ataques | Analisar um binário sem o código-fonte para entender seu funcionamento. | Y1P5 |
+| **Engenharia social** | Social engineering | Ameaças e Ataques | Manipulação psicológica de pessoas para obter informações ou acesso. | Y2P1 |
 | **Envenenamento de ARP** | ARP spoofing / ARP poisoning | Ameaças e Ataques | Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM. | Y1P1 |
 | **Envenenamento de cache ARP** | ARP cache poisoning | Ameaças e Ataques | Enviar respostas ARP falsas para redirecionar o tráfego ao atacante (MitM ou DoS). | Y1P6 |
 | **Escalada de privilégio (PrivEsc)** | Privilege escalation | Ameaças e Ataques | Quando um atacante sai de um acesso limitado para um nível mais alto (ex.: root). | Y1P2 |
@@ -118,8 +133,11 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **F3EAD (F3EAD)** | Find, Fix, Finish, Exploit, Analyze, Disseminate | Threat Intel | Ciclo que integra operações e inteligência, da identificação do alvo à disseminação do aprendizado. | Y2P1 |
 | **Failover DHCP** | DHCP failover | Redes | Dois servidores DHCP compartilham escopos para manter a entrega de IPs se um falhar. | Y1P3 |
+| **Feed de ameaças** | Threat feed | Threat Intel | Fluxo contínuo de IoCs e informações de ameaças consumido por ferramentas de segurança. | Y2P1 |
 | **Filtro WMI (WMI)** | WMI filter | Sistemas | Consulta WMI que limita a aplicação de uma GPO a máquinas que atendam a um critério. | Y1P3 |
+| **Fingerprinting** | Device/browser fingerprinting | Ameaças e Ataques | Identificar um usuário por características do dispositivo e navegador, mesmo sem cookies. | Y2P1 |
 | **Firewall com estado** | Stateful firewall | Redes | Firewall que acompanha o estado das conexões e libera automaticamente o tráfego de retorno. | Y1P1 |
 | **Firewall de aplicação web (WAF)** | Web Application Firewall | Desenvolvimento | Filtra requisições HTTP/HTTPS para proteger aplicações web (SQLi, XSS etc.). | Y1P1 |
 | **Firewall de próxima geração (NGFW)** | Next-Generation Firewall | Redes | Firewall que soma inspeção de aplicação (camada 7), IPS integrado e controle por usuário/aplicação. | Y1P1 |
@@ -147,6 +165,7 @@
 | **Globbing** | Globbing / pattern matching | Sistemas | Uso de curingas (*, ?, [ ]) pelo shell para casar nomes de arquivos. | Y1P2 |
 | **GNU Privacy Guard (GPG)** | GNU Privacy Guard | Criptografia | Implementação livre do OpenPGP para cifrar, decifrar e assinar com chaves assimétricas. | Y1P6 |
 | **GNU/Linux** | GNU/Linux | Sistemas | Nome que reconhece que o sistema combina o kernel Linux com as ferramentas do projeto GNU. | Y1P2 |
+| **Google dorks** | Google dorks | Threat Intel | Operadores de busca avançada para encontrar informações e exposições específicas. | Y2P1 |
 | **GPO forçada** | Enforced GPO | Sistemas | Link de GPO que prevalece sobre conflitos e ignora o bloqueio de herança. | Y1P3 |
 | **grep** | Global regular expression print | Sistemas | Busca linhas que casam com um padrão (texto ou regex). | Y1P2 |
 | **Grupo de segurança** | Security group | Sistemas | Grupo do AD usado para conceder permissões; escopos: global, domínio local e universal. | Y1P3 |
@@ -165,6 +184,7 @@
 | **Hexadecimal (hex)** | Hexadecimal | Sistemas | Base numérica 16; cada dígito representa 4 bits, usado para endereços e opcodes. | Y1P5 |
 | **Hierarquia padrão de sistema de arquivos (FHS)** | Filesystem Hierarchy Standard | Sistemas | Padrão que define a função de cada diretório no Linux. | Y1P2 |
 | **Homem no meio (MitM)** | Man-in-the-Middle | Ameaças e Ataques | Atacante se posiciona entre duas partes para interceptar ou alterar a comunicação. | Y1P1 |
+| **Honeypot** | Honeypot | Threat Intel | Sistema isca, sem valor real, criado para atrair atacantes e estudar suas técnicas. | Y2P1 |
 
 ## I
 
@@ -172,10 +192,15 @@
 |---|---|---|---|---|
 | **I2C (I2C)** | Inter-Integrated Circuit | IoT e Hardware | Barramento serial de dois fios para conectar sensores e periféricos ao microcontrolador. | Y1P7 |
 | **ICMP redirect** | ICMP redirect attack | Ameaças e Ataques | Uso de mensagens ICMP redirect forjadas para alterar a rota de um host e desviar o tráfego. | Y1P6 |
+| **Indicador de ataque (IoA)** | Indicator of Attack | Threat Intel | Sinal de comportamento ou intenção de ataque em andamento, antes do dano concluído. | Y2P1 |
+| **Indicador de comprometimento (IoC)** | Indicator of Compromise | Threat Intel | Evidência técnica de que um sistema já foi comprometido (hash, IP, domínio, chave de registro). | Y2P1 |
 | **Infraestrutura de chaves públicas (PKI)** | Public Key Infrastructure | Criptografia | Conjunto de autoridades, certificados e políticas que gerencia chaves públicas e identidades. | Y1P6 |
 | **Injeção** | Injection | Ameaças e Ataques | Envio de entrada maliciosa que a aplicação interpreta como comando ou consulta. | Y1P2 |
 | **Inspeção dinâmica de ARP (DAI)** | Dynamic ARP Inspection | Redes | Valida mensagens ARP contra a tabela do DHCP Snooping e descarta as falsificadas. | Y1P1 |
 | **Inspeção profunda de pacotes (DPI)** | Deep Packet Inspection | Redes | Análise do payload dos pacotes (camada 7), não só dos cabeçalhos, para identificar aplicações e assinaturas. | Y1P6 |
+| **Inteligência de ameaças cibernéticas (CTI)** | Cyber Threat Intelligence | Threat Intel | Coleta, análise e produção de conhecimento sobre adversários e ameaças para apoiar decisões de segurança. | Y2P1 |
+| **Inteligência de fontes abertas (OSINT)** | Open Source Intelligence | Threat Intel | Coleta e análise de informações disponíveis publicamente para produzir inteligência. | Y2P1 |
+| **Inteligência geoespacial (GEOINT)** | Geospatial Intelligence | Threat Intel | Geolocalização e análise de alvos a partir de imagens, metadados e referências visuais. | Y2P1 |
 | **Interface binária de aplicação (ABI)** | Application Binary Interface | Sistemas | Contrato de baixo nível (tamanhos, chamadas, registradores) que permite binários interoperarem. | Y1P5 |
 | **Internet das Coisas (IoT)** | Internet of Things | IoT e Hardware | Rede de objetos físicos com sensores e conectividade que coletam e trocam dados. | Y1P7 |
 | **IoT Industrial (IIoT)** | Industrial IoT | IoT e Hardware | Uso de IoT em indústria e infraestrutura crítica, ligado a OT/ICS. | Y1P7 |
@@ -206,6 +231,7 @@
 | **LAMP (LAMP)** | Linux, Apache, MySQL, PHP | Desenvolvimento | Stack clássica de servidor web: Linux + Apache + MySQL/MariaDB + PHP. | Y1P2 |
 | **Linguagem C (C)** | C language | Desenvolvimento | Linguagem compilada de baixo nível, base de sistemas operacionais e firmware. | Y1P7 |
 | **Linguagem interpretada** | Interpreted language | Desenvolvimento | Linguagem executada por um interpretador linha a linha, sem compilar para binário antes. | Y1P4 |
+| **Link analysis** | Link analysis | Threat Intel | Técnica de visualizar e analisar relações entre entidades para revelar padrões. | Y2P1 |
 | **Lista** | List | Desenvolvimento | Estrutura de dados ordenada e mutável do Python. | Y1P4 |
 | **Lista de controle de acesso (ACL)** | Access Control List | Redes | Lista ordenada de regras permit/deny aplicada a uma interface para filtrar tráfego; termina com um deny implícito. | Y1P1 |
 | **Little-endian** | Little-endian | Sistemas | Ordem de bytes em que o byte menos significativo é armazenado primeiro; padrão no x86. | Y1P5 |
@@ -215,11 +241,14 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **Maltego** | Maltego | Threat Intel | Ferramenta de análise de links e OSINT que monta grafos de relações entre entidades. | Y2P1 |
 | **MD5 (MD5)** | Message Digest 5 | Criptografia | Função de hash de 128 bits, hoje insegura por sofrer colisões. | Y1P6 |
 | **Memória virtual** | Virtual memory | Sistemas | Abstração que dá a cada processo um espaço de endereçamento próprio, mapeado em páginas na memória física ou em disco. | Y1P3 |
 | **Metasploitable2** | Metasploitable2 | Ameaças e Ataques | Máquina virtual Linux propositalmente vulnerável, usada para treino de pentest em laboratório. | Y1P6 |
 | **Microcontrolador (MCU)** | Microcontroller | IoT e Hardware | Chip que integra CPU, memória e periféricos para controlar um dispositivo. | Y1P7 |
 | **Mirai** | Mirai botnet | Ameaças e Ataques | Botnet de IoT que infectou dispositivos usando credenciais de fábrica e lançou grandes DDoS. | Y1P7 |
+| **MISP (MISP)** | Malware Information Sharing Platform | Threat Intel | Plataforma aberta para armazenar, correlacionar e compartilhar IoCs e informações de ameaças entre organizações. | Y2P1 |
+| **MITRE ATT&CK (ATT&CK)** | MITRE ATT&CK | Threat Intel | Base de conhecimento de táticas e técnicas reais de adversários, usada como linguagem comum de detecção. | Y2P1 |
 | **Modelo OSI (OSI)** | OSI reference model | Redes | Modelo de referência da ISO com 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação). | Y1P1 |
 | **Modo monitor** | Monitor mode | Redes | Modo da placa Wi-Fi que captura todo o tráfego do ar, não só o endereçado a ela. | Y1P7 |
 | **Monitoramento** | Monitoring | Resposta a Incidentes | Coleta contínua de métricas e eventos para detectar falhas ou anomalias. | Y1P4 |
@@ -263,6 +292,7 @@
 | **Pilha TCP/IP (TCP/IP)** | TCP/IP stack | Redes | Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação. | Y1P1 |
 | **Pipe** | Pipe | Sistemas | Operador | que envia a saída de um comando como entrada do próximo. | Y1P2 |
 | **Pipelining** | Pipelining | Sistemas | Técnica que sobrepõe etapas de várias instruções para aumentar a vazão da CPU. | Y1P5 |
+| **Pivotagem** | Pivoting (OSINT) | Threat Intel | Usar um dado encontrado para descobrir outros relacionados, expandindo a investigação. | Y2P1 |
 | **Ponteiro** | Pointer | Desenvolvimento | Variável que armazena o endereço de memória de outro dado. | Y1P7 |
 | **Ponteiro de instrução (EIP / RIP)** | Instruction pointer | Sistemas | Registrador que contém o endereço da próxima instrução a ser executada; controlá-lo é controlar o fluxo. | Y1P5 |
 | **Ponto de acesso não autorizado (Rogue AP)** | Rogue access point | Ameaças e Ataques | AP instalado na rede sem autorização, abrindo uma porta de entrada. | Y1P1 |
@@ -283,6 +313,7 @@
 | **Protocolo de transferência de arquivos (FTP)** | File Transfer Protocol | Redes | Protocolo de transferência de arquivos (TCP 21) sem criptografia; FTPS adiciona TLS. | Y1P2 |
 | **Protocolo de transferência de hipertexto (HTTP)** | Hypertext Transfer Protocol | Redes | Protocolo de aplicação da Web, baseado em requisição/resposta (métodos GET, POST etc.). | Y1P1 |
 | **Protocolo Spanning Tree (STP)** | Spanning Tree Protocol | Redes | Protocolo que bloqueia caminhos redundantes entre switches para evitar loops de camada 2. | Y1P1 |
+| **Proxy** | Proxy | Redes | Intermediário que repassa requisições, mudando o IP visto pelo destino. | Y2P1 |
 | **Python** | Python | Desenvolvimento | Linguagem interpretada, de alto nível e multiparadigma, muito usada em automação de segurança e ciência de dados. | Y1P4 |
 
 ## R
@@ -292,6 +323,7 @@
 | **RADIUS (RADIUS)** | Remote Authentication Dial-In User Service | Redes | Protocolo AAA (UDP 1812/1813) que combina autenticação e autorização e cifra só a senha; ideal para acesso à rede. | Y1P1 |
 | **Rainbow table** | Rainbow table | Ameaças e Ataques | Tabela pré-computada de hashes para reverter senhas rapidamente; o salt a inutiliza. | Y1P6 |
 | **Ransomware** | Ransomware | Ameaças e Ataques | Malware que cifra os dados (ou o disco inteiro) e exige resgate para liberar. | Y1P1 |
+| **Recon-ng** | Recon-ng | Threat Intel | Framework de reconhecimento em Python, com módulos no estilo Metasploit. | Y2P1 |
 | **Rede de longa distância (WAN)** | Wide Area Network | Redes | Rede que interliga LANs em grandes áreas geográficas. | Y1P1 |
 | **Rede local (LAN)** | Local Area Network | Redes | Rede que cobre uma área pequena (casa, andar, empresa) e termina no roteador/gateway. | Y1P1 |
 | **Rede local sem fio (WLAN)** | Wireless LAN | Redes | Rede sem fio local baseada nos padrões IEEE 802.11 (Wi-Fi). | Y1P7 |
@@ -301,6 +333,7 @@
 | **Registrador** | Register | Sistemas | Pequena área de armazenamento dentro da CPU, extremamente rápida, usada no processamento. | Y1P5 |
 | **Registradores de uso geral (GPR)** | General-purpose registers | Sistemas | Registradores x86 usados em cálculos e manipulação de dados: EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP. | Y1P5 |
 | **Registros DNS (RR)** | DNS resource records | Redes | Entradas de uma zona: SOA, NS, A, AAAA, CNAME, MX, PTR, SRV etc. | Y1P3 |
+| **Requisitos prioritários de inteligência (PIR)** | Priority Intelligence Requirements | Threat Intel | Perguntas-chave que direcionam a coleta e a análise de inteligência. | Y2P1 |
 | **Retorno do investimento em segurança (ROSI)** | Return on Security Investment | GRC | Métrica que estima o retorno financeiro de um investimento em segurança (perda evitada × custo). | Y1P6 |
 | **RFID (RFID)** | Radio-Frequency Identification | IoT e Hardware | Identificação por radiofrequência usando etiquetas (passivas, semipassivas ou ativas) e leitores. | Y1P7 |
 | **Risco** | Risk | GRC | Possibilidade de uma ameaça explorar uma vulnerabilidade e causar impacto a um ativo; costuma ser estimado como probabilidade × impacto. | Y1P4 |
@@ -321,6 +354,7 @@
 | **sed** | Stream editor | Sistemas | Editor de fluxo para substituir, apagar ou extrair texto por padrão. | Y1P2 |
 | **Segregação de funções (SoD)** | Separation of duties | GRC | Dividir uma tarefa crítica entre pessoas diferentes para evitar fraude e erro. | Y1P6 |
 | **Segurança de porta** | Port Security | Redes | Limita quais e quantos MACs podem usar uma porta do switch e define a ação em caso de violação. | Y1P1 |
+| **Segurança operacional (OpSec)** | Operational Security | Threat Intel | Práticas para proteger a própria operação de investigação, evitando expor identidade e intenções. | Y2P1 |
 | **Segurança por obscuridade** | Security by obscurity | GRC | Depender do segredo sobre o funcionamento do sistema como proteção; fraco se usado sozinho. | Y1P6 |
 | **Senha hardcoded** | Hardcoded password | Ameaças e Ataques | Credencial fixa embutida no firmware ou código, impossível de o usuário trocar. | Y1P7 |
 | **Server Message Block (SMB)** | Server Message Block | Redes | Protocolo de compartilhamento de arquivos e impressoras (comum no Windows; Samba no Linux). | Y1P2 |
@@ -334,6 +368,7 @@
 | **Shell Script** | Shell script | Desenvolvimento | Arquivo de comandos de shell executado em sequência para automatizar tarefas. | Y1P4 |
 | **Shell seguro (SSH)** | Secure Shell | Redes | Protocolo de acesso remoto cifrado (TCP 22), com autenticação por senha ou chave. | Y1P2 |
 | **Shellcode** | Shellcode | Ameaças e Ataques | Pequeno trecho de código de máquina usado como payload em exploração de memória. | Y1P5 |
+| **Shodan** | Shodan | Threat Intel | Motor de busca de dispositivos e serviços expostos na internet. | Y2P1 |
 | **Sistema autônomo (AS)** | Autonomous System | Redes | Conjunto de redes sob uma única política de roteamento, identificado por um número (ASN). | Y1P1 |
 | **Sistema de arquivos** | Filesystem | Sistemas | Estrutura que organiza como os dados são gravados no disco. | Y1P2 |
 | **Sistema de arquivos de rede (NFS)** | Network File System | Redes | Protocolo para compartilhar diretórios pela rede, montados como se fossem locais. | Y1P2 |
@@ -344,11 +379,14 @@
 | **Sistema de prevenção de intrusão (IPS)** | Intrusion Prevention System | Resposta a Incidentes | Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso. | Y1P1 |
 | **Sistema operacional (SO / OS)** | Operating system | Sistemas | Software que gerencia o hardware e oferece abstrações (processos, arquivos, memória) aos programas. | Y1P3 |
 | **Sniffing** | Sniffing | Ameaças e Ataques | Captura passiva do tráfego de rede para ler dados, especialmente os em texto claro. | Y1P6 |
+| **Sock puppet** | Sock puppet | Threat Intel | Persona falsa, isolada e consistente, usada para investigar sem expor a identidade real. | Y2P1 |
 | **Socket** | Socket | Redes | Ponto final de comunicação em rede (IP + porta + protocolo) usado pelos programas para trocar dados. | Y1P4 |
 | **SPI (SPI)** | Serial Peripheral Interface | IoT e Hardware | Barramento serial síncrono para comunicação com chips, como memórias flash. | Y1P7 |
+| **SpiderFoot** | SpiderFoot | Threat Intel | Ferramenta automatizada de OSINT que coleta dados de centenas de fontes. | Y2P1 |
 | **ss** | Socket statistics | Redes | Lista sockets e portas em escuta ou conexões ativas, junto com o processo dono. | Y1P2 |
 | **Stack canary** | Stack canary | Sistemas | Valor secreto colocado antes do endereço de retorno; se for alterado, o programa aborta. | Y1P5 |
 | **Steghide** | Steghide | Criptografia | Ferramenta de esteganografia que embute e extrai dados cifrados em imagens e áudio. | Y1P6 |
+| **STIX/TAXII (STIX/TAXII)** | Structured Threat Information eXpression / Trusted Automated eXchange | Threat Intel | Padrões para descrever (STIX) e transportar (TAXII) inteligência de ameaças de forma estruturada. | Y2P1 |
 | **Stuxnet** | Stuxnet | Ameaças e Ataques | Malware que sabotou centrífugas industriais via PLC, mostrando dano físico por código. | Y1P7 |
 | **sudo** | Superuser do | Sistemas | Executa um comando com privilégios de outro usuário (normalmente root), com registro em log. | Y1P2 |
 | **SUID (SUID)** | Set User ID | Sistemas | Bit especial que faz um executável rodar com o privilégio do dono do arquivo; alvo comum de escalada de privilégio. | Y1P2 |
@@ -370,6 +408,7 @@
 | **Telnet** | Telnet | Redes | Protocolo antigo de acesso remoto (TCP 23) que trafega tudo em texto claro. | Y1P2 |
 | **Teste de intrusão (Pentest)** | Penetration test | Ameaças e Ataques | Ataque simulado e autorizado que explora vulnerabilidades para provar o impacto. | Y1P4 |
 | **Texto claro** | Cleartext | Ameaças e Ataques | Dados transmitidos sem criptografia, legíveis por quem capturar o tráfego. | Y1P2 |
+| **theHarvester** | theHarvester | Threat Intel | Ferramenta que coleta e-mails, nomes, subdomínios e hosts de fontes públicas. | Y2P1 |
 | **Thread** | Thread | Sistemas | Linha de execução dentro de um processo; threads compartilham a memória do processo. | Y1P3 |
 | **Three-way handshake** | Three-way handshake | Redes | Estabelecimento de conexão TCP: SYN → SYN-ACK → ACK. | Y1P4 |
 | **Tinkercad** | Tinkercad | IoT e Hardware | Simulador online de circuitos e Arduino, usado para prototipar sem hardware físico. | Y1P7 |
@@ -380,6 +419,7 @@
 | **Tronco 802.1Q** | 802.1Q trunk | Redes | Link que transporta várias VLANs entre switches, marcando os quadros com a tag da VLAN. | Y1P1 |
 | **Tríade CID (CID / CIA)** | CIA triad | GRC | Os três pilares da segurança da informação: confidencialidade, integridade e disponibilidade. | Y1P1 |
 | **tshark** | tshark | Forense | Versão em linha de comando do Wireshark, útil para automação e extração de campos. | Y1P6 |
+| **Táticas, técnicas e procedimentos (TTP)** | Tactics, Techniques and Procedures | Threat Intel | O comportamento do adversário: o porquê (tática), o como (técnica) e o passo a passo (procedimento). | Y2P1 |
 
 ## U
 
@@ -402,6 +442,7 @@
 
 | Termo (PT) | Term (EN) | Categoria | Definição | Fase |
 |---|---|---|---|---|
+| **WHOIS** | WHOIS | Redes | Serviço que consulta dados de registro de um domínio ou bloco de IP. | Y2P1 |
 | **Windows Server** | Windows Server | Sistemas | Linha de sistemas operacionais da Microsoft para servidores, com funções como AD, DNS, DHCP, IIS e Hyper-V. | Y1P3 |
 | **Windows Server Update Services (WSUS)** | Windows Server Update Services | Sistemas | Serviço que centraliza aprovação e distribuição de atualizações Microsoft na rede. | Y1P3 |
 | **Wine (Wine)** | Wine Is Not an Emulator | Sistemas | Camada de compatibilidade que roda executáveis Windows no Linux sem emular o SO. | Y1P5 |

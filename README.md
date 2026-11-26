@@ -17,7 +17,7 @@ and how the topic connects to real SOC / blue-team work.
 | 1 | 5 | Arquitetura, Binários e Segurança de Memória (Computer Architecture, Binaries & Memory Safety) | [notes](year-1/phase-5) |
 | 1 | 6 | Criptografia, Análise de Tráfego e Ataques TCP/IP (Cryptography, Traffic Analysis & TCP/IP Attacks) | [notes](year-1/phase-6) |
 | 1 | 7 | Segurança de IoT, Firmware e Hardware (IoT, Firmware & Hardware Security) | [notes](year-1/phase-7) |
-| 2 | 1 | _TBD_ | [notes](year-2/phase-1) |
+| 2 | 1 | Cyber Threat Intelligence e OSINT (Cyber Threat Intelligence & OSINT) | [notes](year-2/phase-1) |
 | 2 | 2 | _TBD_ | [notes](year-2/phase-2) |
 | 2 | 3 | _TBD_ | [notes](year-2/phase-3) |
 | 2 | 4 | _TBD_ | [notes](year-2/phase-4) |

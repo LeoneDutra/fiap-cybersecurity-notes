@@ -298,3 +298,44 @@ Modo monitor,Monitor mode,,Redes,"Modo da placa Wi-Fi que captura todo o tráfeg
 Tecnologia operacional,Operational Technology,OT,IoT e Hardware,Hardware e software que monitoram e controlam processos físicos industriais.,Sistemas de uma usina ou fábrica.,Y1P7
 Sistema de controle industrial,Industrial Control System,ICS,IoT e Hardware,"Conjunto de sistemas (SCADA, PLC) que automatiza processos industriais.",Controle de uma estação de tratamento de água.,Y1P7
 Controlador lógico programável,Programmable Logic Controller,PLC,IoT e Hardware,Computador industrial robusto que controla máquinas e processos em tempo real.,Alvo do Stuxnet.,Y1P7
+Inteligência de ameaças cibernéticas,Cyber Threat Intelligence,CTI,Threat Intel,"Coleta, análise e produção de conhecimento sobre adversários e ameaças para apoiar decisões de segurança.",Relatório sobre um grupo que ataca o setor financeiro.,Y2P1
+"Dado, informação e inteligência","Data, information, intelligence",,Threat Intel,"Hierarquia: dado é o fato bruto, informação é o dado com contexto, inteligência é a análise que apoia decisão.",IP → IP suspeito às 3h → bloquear e caçar.,Y2P1
+CTI estratégica,Strategic threat intelligence,,Threat Intel,"Inteligência de alto nível sobre tendências e risco, voltada a executivos e decisões de longo prazo.",Panorama de ameaças ao setor para o board.,Y2P1
+CTI tática,Tactical threat intelligence,,Threat Intel,"Inteligência sobre TTPs e comportamento dos adversários, voltada aos times de defesa.",Como um grupo costuma se mover lateralmente.,Y2P1
+CTI operacional,Operational threat intelligence,,Threat Intel,"Inteligência sobre campanhas e intenções de um ator específico, para resposta e caça.",Detalhes de uma campanha de phishing em curso.,Y2P1
+CTI técnica,Technical threat intelligence,,Threat Intel,Indicadores técnicos específicos (IoCs) para alimentar ferramentas de detecção.,Lista de hashes e IPs maliciosos num feed.,Y2P1
+Cyber Kill Chain,Cyber Kill Chain,,Threat Intel,"Modelo da Lockheed Martin com 7 fases de um ataque, do reconhecimento às ações no objetivo.",Quebrar a cadeia bloqueando a fase de entrega.,Y2P1
+MITRE ATT&CK,MITRE ATT&CK,ATT&CK,Threat Intel,"Base de conhecimento de táticas e técnicas reais de adversários, usada como linguagem comum de detecção.","Mapear um incidente a técnicas T1059, T1003.",Y2P1
+"Táticas, técnicas e procedimentos","Tactics, Techniques and Procedures",TTP,Threat Intel,"O comportamento do adversário: o porquê (tática), o como (técnica) e o passo a passo (procedimento).",TTPs atribuídos a um grupo de ransomware.,Y2P1
+Diamond Model,Diamond Model,,Threat Intel,"Modelo que correlaciona adversário, capacidade, infraestrutura e vítima numa intrusão.",Pivotar de uma infraestrutura C2 para outras vítimas.,Y2P1
+F3EAD,"Find, Fix, Finish, Exploit, Analyze, Disseminate",F3EAD,Threat Intel,"Ciclo que integra operações e inteligência, da identificação do alvo à disseminação do aprendizado.",Usado para unir caça e produção de inteligência.,Y2P1
+Requisitos prioritários de inteligência,Priority Intelligence Requirements,PIR,Threat Intel,Perguntas-chave que direcionam a coleta e a análise de inteligência.,'Quais grupos miram nosso setor?',Y2P1
+Indicador de comprometimento,Indicator of Compromise,IoC,Threat Intel,"Evidência técnica de que um sistema já foi comprometido (hash, IP, domínio, chave de registro).",Hash de um malware conhecido num endpoint.,Y2P1
+Indicador de ataque,Indicator of Attack,IoA,Threat Intel,"Sinal de comportamento ou intenção de ataque em andamento, antes do dano concluído.",Processo tentando despejar credenciais do LSASS.,Y2P1
+Feed de ameaças,Threat feed,,Threat Intel,Fluxo contínuo de IoCs e informações de ameaças consumido por ferramentas de segurança.,Feed de IPs maliciosos atualizado por hora.,Y2P1
+MISP,Malware Information Sharing Platform,MISP,Threat Intel,"Plataforma aberta para armazenar, correlacionar e compartilhar IoCs e informações de ameaças entre organizações.",Compartilhar IoCs de uma campanha com parceiros.,Y2P1
+STIX/TAXII,Structured Threat Information eXpression / Trusted Automated eXchange,STIX/TAXII,Threat Intel,Padrões para descrever (STIX) e transportar (TAXII) inteligência de ameaças de forma estruturada.,Exportar indicadores em STIX 2.1.,Y2P1
+Segurança operacional,Operational Security,OpSec,Threat Intel,"Práticas para proteger a própria operação de investigação, evitando expor identidade e intenções.",Usar VM e persona separadas para investigar.,Y2P1
+Contrainteligência,Counterintelligence,,Threat Intel,Medidas para detectar e frustrar a coleta de inteligência do adversário sobre você.,Verificação de fontes e compartimentalização.,Y2P1
+Deception,Deception,,Threat Intel,"Uso de iscas e informações falsas (honeypots, honeytokens) para enganar e detectar o atacante.",Honeypot que atrai e registra o invasor.,Y2P1
+Honeypot,Honeypot,,Threat Intel,"Sistema isca, sem valor real, criado para atrair atacantes e estudar suas técnicas.",Servidor SSH falso que registra tentativas.,Y2P1
+Engenharia social,Social engineering,,Ameaças e Ataques,Manipulação psicológica de pessoas para obter informações ou acesso.,"Phishing, pretexto, persuasão (PNL).",Y2P1
+Inteligência de fontes abertas,Open Source Intelligence,OSINT,Threat Intel,Coleta e análise de informações disponíveis publicamente para produzir inteligência.,Mapear funcionários de uma empresa por LinkedIn.,Y2P1
+Ciclo de vida do OSINT,OSINT lifecycle,,Threat Intel,"Etapas: requisitos (PIR), coleta, processamento, análise, produção, disseminação e feedback.",Planejar antes de coletar para não acumular lixo.,Y2P1
+WHOIS,WHOIS,,Redes,Serviço que consulta dados de registro de um domínio ou bloco de IP.,whois exemplo.com,Y2P1
+Certificate Transparency,Certificate Transparency,CT,Redes,"Logs públicos de certificados TLS emitidos, úteis para descobrir subdomínios.",Buscar %.exemplo.com no crt.sh.,Y2P1
+Google dorks,Google dorks,,Threat Intel,Operadores de busca avançada para encontrar informações e exposições específicas.,site:exemplo.com filetype:pdf,Y2P1
+Shodan,Shodan,,Threat Intel,Motor de busca de dispositivos e serviços expostos na internet.,Encontrar câmeras e servidores de uma organização.,Y2P1
+Censys,Censys,,Threat Intel,"Motor de busca de hosts, certificados e serviços expostos, similar ao Shodan.",Mapear a superfície de ataque por certificados.,Y2P1
+Inteligência geoespacial,Geospatial Intelligence,GEOINT,Threat Intel,"Geolocalização e análise de alvos a partir de imagens, metadados e referências visuais.",Descobrir onde uma foto foi tirada.,Y2P1
+Sock puppet,Sock puppet,,Threat Intel,"Persona falsa, isolada e consistente, usada para investigar sem expor a identidade real.",Perfil de investigação separado do pessoal.,Y2P1
+Due diligence,Due diligence,,GRC,"Investigação cuidadosa para verificar a legitimidade de uma pessoa, empresa ou informação.",Checar se um perfil corporativo é real.,Y2P1
+Maltego,Maltego,,Threat Intel,Ferramenta de análise de links e OSINT que monta grafos de relações entre entidades.,Pivotar de um domínio para e-mails e hosts.,Y2P1
+SpiderFoot,SpiderFoot,,Threat Intel,Ferramenta automatizada de OSINT que coleta dados de centenas de fontes.,Varredura automatizada de um domínio.,Y2P1
+Recon-ng,Recon-ng,,Threat Intel,"Framework de reconhecimento em Python, com módulos no estilo Metasploit.",Coletar subdomínios via módulos.,Y2P1
+theHarvester,theHarvester,,Threat Intel,"Ferramenta que coleta e-mails, nomes, subdomínios e hosts de fontes públicas.","theHarvester -d exemplo.com -b bing,crtsh",Y2P1
+Pivotagem,Pivoting (OSINT),,Threat Intel,"Usar um dado encontrado para descobrir outros relacionados, expandindo a investigação.",De um e-mail para contas e domínios ligados.,Y2P1
+Link analysis,Link analysis,,Threat Intel,Técnica de visualizar e analisar relações entre entidades para revelar padrões.,"Grafo ligando pessoas, domínios e empresas.",Y2P1
+Proxy,Proxy,,Redes,"Intermediário que repassa requisições, mudando o IP visto pelo destino.",Proxy web para ocultar a origem.,Y2P1
+Anonimato,Anonymity,,Threat Intel,"Ocultar quem é o autor de uma ação (diferente de privacidade, que oculta o conteúdo).",Tor foca anonimato de identidade.,Y2P1
+Fingerprinting,Device/browser fingerprinting,,Ameaças e Ataques,"Identificar um usuário por características do dispositivo e navegador, mesmo sem cookies.","Resolução, fontes e user-agent combinados.",Y2P1

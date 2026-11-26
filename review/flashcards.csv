@@ -69,3 +69,13 @@ O que é um ataque BadUSB?,Dispositivo USB que se apresenta como teclado (HID) e
 Por que a segurança física importa em IoT?,"O atacante tem o dispositivo na mão: pode soldar nas interfaces de debug e ler a flash. Hardening físico (desabilitar JTAG, cifrar flash, secure boot) entra no modelo de ameaça.",Y1P7,iot hardware
 Boas práticas para defender uma implantação de IoT?,"VLAN própria, trocar credenciais padrão, TLS + autenticação, updates assinados, desativar debug em produção, inventário e patch.",Y1P7,iot defesa
 O que o Stuxnet mostra sobre OT/embarcados?,Malware pode causar dano físico (sabotou centrífugas via PLC) mesmo em redes air-gapped; reforça segurança de OT/ICS e controle de mídias.,Y1P7,ot ics
+"Diferença entre dado, informação e inteligência?",Dado: fato bruto (um IP). Informação: dado com contexto (IP acessou às 3h). Inteligência: análise que orienta decisão (IP de grupo que ataca seu setor → bloquear e investigar).,Y2P1,cti fundamentos
+Os quatro tipos de CTI e para quem servem?,"Estratégica (diretoria/tendências), operacional (resposta/campanhas), tática (defensores/TTPs), técnica (ferramentas/IoCs).",Y2P1,cti
+Diferença entre IoC e IoA?,"IoC: evidência do que já ocorreu (hash, IP, domínio). IoA: comportamento/intenção em andamento (ex.: dump de credenciais). IoA detecta mais cedo.",Y2P1,cti ioc ioa
+Kill Chain × MITRE ATT&CK?,Kill Chain: modelo linear das fases do ataque (onde interromper). ATT&CK: matriz de táticas e técnicas reais (mapear detecção e cobertura).,Y2P1,cti frameworks
+O que é o Diamond Model?,"Liga adversário, capacidade, infraestrutura e vítima numa intrusão, permitindo correlacionar e pivotar entre eventos.",Y2P1,cti frameworks
+Por que OpSec é essencial no OSINT?,Usar IP/conta/navegador reais pode alertar o alvo e expor o investigador. Compartimentalizar identidade e infraestrutura evita contaminar a investigação e virar vítima.,Y2P1,opsec osint
+Privacidade é o mesmo que anonimato? VPN garante anonimato?,"Não. Privacidade esconde conteúdo; anonimato esconde identidade. VPN muda o IP de saída e protege em trânsito, mas o provedor sabe quem você é e há pegadas; não anonimiza sozinha.",Y2P1,anonimato
+Etapas do ciclo de vida do OSINT?,Requisitos (PIR) → coleta → processamento → análise → produção → disseminação → feedback/melhoria.,Y2P1,osint ciclo
+O que é um sock puppet e por que verificar perfis?,Persona falsa e isolada para investigar sem expor a identidade real. A verificação (due diligence) distingue perfis reais de fabricados.,Y2P1,osint perfis
+"Cuidados com automação de coleta (Maltego, Recon-ng, theHarvester)?","Validar dados (falsos positivos), respeitar termos de uso e a lei, controlar ruído/rate limit e manter o humano no circuito para interpretar.",Y2P1,osint automacao
