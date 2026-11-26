@@ -1,1 +1,11 @@
 question,answer,phase,tags
+Qual a diferença entre o modelo OSI e o TCP/IP?,"OSI é referência com 7 camadas; TCP/IP é a pilha usada de fato, com 4. Aplicação+apresentação+sessão viram 'aplicação' e física+enlace viram 'acesso à rede'.",Y1P1,redes osi tcpip
+Quantos hosts utilizáveis existem em uma /26?,6 bits de host: 2^6 = 64 endereços − rede − broadcast = 62 hosts.,Y1P1,redes ipv4 subnetting
+Por que o WannaCry se espalhou tão rápido?,"Era um worm que explorava o SMBv1 (EternalBlue) e se propagava sozinho, sem phishing. Mitigação: desativar SMBv1 e aplicar o MS17-010.",Y1P1,ameacas ransomware
+OSPF × BGP: quando usar cada um?,"OSPF: IGP link-state (Dijkstra) dentro do AS, convergência rápida. BGP: EGP path-vector entre ASs, com políticas (AS-PATH, MED).",Y1P1,redes roteamento
+"O que fazem o DHCP Snooping e o DAI, e como se complementam?",DHCP Snooping bloqueia DHCP falso em portas não confiáveis e monta a tabela IP-MAC-porta; o DAI usa essa tabela para descartar ARP falsificado (anti-MitM).,Y1P1,redes camada2
+TACACS+ ou RADIUS para controlar comandos em switches?,"TACACS+: separa AAA, cifra o pacote inteiro (TCP 49) e autoriza comando a comando. RADIUS é melhor para acesso à rede (802.1X, VPN, Wi-Fi).",Y1P1,aaa redes
+O que o WPA3 traz de novo em relação ao WPA2?,"SAE no lugar do PSK (resiste a dicionário offline), forward secrecy e opção de 192 bits no Enterprise.",Y1P1,wireless criptografia
+Onde posicionar ACL estendida e ACL padrão?,Estendida perto da origem (filtra origem/destino/porta e descarta cedo); padrão perto do destino (só filtra a origem).,Y1P1,redes acl
+IDS × IPS?,IDS é passivo: monitora uma cópia do tráfego e alerta. IPS fica inline e bloqueia em tempo real; um falso positivo derruba tráfego legítimo.,Y1P1,deteccao soc
+IPsec: modo túnel × modo transporte?,Transporte protege só o payload e mantém o cabeçalho original (host a host). Túnel encapsula o pacote inteiro em novo cabeçalho IP (VPN site-to-site).,Y1P1,vpn criptografia

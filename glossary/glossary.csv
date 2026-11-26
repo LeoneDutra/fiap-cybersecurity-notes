@@ -1,1 +1,57 @@
 term_pt,term_en,acronym,category,definition_pt,example,phases
+Tríade CID,CIA triad,CID / CIA,GRC,"Os três pilares da segurança da informação: confidencialidade, integridade e disponibilidade.",Um ransomware afeta a disponibilidade; um vazamento afeta a confidencialidade.,Y1P1
+Não repúdio,Non-repudiation,,GRC,Garantia de que o autor de uma ação não consegue negar depois que a realizou.,Assinatura digital em um e-mail ou contrato.,Y1P1
+Negação de serviço,Denial of Service,DoS / DDoS,Ameaças e Ataques,Ataque que esgota recursos de um serviço ou rede para torná-lo indisponível; DDoS usa muitas origens ao mesmo tempo.,Botnet enviando milhões de requisições a um site.,Y1P1
+Ransomware,Ransomware,,Ameaças e Ataques,Malware que cifra os dados (ou o disco inteiro) e exige resgate para liberar.,"WannaCry, que se propagou explorando o SMBv1 (EternalBlue).",Y1P1
+Vetor de ataque,Attack vector,,Ameaças e Ataques,Caminho ou meio usado pelo atacante para chegar ao alvo.,"Phishing, serviço exposto desatualizado, credencial vazada.",Y1P1
+Tomada de conta,Account takeover,ATO,Ameaças e Ataques,Uso de credenciais legítimas roubadas para controlar a conta de uma vítima.,Invasor entra no e-mail da vítima e reseta senhas de outros serviços.,Y1P1
+Hacktivismo,Hacktivism,,Ameaças e Ataques,"Ataques motivados por causas políticas ou sociais, normalmente defacement ou DoS.",Pichação (defacement) de sites de governo.,Y1P1
+Varredura de portas,Port scan,,Ameaças e Ataques,Sondagem de hosts para descobrir quais estão ativos e quais serviços/portas estão abertos; costuma ser o primeiro passo de um ataque.,nmap -sS 192.168.0.0/24,Y1P1
+Modelo OSI,OSI reference model,OSI,Redes,"Modelo de referência da ISO com 7 camadas (física, enlace, rede, transporte, sessão, apresentação, aplicação).","Um switch atua na camada 2; um roteador, na camada 3.",Y1P1
+Pilha TCP/IP,TCP/IP stack,TCP/IP,Redes,"Arquitetura de protocolos usada na Internet, com 4 camadas: acesso à rede, internet, transporte e aplicação.",HTTP sobre TCP sobre IP sobre Ethernet.,Y1P1
+Encapsulamento,Encapsulation,,Redes,Cada camada acrescenta seu cabeçalho aos dados da camada de cima antes de enviar; o destino faz o processo inverso.,Dados → segmento → pacote → quadro → bits.,Y1P1
+Rede local,Local Area Network,LAN,Redes,"Rede que cobre uma área pequena (casa, andar, empresa) e termina no roteador/gateway.",Rede do escritório ligada por switches.,Y1P1
+Rede de longa distância,Wide Area Network,WAN,Redes,Rede que interliga LANs em grandes áreas geográficas.,Link entre filiais; a própria Internet.,Y1P1
+Endereço MAC,MAC address,MAC,Redes,"Endereço físico de 48 bits da interface de rede, usado na camada 2.",00:1A:2B:3C:4D:5E,Y1P1
+Tabela de endereços MAC,MAC address table (CAM table),CAM,Redes,Tabela do switch que associa endereços MAC às portas para encaminhar quadros.,show mac address-table,Y1P1
+Rede local virtual,Virtual LAN,VLAN,Redes,Segmentação lógica de um switch em domínios de broadcast separados.,"VLAN 10 = RH, VLAN 20 = TI.",Y1P1
+Tronco 802.1Q,802.1Q trunk,,Redes,"Link que transporta várias VLANs entre switches, marcando os quadros com a tag da VLAN.",switchport mode trunk,Y1P1
+Protocolo Spanning Tree,Spanning Tree Protocol,STP,Redes,Protocolo que bloqueia caminhos redundantes entre switches para evitar loops de camada 2.,Uma porta fica em estado blocking até o link principal cair.,Y1P1
+Endereço IPv4,IPv4 address,IPv4,Redes,Endereço lógico de 32 bits escrito em 4 octetos decimais.,192.168.1.10/24,Y1P1
+Endereços privados,Private addressing (RFC 1918),,Redes,"Faixas IPv4 reservadas para uso interno, não roteáveis na Internet: 10/8, 172.16/12, 192.168/16.",Rede doméstica em 192.168.0.0/24.,Y1P1
+Roteamento sem classes,Classless Inter-Domain Routing,CIDR,Redes,"Notação e técnica que define a máscara pelo número de bits de rede (/n), sem depender das classes.",200.18.160.0/21,Y1P1
+Máscara de tamanho variável,Variable Length Subnet Mask,VLSM,Redes,Divisão de um bloco em sub-redes de tamanhos diferentes conforme a necessidade de cada uma.,Uma /25 para 126 hosts e duas /26 para 62 hosts.,Y1P1
+Tradução de endereços de rede,Network Address Translation,NAT,Redes,Troca de endereços IP (geralmente privado→público) na borda da rede.,Roteador doméstico compartilhando um IP público.,Y1P1
+Endereço IPv6,IPv6 address,IPv6,Redes,"Endereço de 128 bits em hexadecimal, em 8 grupos separados por dois-pontos.",2001:db8::1/64,Y1P1
+Autoconfiguração sem estado,Stateless Address Autoconfiguration,SLAAC,Redes,Mecanismo IPv6 em que o host gera o próprio endereço a partir do prefixo anunciado pelo roteador.,Host recebe o prefixo 2001:db8:1::/64 via Router Advertisement.,Y1P1
+Pilha dupla,Dual-stack,,Redes,Método de transição em que equipamentos rodam IPv4 e IPv6 ao mesmo tempo.,Servidor responde tanto em A quanto em AAAA.,Y1P1
+Roteamento estático,Static routing,,Redes,Rotas configuradas manualmente pelo administrador.,ip route 0.0.0.0 0.0.0.0 10.0.0.1,Y1P1
+Roteamento dinâmico,Dynamic routing,,Redes,Roteadores trocam informações por protocolos e montam as rotas automaticamente.,"RIP, EIGRP, OSPF, BGP.",Y1P1
+Primeiro o caminho mais curto,Open Shortest Path First,OSPF,Redes,IGP de estado de enlace (link-state) que usa o algoritmo de Dijkstra e organiza a rede em áreas (área 0 = backbone).,router ospf 1 / network 10.0.0.0 0.0.0.255 area 0,Y1P1
+Protocolo de borda,Border Gateway Protocol,BGP,Redes,Protocolo de vetor de caminho usado entre sistemas autônomos; é o roteamento da Internet.,eBGP entre o provedor (AS 65001) e o cliente (AS 65002).,Y1P1
+Sistema autônomo,Autonomous System,AS,Redes,"Conjunto de redes sob uma única política de roteamento, identificado por um número (ASN).",AS de um provedor de Internet.,Y1P1
+Sistema de nomes de domínio,Domain Name System,DNS,Redes,Serviço que traduz nomes em endereços IP de forma hierárquica e distribuída.,nslookup exemplo.com,Y1P1
+Protocolo de transferência de hipertexto,Hypertext Transfer Protocol,HTTP,Redes,"Protocolo de aplicação da Web, baseado em requisição/resposta (métodos GET, POST etc.).",GET /index.html HTTP/1.1,Y1P1
+Lista de controle de acesso,Access Control List,ACL,Redes,Lista ordenada de regras permit/deny aplicada a uma interface para filtrar tráfego; termina com um deny implícito.,access-list 10 permit 192.168.10.0 0.0.0.255,Y1P1
+Máscara curinga,Wildcard mask,,Redes,Máscara usada em ACLs e no OSPF em que 0 = bit deve coincidir e 1 = bit ignorado (o inverso da máscara de sub-rede).,0.0.0.255 para uma /24.,Y1P1
+"Autenticação, autorização e auditoria","Authentication, Authorization and Accounting",AAA,GRC,"Framework que controla quem acessa (autenticação), o que pode fazer (autorização) e registra o que fez (accounting).",Login em roteador validado por servidor central.,Y1P1
+TACACS+,Terminal Access Controller Access-Control System Plus,TACACS+,Redes,Protocolo AAA (TCP/49) que cifra o pacote inteiro e separa as três funções; ideal para administrar equipamentos.,Autorizar comando a comando quem pode usar 'configure terminal'.,Y1P1
+RADIUS,Remote Authentication Dial-In User Service,RADIUS,Redes,Protocolo AAA (UDP 1812/1813) que combina autenticação e autorização e cifra só a senha; ideal para acesso à rede.,Wi-Fi corporativo 802.1X/WPA2-Enterprise.,Y1P1
+DHCP Snooping,DHCP Snooping,,Redes,Recurso do switch que só aceita respostas DHCP de portas confiáveis e monta uma tabela de vínculos IP-MAC-porta.,Bloqueia um servidor DHCP falso (rogue DHCP).,Y1P1
+Inspeção dinâmica de ARP,Dynamic ARP Inspection,DAI,Redes,Valida mensagens ARP contra a tabela do DHCP Snooping e descarta as falsificadas.,ip arp inspection vlan 10,Y1P1
+Envenenamento de ARP,ARP spoofing / ARP poisoning,,Ameaças e Ataques,"Envio de respostas ARP falsas para associar o MAC do atacante ao IP de outro host (ex.: gateway), permitindo MitM.",Atacante se passa pelo gateway e intercepta o tráfego.,Y1P1
+Segurança de porta,Port Security,,Redes,Limita quais e quantos MACs podem usar uma porta do switch e define a ação em caso de violação.,switchport port-security maximum 2 / violation shutdown,Y1P1
+Homem no meio,Man-in-the-Middle,MitM,Ameaças e Ataques,Atacante se posiciona entre duas partes para interceptar ou alterar a comunicação.,ARP spoofing ou evil twin em Wi-Fi público.,Y1P1
+Gêmeo maligno,Evil twin,,Ameaças e Ataques,Ponto de acesso falso com o mesmo SSID de uma rede legítima para atrair vítimas.,AP falso 'Cafe_WiFi' capturando credenciais.,Y1P1
+Ponto de acesso não autorizado,Rogue access point,Rogue AP,Ameaças e Ataques,"AP instalado na rede sem autorização, abrindo uma porta de entrada.",Funcionário liga um roteador Wi-Fi próprio na tomada de rede.,Y1P1
+WPA2,Wi-Fi Protected Access 2,WPA2,Criptografia,Padrão de segurança Wi-Fi com AES-CCMP; modos Personal (PSK) e Enterprise (802.1X/RADIUS).,Rede doméstica com senha WPA2-PSK.,Y1P1
+WPA3,Wi-Fi Protected Access 3,WPA3,Criptografia,"Sucessor do WPA2 com SAE, forward secrecy e opção de 192 bits no modo Enterprise.",Roteador novo configurado em WPA3-Personal.,Y1P1
+Autenticação simultânea de iguais,Simultaneous Authentication of Equals,SAE,Criptografia,Troca de chaves do WPA3-Personal que substitui o PSK e resiste a ataques de dicionário offline.,Capturar o handshake não permite quebrar a senha offline.,Y1P1
+Rede privada virtual,Virtual Private Network,VPN,Redes,Túnel cifrado sobre uma rede pública que liga usuários ou sites como se estivessem na mesma rede.,Home office acessando a rede da empresa.,Y1P1
+IPsec,Internet Protocol Security,IPsec,Criptografia,"Conjunto de protocolos (IKE, ESP, AH) que cifra e autentica pacotes IP; modos transporte e túnel.",VPN site-to-site entre dois roteadores.,Y1P1
+OpenVPN,OpenVPN,,Redes,"VPN de código aberto baseada em SSL/TLS, flexível e muito usada em acesso remoto.",Cliente OpenVPN com arquivo .ovpn.,Y1P1
+Firewall com estado,Stateful firewall,,Redes,Firewall que acompanha o estado das conexões e libera automaticamente o tráfego de retorno.,Libera a resposta de um acesso HTTPS iniciado de dentro.,Y1P1
+Firewall de próxima geração,Next-Generation Firewall,NGFW,Redes,"Firewall que soma inspeção de aplicação (camada 7), IPS integrado e controle por usuário/aplicação.",Bloquear uma aplicação específica mesmo na porta 443.,Y1P1
+Sistema de detecção de intrusão,Intrusion Detection System,IDS,Resposta a Incidentes,"Monitora o tráfego ou o host e gera alertas sobre atividade suspeita, sem bloquear (passivo).",Snort/Suricata alertando sobre um port scan.,Y1P1
+Sistema de prevenção de intrusão,Intrusion Prevention System,IPS,Resposta a Incidentes,Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso.,IPS descarta pacotes de um exploit conhecido.,Y1P1
+Firewall de aplicação web,Web Application Firewall,WAF,Desenvolvimento,"Filtra requisições HTTP/HTTPS para proteger aplicações web (SQLi, XSS etc.).",WAF na frente de uma loja virtual.,Y1P1
