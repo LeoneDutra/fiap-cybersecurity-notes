@@ -9,3 +9,13 @@ O que o WPA3 traz de novo em relação ao WPA2?,"SAE no lugar do PSK (resiste a 
 Onde posicionar ACL estendida e ACL padrão?,Estendida perto da origem (filtra origem/destino/porta e descarta cedo); padrão perto do destino (só filtra a origem).,Y1P1,redes acl
 IDS × IPS?,IDS é passivo: monitora uma cópia do tráfego e alerta. IPS fica inline e bloqueia em tempo real; um falso positivo derruba tráfego legítimo.,Y1P1,deteccao soc
 IPsec: modo túnel × modo transporte?,Transporte protege só o payload e mantém o cabeçalho original (host a host). Túnel encapsula o pacote inteiro em novo cabeçalho IP (VPN site-to-site).,Y1P1,vpn criptografia
+Diferença entre systemctl start e enable?,start sobe o serviço agora; enable faz subir no boot. São independentes (enable --now faz os dois).,Y1P2,linux systemd
+O que significa a permissão 750 em um diretório?,"Dono rwx, grupo r-x, outros nada: o grupo entra e lista, mas não escreve; os demais não acessam.",Y1P2,linux permissoes
+Por que procurar binários SUID numa auditoria?,"Rodam com o privilégio do dono (muitas vezes root); se forem vulneráveis, viram caminho de escalada de privilégio.",Y1P2,linux privesc
+O que faz 'cmd > saida.txt 2>&1'?,stdout vai para o arquivo e stderr é redirecionado para onde o stdout aponta: tudo acaba em saida.txt.,Y1P2,linux shell
+Pipeline para contar logins SSH falhos por IP?,grep 'Failed password' /var/log/secure | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr,Y1P2,linux soc logs
+Camadas e vantagem do LVM?,PV (disco) → VG (pool) → LV (volume com filesystem); permite crescer ou mover volumes sem reparticionar.,Y1P2,linux discos
+Por que Telnet e FTP são inseguros?,Credenciais e dados trafegam em texto claro; um sniffer ou MitM lê tudo. Substitutos: SSH e SFTP/FTPS.,Y1P2,protocolos
+Diferença entre CVE e CVSS?,"CVE é o identificador da vulnerabilidade (MITRE); CVSS é a nota de 0 a 10 da gravidade (FIRST), usada para priorizar.",Y1P2,vulnerabilidades
+Regra 'firewall-cmd --add-port=80/tcp' sobrevive ao reboot?,"Não, é de runtime. Use --permanent (ou --runtime-to-permanent) e depois --reload.",Y1P2,linux firewall
+Para que serve o auditd? Dê um exemplo de regra.,Registra eventos de segurança no kernel. Ex.: auditctl -w /etc/passwd -p wa -k passwd_changes.,Y1P2,linux auditoria

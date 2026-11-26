@@ -11,7 +11,7 @@ and how the topic connects to real SOC / blue-team work.
 | Year | Phase | Topic | Notes |
 |---|---|---|---|
 | 1 | 1 | Redes e Segurança de Redes (Networking & Network Security) | [notes](year-1/phase-1) |
-| 1 | 2 | _TBD_ | [notes](year-1/phase-2) |
+| 1 | 2 | Linux: Administração, Serviços e Hardening (Linux Administration, Services & Hardening) | [notes](year-1/phase-2) |
 | 1 | 3 | _TBD_ | [notes](year-1/phase-3) |
 | 1 | 4 | _TBD_ | [notes](year-1/phase-4) |
 | 1 | 5 | _TBD_ | [notes](year-1/phase-5) |

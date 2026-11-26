@@ -55,3 +55,55 @@ Firewall de próxima geração,Next-Generation Firewall,NGFW,Redes,"Firewall que
 Sistema de detecção de intrusão,Intrusion Detection System,IDS,Resposta a Incidentes,"Monitora o tráfego ou o host e gera alertas sobre atividade suspeita, sem bloquear (passivo).",Snort/Suricata alertando sobre um port scan.,Y1P1
 Sistema de prevenção de intrusão,Intrusion Prevention System,IPS,Resposta a Incidentes,Fica em linha (inline) e bloqueia em tempo real o tráfego identificado como malicioso.,IPS descarta pacotes de um exploit conhecido.,Y1P1
 Firewall de aplicação web,Web Application Firewall,WAF,Desenvolvimento,"Filtra requisições HTTP/HTTPS para proteger aplicações web (SQLi, XSS etc.).",WAF na frente de uma loja virtual.,Y1P1
+Kernel,Kernel,,Sistemas,"Núcleo do sistema operacional: gerencia CPU, memória, dispositivos e processos, fazendo a ponte entre hardware e software.",uname -r mostra a versão do kernel Linux em uso.,Y1P2
+Distribuição Linux,Linux distribution (distro),,Sistemas,"Pacote completo formado pelo kernel Linux, ferramentas GNU, gerenciador de pacotes e configurações.","Debian, Ubuntu, Rocky Linux, Fedora.",Y1P2
+GNU/Linux,GNU/Linux,,Sistemas,Nome que reconhece que o sistema combina o kernel Linux com as ferramentas do projeto GNU.,"bash, coreutils e gcc vêm do projeto GNU.",Y1P2
+Shell,Shell,,Sistemas,Interpretador de comandos entre o usuário e o kernel; o Bash é o mais comum no Linux.,echo $SHELL → /bin/bash,Y1P2
+Superusuário,Superuser (root),,Sistemas,Conta com privilégio total no sistema (UID 0); deve ser usada só quando necessário.,sudo -i para virar root temporariamente.,Y1P2
+sudo,Superuser do,,Sistemas,"Executa um comando com privilégios de outro usuário (normalmente root), com registro em log.",sudo systemctl restart sshd,Y1P2
+Gerenciador de pacotes,Package manager,,Sistemas,"Ferramenta que instala, atualiza e remove software resolvendo dependências.",dnf install httpd (Red Hat) / apt install nginx (Debian).,Y1P2
+Permissões de arquivo,File permissions (rwx),,Sistemas,"Controle de leitura, escrita e execução para dono, grupo e outros, em notação simbólica ou octal.",chmod 640 relatorio.txt,Y1P2
+SUID,Set User ID,SUID,Sistemas,Bit especial que faz um executável rodar com o privilégio do dono do arquivo; alvo comum de escalada de privilégio.,find / -perm -4000 -type f,Y1P2
+Princípio do menor privilégio,Principle of least privilege,PoLP,GRC,Dar a cada usuário ou processo apenas as permissões estritamente necessárias.,Usuário comum + sudo em vez de login direto como root.,Y1P2
+Escalada de privilégio,Privilege escalation,PrivEsc,Ameaças e Ataques,Quando um atacante sai de um acesso limitado para um nível mais alto (ex.: root).,Explorar um binário SUID vulnerável.,Y1P2
+Processo,Process (PID),PID,Sistemas,"Programa em execução, identificado por um número (PID).",ps aux | grep nginx,Y1P2
+Daemon,Daemon,,Sistemas,Processo que roda em segundo plano prestando um serviço.,"sshd, crond, httpd.",Y1P2
+systemd,systemd,,Sistemas,"Sistema de inicialização e gerenciador de serviços (units), dependências e logs do Linux moderno.",systemctl enable --now sshd,Y1P2
+journalctl,journalctl,,Forense,Ferramenta para consultar o journal do systemd (logs binários estruturados).,journalctl -u sshd --since today,Y1P2
+rsyslog,rsyslog,,Forense,Serviço que recebe e grava logs em arquivos de texto ou os encaminha para servidores remotos/SIEM.,/var/log/messages e /var/log/secure.,Y1P2
+vim,Vi IMproved,,Sistemas,"Editor de texto do terminal com modos normal, inserção e comando.",:wq salva e sai; :q! sai sem salvar.,Y1P2
+Hierarquia padrão de sistema de arquivos,Filesystem Hierarchy Standard,FHS,Sistemas,Padrão que define a função de cada diretório no Linux.,"/etc = configuração, /var/log = logs, /home = usuários.",Y1P2
+Sistema de arquivos,Filesystem,,Sistemas,Estrutura que organiza como os dados são gravados no disco.,EXT4 e XFS.,Y1P2
+fstab,File systems table,,Sistemas,Arquivo /etc/fstab que lista o que é montado automaticamente no boot e com quais opções.,UUID=... /app xfs defaults 0 0,Y1P2
+Gerenciador de volumes lógicos,Logical Volume Manager,LVM,Sistemas,Camada que agrupa discos (PV) em pools (VG) e cria volumes lógicos (LV) redimensionáveis.,lvextend -r -L +2G /dev/vgdados/lvapp,Y1P2
+sysctl,sysctl,,Sistemas,Comando para ler e ajustar parâmetros do kernel em tempo de execução.,sysctl -w net.ipv4.ip_forward=0,Y1P2
+ss,Socket statistics,,Redes,"Lista sockets e portas em escuta ou conexões ativas, junto com o processo dono.",ss -tulpn,Y1P2
+tcpdump,tcpdump,,Redes,Capturador de pacotes em linha de comando; grava PCAPs para análise.,tcpdump -i eth0 port 22 -w ssh.pcap,Y1P2
+Fluxos padrão,Standard streams (stdin/stdout/stderr),,Sistemas,"Canais de entrada (fd 0), saída (fd 1) e erro (fd 2) de um processo.",cmd 2> erros.log,Y1P2
+Pipe,Pipe,,Sistemas,Operador | que envia a saída de um comando como entrada do próximo.,cat log | grep erro | wc -l,Y1P2
+Redirecionamento,Redirection,,Sistemas,"Envio de entradas ou saídas para arquivos (>, >>, <, 2>&1).",cmd > saida.txt 2>&1,Y1P2
+Globbing,Globbing / pattern matching,,Sistemas,"Uso de curingas (*, ?, [ ]) pelo shell para casar nomes de arquivos.",ls *.log,Y1P2
+awk,awk,,Sistemas,Linguagem de processamento de texto orientada a colunas/campos.,awk -F: '{print $1}' /etc/passwd,Y1P2
+sed,Stream editor,,Sistemas,"Editor de fluxo para substituir, apagar ou extrair texto por padrão.",sed 's/foo/bar/g' arquivo,Y1P2
+grep,Global regular expression print,,Sistemas,Busca linhas que casam com um padrão (texto ou regex).,grep -i 'failed' /var/log/secure,Y1P2
+Base64,Base64,,Criptografia,Codificação (não criptografia) que representa dados binários em texto ASCII.,echo dGVzdGU= | base64 -d,Y1P2
+Shell seguro,Secure Shell,SSH,Redes,"Protocolo de acesso remoto cifrado (TCP 22), com autenticação por senha ou chave.",ssh -i chave.pem user@servidor,Y1P2
+Telnet,Telnet,,Redes,Protocolo antigo de acesso remoto (TCP 23) que trafega tudo em texto claro.,Substituído pelo SSH.,Y1P2
+Protocolo de transferência de arquivos,File Transfer Protocol,FTP,Redes,Protocolo de transferência de arquivos (TCP 21) sem criptografia; FTPS adiciona TLS.,vsftpd como servidor; lftp como cliente.,Y1P2
+SFTP / SCP,SSH File Transfer Protocol / Secure Copy,SFTP / SCP,Redes,Transferência de arquivos cifrada que usa o canal SSH.,scp relatorio.pdf user@host:/tmp,Y1P2
+rsync,rsync,,Sistemas,"Ferramenta de cópia e sincronização incremental, local ou remota (via SSH).",rsync -avz /dados/ user@bkp:/backup/,Y1P2
+Sistema de arquivos de rede,Network File System,NFS,Redes,"Protocolo para compartilhar diretórios pela rede, montados como se fossem locais.",mount -t nfs srv:/export /mnt,Y1P2
+Server Message Block,Server Message Block,SMB,Redes,Protocolo de compartilhamento de arquivos e impressoras (comum no Windows; Samba no Linux).,SMBv1 vulnerável ao EternalBlue.,Y1P2
+cron,cron,,Sistemas,"Serviço de agendamento de tarefas recorrentes, configurado no crontab.",0 2 * * * /usr/local/bin/backup.sh,Y1P2
+LAMP,"Linux, Apache, MySQL, PHP",LAMP,Desenvolvimento,Stack clássica de servidor web: Linux + Apache + MySQL/MariaDB + PHP.,Site WordPress em servidor LAMP.,Y1P2
+Servidor web,Web server,,Desenvolvimento,Software que atende requisições HTTP/HTTPS e entrega páginas ou APIs.,Apache HTTP Server e NGINX.,Y1P2
+Texto claro,Cleartext,,Ameaças e Ataques,"Dados transmitidos sem criptografia, legíveis por quem capturar o tráfego.",Senha de FTP visível no Wireshark.,Y1P2
+Injeção,Injection,,Ameaças e Ataques,Envio de entrada maliciosa que a aplicação interpreta como comando ou consulta.,SQL injection: ' OR 1=1 --,Y1P2
+Vulnerabilidades e exposições comuns,Common Vulnerabilities and Exposures,CVE,GRC,"Catálogo público de vulnerabilidades conhecidas, mantido pelo MITRE, com um ID único para cada uma.",CVE-2017-0144 (EternalBlue).,Y1P2
+Sistema de pontuação de vulnerabilidades,Common Vulnerability Scoring System,CVSS,GRC,Padrão do FIRST que dá uma nota de 0 a 10 à gravidade de uma vulnerabilidade.,CVSS 9.8 = crítica.,Y1P2
+Endurecimento,Hardening,,GRC,Conjunto de configurações que reduzem a superfície de ataque de um sistema.,Desativar serviços desnecessários e o login de root via SSH.,Y1P2
+CIS Benchmark,CIS Benchmark,CIS,GRC,Guias de configuração segura publicados pelo Center for Internet Security.,CIS Benchmark para Red Hat Enterprise Linux.,Y1P2
+Módulos de autenticação plugáveis,Pluggable Authentication Modules,PAM,Sistemas,"Framework modular de autenticação do Linux (complexidade de senha, bloqueio após falhas etc.).",pam_pwquality exige senha mínima de 12 caracteres.,Y1P2
+firewalld,firewalld,,Redes,"Firewall dinâmico baseado em zonas, gerenciado pelo firewall-cmd, com regras runtime e permanentes.",firewall-cmd --add-service=https --permanent,Y1P2
+auditd,Linux Audit daemon,,Forense,Serviço que registra eventos de segurança no nível do kernel conforme regras definidas.,auditctl -w /etc/shadow -p wa -k shadow,Y1P2
+Força bruta,Brute force,,Ameaças e Ataques,Tentativas repetidas de adivinhar senhas até acertar.,Centenas de 'Failed password' para root no SSH.,Y1P2
