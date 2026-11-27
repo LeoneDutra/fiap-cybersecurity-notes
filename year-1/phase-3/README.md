@@ -63,19 +63,6 @@ Get-DhcpServerv4Scope; Get-DhcpServerv4Lease -ScopeId 192.168.1.0
 gpupdate /force; gpresult /r; gpresult /h relatorio.html; rsop.msc
 ```
 
-## 🧪 Atividades / CTFs
-
-A pasta `CTF` desta fase está vazia. A prática vem dos **laboratórios guiados** dos materiais:
-
-- Instalar o Windows Server 2019 e um cliente Windows 10 em VM, com IP fixo e nome no servidor.
-- Promover o servidor a DC (nova floresta) e criar OUs, usuários, computadores e grupos no modelo AGDLP.
-- Delegar a redefinição de senhas de uma OU.
-- Configurar DHCP (escopo, reserva e failover) e DNS (zonas direta e inversa, registros, servidor secundário e forwarders).
-- Montar uma VPN com RRAS e NPS e conectar o Windows 10. Configurar NAT, publicar um site no IIS e montar o WSUS com aprovação automática e GPO.
-- Criar GPOs: papel de parede, bloqueio de USB, redirecionamento de pastas, instalação de software, filtro WMI, block inheritance e enforced.
-
-> 💡 Dica de homelab: monte o mesmo AD e depois rode **PingCastle** ou **BloodHound** (em modo de auditoria) para ver como um atacante enxergaria o domínio. Ative a auditoria avançada e o Sysmon e encaminhe os eventos para um SIEM gratuito (Wazuh, Splunk Free) para treinar detecção.
-
 ## ❓ Perguntas de revisão
 
 1. **Qual a diferença entre domínio, árvore e floresta no AD?**

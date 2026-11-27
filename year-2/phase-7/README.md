@@ -72,16 +72,6 @@ Esta fase é de **gestão, direito e processo** — as "ferramentas" são framew
 | **Relatório de Impacto à Proteção de Dados (RIPD/DPIA)** | Avaliar riscos de privacidade de um tratamento |
 | **Acordo de Nível de Serviço (SLA)** | Formalizar metas de serviço de TI |
 
-## Atividades/práticas
-
-A fase se avalia por **estudos de caso e análise**, não por laboratório técnico. As atividades típicas (descritas em termos gerais, sem respostas):
-
-- Ler um cenário e **classificar o dado** (pessoal? sensível?) e identificar a **base legal** adequada do tratamento.
-- Mapear, num incidente, **o que precisa ser comunicado**, a quem (titulares, ANPD) e como preservar a **prova eletrônica**.
-- Analisar um caso de **monitoramento no trabalho** e dizer se é lícito, e o que faltaria (política, aviso) para torná-lo lícito.
-- Montar uma **matriz de risco** a partir de ativos, ameaças e vulnerabilidades de um cenário, e propor a **resposta** (mitigar/transferir/aceitar/evitar) para cada risco.
-- Relacionar um objetivo de negócio a **qual framework** (COBIT, ITIL, ISO 27001, ISO 31000) ajuda a atingi-lo.
-
 ## Perguntas de revisão
 
 <toggle>

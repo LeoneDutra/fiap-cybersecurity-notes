@@ -64,14 +64,6 @@ Ghidra · IDA Free · x32dbg/x64dbg · PE-bear / CFF Explorer · Godbolt (C → 
 checksec (Linux)  ·  "!mona modules" no Immunity (lista DEP/ASLR/SafeSEH por módulo)
 ```
 
-## 🧪 Atividades / CTFs
-
-A pasta `CTF5` traz um desafio com um executável Windows (`desafio.exe`), uma DLL de apoio (`funcs.dll`) e um `flag.txt`. É um exercício de **engenharia reversa**: abrir o binário num debugger/disassembler, entender a lógica (uma verificação) e deduzir a entrada correta. Registro apenas o **tema**, sem a solução nem a flag.
-
-Labs conceituais dos materiais: converter entre decimal/binário/hex; identificar seções e importações de um PE e de um ELF; ler trechos de Assembly x86 e acompanhar a pilha num debugger; resolver um crackme simples; e, em ambiente isolado, observar como uma entrada sem validação quebra um programa e como as mitigações (DEP, ASLR, canary) mudam esse quadro.
-
-> 💡 Dica de homelab: pratique reversing defensivo nos desafios gratuitos do **Microcorruption**, do **crackmes.one** e do módulo de *Reverse Engineering* do **picoCTF**. Compile um `.c` simples com e sem `-fstack-protector` e compare o Assembly no Godbolt para ver o canary sendo inserido.
-
 ## ❓ Perguntas de revisão
 
 1. **O que são `ESP`, `EBP` e `EIP`?**

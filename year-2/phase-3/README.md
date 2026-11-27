@@ -55,18 +55,6 @@ Credential dump → Credential Guard, LSASS protegido, EDR, menor privilégio
 Lateral movement→ LAPS, segmentação, restrição de logon por tier
 ```
 
-## 🧪 Atividades / CTFs
-
-Não há pasta de CTF nesta fase; a prática é o **laboratório de AD** montado nos materiais (VMs isoladas). Exercícios, sempre com foco em entender para defender:
-
-- Montar um **laboratório de AD** (DC + estações) e explorar sua estrutura (OUs, grupos, GPOs) com LDAP/BloodHound.
-- Mapear **caminhos de ataque** no BloodHound e, como defensor, propor onde cortá‑los.
-- Reproduzir, em lab, a captura por **LLMNR/NBT‑NS** e aplicar a mitigação por GPO, verificando que a captura para.
-- Identificar contas vulneráveis a **AS‑REP roasting**/**Kerberoasting** e corrigi‑las (pré‑auth, gMSA).
-- Escrever regras de **detecção** (eventos 4768/4769/4625) num SIEM para os ataques estudados.
-
-> 💡 Dica de homelab: use o **GOAD (Game of Active Directory)** ou o laboratório **AD** do próprio material, sempre isolado. Para treinar **defesa e detecção**, combine com o **Atomic Red Team** (simula técnicas ATT&CK) e colete os eventos num SIEM. Para prática legal e guiada, os módulos de AD do **TryHackMe/HackTheBox Academy**.
-
 ## ❓ Perguntas de revisão
 
 1. **Quais são as fases de um pentest e como a defesa espelha cada uma?**

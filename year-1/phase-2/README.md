@@ -22,7 +22,7 @@ A ideia central: **todo serviço exposto é superfície de ataque**. Quem sabe i
 | 8 | Stack web (LAMP) | Instalação e configuração do Apache HTTP Server e do NGINX (arquivos de configuração, troca do site padrão). MySQL Server: `mysql_secure_installation`, criação de usuário, liberação de acesso externo e teste de conexão. |
 | 9 | Serviços de rede ameaçados | **CVE** (catálogo público mantido pelo MITRE) e **CVSS** (nota de 0 a 10 mantida pelo FIRST). Riscos por protocolo: HTTP em texto claro × HTTPS e injeção em aplicações web; POP/IMAP/SMTP; FTP × FTPS; NFSv3/NFSv4 e SMB; SSH × Telnet. Relatórios Shadowserver sobre serviços expostos. |
 | 10 | Hardening e firewall | Conceito de **hardening** e o **CIS Benchmark** como referência. Política de senhas (`login.defs`, `chage`, padrões do `useradd`, PAM/pwquality). **firewalld** com `firewall-cmd`: zonas, regras runtime × permanentes. Auditoria com **auditd** (`auditd.conf`, regras, `auditctl`, leitura dos logs de auditoria). |
-| — | Cheat sheet de CTF | Guia de comandos para manipular texto e dados: `grep`, `cut`, `sort`/`uniq`, `awk`, `sed`, `tr`, `wc`, `file`/`strings`, `xxd`/`hexdump`, `base64`. |
+| — | Cheat sheet de comandos | Guia de comandos para manipular texto e dados: `grep`, `cut`, `sort`/`uniq`, `awk`, `sed`, `tr`, `wc`, `file`/`strings`, `xxd`/`hexdump`, `base64`. |
 
 ## 🔑 Conceitos-chave
 
@@ -83,13 +83,6 @@ firewall-cmd --get-active-zones; firewall-cmd --list-all
 firewall-cmd --add-service=http --zone=public --permanent; firewall-cmd --reload
 auditctl -w /etc/passwd -p wa -k passwd_changes; ausearch -k passwd_changes
 ```
-
-## 🧪 Atividades / CTFs
-
-- **CTF de Linux**: a pasta da fase tem uma cheat sheet de manipulação de texto e dados, que é o tipo de habilidade cobrada no desafio. Os temas: filtrar logs de autenticação (ex.: falhas de login em FTP), extrair IPs e usuários, contar ocorrências, identificar tipos de arquivo, extrair strings de binários e decodificar hex/Base64. *(Sem respostas aqui.)*
-- **Labs práticos dos materiais**: instalar servidor e desktop em VM; criar usuários e permissões; configurar a rede; criar PV/VG/LV e montar via fstab; subir SSH, vsftpd, NFS e cron; publicar um site em Apache/NGINX e conectar ao MySQL remotamente; aplicar política de senhas, regras do firewalld e regras do auditd.
-
-> 💡 Dica de homelab: repetir tudo numa VM Rocky/AlmaLinux (substitutos do CentOS) e numa Debian/Ubuntu. Depois, rodar um scanner como Lynis ou o CIS‑CAT Lite e comparar a nota antes e depois do hardening.
 
 ## ❓ Perguntas de revisão
 

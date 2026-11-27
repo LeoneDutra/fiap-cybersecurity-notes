@@ -70,19 +70,6 @@ tshark -r captura.pcap -q -z conv,tcp        # conversas TCP
 
 Códigos HTTP úteis em log de servidor web: **200** (ok), **401/403** (auth/proibido), **404** (não encontrado — varredura), **429** (rate limit), **500/503** (erro/indisponível).
 
-## 🧪 Atividades / CTFs
-
-Não há pasta de CTF nesta fase. A prática é **investigativa**, nos laboratórios dos materiais:
-
-- Montar um **Splunk** (ou Wazuh) e investigar um incidente simulado correlacionando logs web, firewall e IDS.
-- Reconstruir um ataque a partir de um **PCAP** com Wireshark/NetworkMiner (metodologia OSCAR).
-- Fazer uma **aquisição in‑vivo** (memória + estado) de uma VM Windows e Linux, respeitando a ordem da volatilidade.
-- Analisar um **dump de memória** com Volatility (processos, conexões, malfind) num caso como Poison Ivy/WannaCry.
-- Criar uma **imagem de disco** com FTK Imager/Guymager (com hash), abrir no **Autopsy** e montar a **timeline**.
-- Extrair artefatos do **Windows** (Registro, .evtx, USB, navegador, e‑mail) e escrever um **relatório forense** com cadeia de custódia.
-
-> 💡 Dica de homelab: resolve os desafios gratuitos de **DFIR** no CyberDefenders e BlueTeamLabs, baixe os **memory samples** do repositório do Volatility, e os **PCAPs** do malware-traffic-analysis.net. Pratique escrever o relatório como se fosse ser lido por um juiz.
-
 ## ❓ Perguntas de revisão
 
 1. **Quais são as fases do ciclo de resposta a incidentes (PICERL/NIST)?**

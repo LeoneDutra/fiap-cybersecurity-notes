@@ -77,20 +77,6 @@ sudo systemctl start nessusd              # Nessus Essentials → https://localh
 sudo systemctl enable --now zabbix-server zabbix-agent apache2
 ```
 
-## 🧪 Atividades / CTFs
-
-A pasta `CTF` desta fase guarda os scripts e arquivos que usei nos desafios. Resumo só **os temas**, sem soluções:
-
-- **Hashes e wordlists**: gerar hashes e compará‑los a uma lista de palavras (o conceito de ataque de dicionário contra hashes sem salt).
-- **Ransomware didático**: decifrar um arquivo cifrado em laboratório (uma imagem) sabendo o algoritmo e a chave, o que reforça os conceitos de criptografia simétrica.
-- **Processamento de arquivos**: contar linhas, tratar listas de nomes e ler arquivos no formato `passwd`.
-- **Análise de dados em CSV grande**: filtrar e agregar um dataset público de casos por condado (US counties) com Python.
-- **Depuração**: corrigir scripts com erro.
-
-Labs dos materiais: scripts Bash com parâmetros, laços e funções; exercícios de Python; inventário em arquivo; cifrar e decifrar com DES/AES; chat por socket e port scanner; varredura com OpenVAS e Nessus contra uma VM alvo; e monitoramento com Zabbix e alerta de teste.
-
-> 💡 Dica de homelab: transforme o port scanner num script com `argparse`, `concurrent.futures` e saída em JSON. Depois compare o resultado com `nmap -sT`. Exporte o relatório do OpenVAS e monte uma planilha de priorização (CVSS + exposição + criticidade do ativo).
-
 ## ❓ Perguntas de revisão
 
 1. **O que significam `$#`, `$@` e `$?` num script Bash?**

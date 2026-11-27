@@ -62,19 +62,6 @@ tor + Tor Browser; verificar vazamento de DNS/WebRTC; checar o IP de saída
 
 Shodan/Censys (web): buscar por `org:"Empresa"`, `port:`, `ssl.cert.subject.cn:`, para mapear a superfície de ataque exposta — apenas para reconhecimento autorizado.
 
-## 🧪 Atividades / CTFs
-
-Não há pasta de CTF nesta fase. A prática é **investigativa e ética**, nos laboratórios dos materiais:
-
-- Montar um **laboratório de OpSec** (VM isolada, VPN/Tor, navegador endurecido) e verificar vazamentos de DNS/WebRTC.
-- Extrair **IoCs** de um artefato (análise estática/dinâmica) e documentá‑los num formato compartilhável (ex.: MISP/STIX).
-- Mapear os **subdomínios e a superfície** de um domínio autorizado com crt.sh, theHarvester e Shodan.
-- Praticar **GEOINT** com fotos de treino e validar um perfil real × sock puppet.
-- Montar um grafo de investigação no **Maltego/Recon‑ng** a partir de um domínio, pivotando por e‑mails, hosts e certificados.
-- Mapear um incidente conhecido (ex.: Ryuk) na **Cyber Kill Chain** e no **ATT&CK**.
-
-> 💡 Dica de homelab: use alvos pensados para treino de OSINT (o próprio domínio, *bug bounty scopes* que permitem recon, ou laboratórios como o TraceLabs CTF e o OSINT Exercises do GEOINT). Cadastre‑se no **MISP** de treino e pratique a produção de um relatório de inteligência curto (quem, o quê, TTPs, IoCs, recomendação).
-
 ## ❓ Perguntas de revisão
 
 1. **Qual a diferença entre dado, informação e inteligência?**

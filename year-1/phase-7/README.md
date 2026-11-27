@@ -79,20 +79,6 @@ iw dev; airmon-ng start wlan0; airodump-ng wlan0mon
 # captura de handshake WPA2 para auditoria da própria senha
 ```
 
-## 🧪 Atividades / CTFs
-
-A pasta `CTF/Fase7` contém a VM **IoTGoat** (imagens `.img`, `.vmdk`, `.vdi`) — um firmware OpenWrt deliberadamente vulnerável, feito para treino sobre a OWASP IoT Top 10. Registro só o **tema**; não executei a VM nem reproduzo soluções.
-
-Labs dos materiais (em ambiente isolado, com hardware/arquivos próprios):
-
-- Montar circuitos no **Tinkercad** e programar o Arduino em C (potenciômetro, semáforo, alarme ultrassônico).
-- Construir um **gateway MQTT** e fazer Python e Arduino trocarem dados por serial, persistindo o resultado.
-- **Extrair e analisar firmware** com binwalk, procurando senhas e serviços inseguros (OWASP IoT Top 10).
-- Reconhecer **UART/JTAG/SPI/I2C** numa placa e explicar o que cada interface expõe.
-- Auditar a **própria rede Wi‑Fi**: modo monitor, canais, captura do handshake e teste da robustez da senha.
-
-> 💡 Dica de homelab: pratique na **IoTGoat** e na **Damn Vulnerable IoT Device (DVID)**, use o **FACT** ou o **EMBA** para análise automatizada de firmware, e o simulador do Tinkercad para eletrônica sem comprar peças. Para Wi‑Fi, audite apenas redes suas.
-
 ## ❓ Perguntas de revisão
 
 1. **Por que o MQTT e o CoAP são comuns em IoT, e qual o risco de segurança associado?**

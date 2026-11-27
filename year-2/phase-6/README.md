@@ -63,19 +63,6 @@ LLM/GenAI   → validar entrada (anti prompt injection), filtrar saída, guardra
 Governança  → OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF
 ```
 
-## 🧪 Atividades / CTFs
-
-Não há CTF; a prática são os **hands‑on da AWS** (em conta de laboratório) e exercícios de ML:
-
-- Configurar **CloudTrail + CloudWatch** e investigar atividade; monitorar conformidade com **Config**.
-- Capturar e analisar **VPC Flow Logs** e rastrear uma aplicação com **X‑Ray**.
-- Criptografar **S3/RDS/DynamoDB** em repouso com **KMS**; descobrir PII com **Macie**.
-- Montar **SSO/Cognito** e usar **Secrets Manager**; aplicar **WAF/Shield**.
-- Fazer deploy por **CloudFormation (IaC)** e por **CI/CD**; montar uma arquitetura **Multi‑AZ/cross‑region**.
-- Treinar um classificador supervisionado e avaliar métricas; reproduzir um **ataque adversarial** (FGSM) e uma defesa num dataset de treino; testar **prompt injection** num app de LLM próprio e aplicar guardrails.
-
-> 💡 Dica de homelab: use o **AWS Free Tier** e o **AWS Skill Builder**; para IA/ML, os notebooks do scikit‑learn e os desafios de ML adversarial. Estude a **OWASP Top 10 for LLM**, o **MITRE ATLAS** e o **NIST AI RMF** como mapas de ameaça/controle.
-
 ## ❓ Perguntas de revisão
 
 1. **O que é o modelo de responsabilidade compartilhada na nuvem?**

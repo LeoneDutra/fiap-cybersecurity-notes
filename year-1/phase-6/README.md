@@ -67,19 +67,6 @@ john --show hashes.txt
 hashcat -m 1800 hashes.txt rockyou.txt             # $6$ = sha512crypt
 ```
 
-## 🧪 Atividades / CTFs
-
-A pasta `CTF/Fase6` está presente mas vazia. A prática vem dos **laboratórios "hands on"** dos materiais (com arquivos próprios, em ambiente isolado):
-
-- Capturar tráfego com tcpdump/Wireshark e **seguir uma sessão FTP** no Metasploitable2 para ver credenciais em texto claro.
-- Reproduzir e **mitigar ARP cache poisoning** (observar o MitM e aplicar DAI/ARP estático).
-- Gerar par de chaves, cifrar, decifrar e **assinar** com GnuPG.
-- Esconder e extrair uma mensagem com Steghide e praticar **esteganálise**.
-- Gerar hashes no Linux e **quebrá‑los com John the Ripper** usando uma wordlist, observando o efeito do salt.
-- Usar filtros e o *Follow TCP Stream* no Wireshark; repetir a extração de campos com tshark.
-
-> 💡 Dica de homelab: baixe PCAPs de treino do **malware-traffic-analysis.net** e do **Wireshark sample captures**, e resolva os desafios de *Forensics*/*Cryptography* do **picoCTF**. Compare MD5 × SHA‑256 de um mesmo arquivo e veja uma colisão conhecida de MD5.
-
 ## ❓ Perguntas de revisão
 
 1. **Qual a diferença entre criptografia simétrica e assimétrica, e por que o TLS usa as duas?**

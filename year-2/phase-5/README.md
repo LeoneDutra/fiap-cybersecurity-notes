@@ -63,19 +63,6 @@ upx -d amostra.bin -o amostra_unpacked.bin
 # byte ^ chave repetida = texto original
 ```
 
-## 🧪 Atividades / CTFs
-
-Não há pasta de CTF; a prática usa **amostras de treino** em VM isolada (nunca malware real sem controle):
-
-- Montar o **lab** (VirtualBox, snapshots, rede host‑only com INetSim) e validar o isolamento.
-- Fazer **triagem estática** de uma amostra: hash/imphash, strings, imports, e consultar reputação.
-- Identificar **packing** por entropia/PEiD e **desempacotar**.
-- **Detonar** numa amostra de treino e capturar o comportamento (Procmon, Process Hacker, Regshot, Wireshark/INetSim), extraindo IOCs.
-- **Desofuscar** strings cifradas por XOR e seguir o fluxo de execução no IDA/Ghidra.
-- Escrever uma **regra YARA** e mapear as técnicas no **ATT&CK**.
-
-> 💡 Dica de homelab: use o **FLARE VM** + **REMnux** como par de VMs, amostras de treino do **MalwareBazaar** (abuse.ch) e do **PMA labs** (livro *Practical Malware Analysis*), e a sandbox pública **Any.run**/**Hybrid Analysis** para comparar. Sempre snapshot antes e rollback depois.
-
 ## ❓ Perguntas de revisão
 
 1. **Por que a análise de malware deve ser feita em VM isolada com snapshot?**

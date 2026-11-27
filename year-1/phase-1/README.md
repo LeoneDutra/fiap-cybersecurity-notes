@@ -72,21 +72,6 @@ show ip route | show ip ospf neighbor | show ip bgp summary | show access-lists
 show port-security interface f0/1 | show ip dhcp snooping binding | show crypto isakmp sa
 ```
 
-## 🧪 Atividades / CTFs
-
-A fase não tem CTF próprio. A prática vem dos **laboratórios no Packet Tracer** que acompanham os materiais:
-
-- RIP e EIGRP entre roteadores; OSPF (área única, autenticação, sumarização) e OSPFv3 com IPv6.
-- BGP básico entre ASs.
-- AAA com servidor TACACS+ e com servidor RADIUS.
-- Segurança de camada 2: DHCP Snooping, DAI e Port Security, com testes de violação.
-- ACL padrão, estendida, nomeada e por horário.
-- Rede Wi‑Fi com WPA2/WPA3.
-- VPN site‑to‑site com IPsec e com IPsec + GRE.
-- Firewall e IDS/IPS em topologia simulada.
-
-> 💡 Dica de homelab: repetir os labs em GNS3/EVE‑NG ou com pfSense + Suricata. Capturar o tráfego com Wireshark ajuda a ver cada camada na prática.
-
 ## ❓ Perguntas de revisão
 
 1. **Qual a diferença entre o modelo OSI e o TCP/IP?**

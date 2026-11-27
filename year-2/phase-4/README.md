@@ -72,18 +72,6 @@ Android        → não exportar componentes sem necessidade; sem debuggable/all
                  em produção; armazenamento seguro; validar input de Intents
 ```
 
-## 🧪 Atividades / CTFs
-
-Não há pasta de CTF; a prática usa **alvos deliberadamente vulneráveis** dos materiais, em laboratório isolado:
-
-- Configurar o **Burp Suite** e interceptar/repetir requisições de uma app de treino.
-- Descobrir diretórios ocultos com **gobuster/FFUF** e fazer **fuzzing** de parâmetros.
-- Reproduzir, em alvo de treino, cada vulnerabilidade do capítulo 4 **e aplicar a correção**, confirmando que o ataque deixa de funcionar.
-- Varrer os próprios ativos com **Nuclei/WPScan** e triar os achados.
-- Montar o **laboratório Android** e fazer a **análise híbrida** de um APK (InjuredAndroid): decompilar com JADX, ler o manifest, achar componentes exportados e observar o app no emulador.
-
-> 💡 Dica de homelab: pratique web em alvos legais — **OWASP Juice Shop**, **DVWA**, **PortSwigger Web Security Academy** (gratuito e guiado). Para mobile, **InjuredAndroid**, **DIVA** e o **OWASP MASTG/MASVS** como referência de teste e de requisitos de segurança.
-
 ## ❓ Perguntas de revisão
 
 1. **O que é o OWASP Top 10 e para que serve?**
